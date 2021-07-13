@@ -1,7 +1,11 @@
 import "./ProjectBox.css";
 
 const ProjectBox = () => {
-  return <div className="project-box">Project Box</div>;
+  return (
+    <div className="project-box">
+      <p>Project Box</p>
+    </div>
+  );
 };
 
 export default ProjectBox;

@@ -1,3 +1,13 @@
 .project-box {
-    background: yellow
-  }
+  background: yellow;
+  height: 100vh;
+  width: 100vw;
+}
+
+.project-box p {
+  color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
