@@ -1,13 +1,25 @@
 .about {
-  background: green;
+  background: grey;
   height: 100vh;
   width: 100vw;
 }
 
-.about p {
-  color: purple;
+.about span {
+  color: black;
+  margin: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 20vh;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5vh;
+  height: 30vh;
+  width: 40vh;
 }
