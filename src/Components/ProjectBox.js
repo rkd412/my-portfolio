@@ -2,7 +2,7 @@ import "./ProjectBox.css";
 
 const ProjectBox = () => {
   return (
-    <div className="project-box">
+    <div id="project" className="project-box">
       <p>Project Box</p>
     </div>
   );

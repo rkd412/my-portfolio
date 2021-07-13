@@ -4,7 +4,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <img className="image" src={day} alt="Photo of me" />
       <span>
         Welcome to my website! My name is Rob and I am a web developer. Feel
