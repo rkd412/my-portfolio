@@ -1,0 +1,25 @@
+.about {
+  background: grey;
+  height: 100vh;
+  width: 100vw;
+}
+
+.about span {
+  color: black;
+  margin: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5vh;
+  height: 30vh;
+  width: 40vh;
+}

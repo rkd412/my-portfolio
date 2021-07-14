@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import "./NavBar.css";
+import "./MobileNavBar.css";
 
-const NavBar = () => {
+const MobileNavBar = () => {
   const [dayMode, setDayMode] = useState(false);
 
   const dayModeHandler = () => {
@@ -11,18 +11,18 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="nav-bar">
+    <nav className="mobile-nav-bar">
       <ul>
-        <li className="nav-item">
+        <li className="mobile-nav-item">
           <a href="#about">About</a>
         </li>
-        <li className="nav-item">
-          <a href="#project">Portfolio</a>
+        <li className="mobile-nav-item">
+          <a href="#project">Projects</a>
         </li>
-        <li className="nav-item">
+        <li className="mobile-nav-item">
           <a href="#contact">Contact</a>
         </li>
-        <li className="nav-mode-toggle" onClick={dayModeHandler}>
+        <li className="mobile-nav-mode-toggle" onClick={dayModeHandler}>
           day/night
         </li>
       </ul>
@@ -30,4 +30,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default MobileNavBar;

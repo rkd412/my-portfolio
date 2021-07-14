@@ -1,21 +1,21 @@
-.about {
-  background: grey;
+.mobile-about {
+  background: yellow;
   height: 100vh;
   width: 100vw;
 }
 
-.about span {
+.mobile-about span {
   color: black;
   margin: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
-  font-size: 1.5vw;
+  height: 10vh;
+  font-size: 1vw;
   text-align: center;
 }
 
-.image {
+.mobile-image {
   display: block;
   margin-left: auto;
   margin-right: auto;

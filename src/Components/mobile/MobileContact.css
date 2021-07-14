@@ -1,0 +1,15 @@
+.mobile-contact {
+    background: grey;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .mobile-contact p {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 1.5vw;
+  }
+  

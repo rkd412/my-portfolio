@@ -1,22 +1,23 @@
 .nav-bar {
   background: Orange;
-  margin: 1vh;
+  margin: 2vh;
   position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+  position: sticky;
+  top: 0;
 }
 
 .nav-bar ul {
   width: 100%;
-  padding: 1vh;
   background: #ccc;
   display: flex;
+  height: 5vh;
+  width: 95vw;
 }
 .nav-bar ul li {
   display: inline;
   box-sizing: border-box;
-  min-width: 100px;
-  max-width: 133px;
+  width: 5vw;
+  height: 5vh;
   padding: 5px 10px;
   background: pink;
 }
@@ -25,6 +26,7 @@
   background: seashell;
 }
 
-.nav-bar a {
+a {
   text-decoration: none;
+  text-align: center;
 }

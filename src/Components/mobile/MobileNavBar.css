@@ -1,0 +1,27 @@
+.mobile-nav-bar {
+    background: Orange;
+    margin: 2vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  .mobile-nav-bar ul {
+    width: 100%;
+    background: #ccc;
+    display: flex;
+    height: 5vh;
+    width: 95vw;
+  }
+  .mobile-nav-bar ul li {
+    display: inline;
+    box-sizing: border-box;
+    width: 5vw;
+    height: 5vh;
+    padding: 5px 10px;
+    background: pink;
+  }
+  .mobile-nav-bar ul li:last-child {
+    margin-left: auto;
+    background: seashell;
+  }
