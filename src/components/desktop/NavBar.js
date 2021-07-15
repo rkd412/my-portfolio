@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 import "./NavBar.css";
 
 const NavBar = () => {
-  const [dayMode, setDayMode] = useState(false);
+  const { isNight, setIsNight } = useContext(ThemeContext);
 
-  const dayModeHandler = () => {
-    setDayMode(prevCheck => !prevCheck);
-    console.log(dayMode);
+  const handleThemeToggle = (e) => {
+    e.preventDefault();
+    setIsNight(isNight === true ? false : true);
+    console.log(isNight);
   };
 
   return (
-    <nav className="nav-bar">
+    <nav className={isNight ? "night-nav-bar" : "day-nav-bar"}>
       <ul>
         <li className="nav-item">
           <a href="#about">About</a>
@@ -22,7 +24,7 @@ const NavBar = () => {
         <li className="nav-item">
           <a href="#contact">Contact</a>
         </li>
-        <li className="nav-mode-toggle" onClick={dayModeHandler}>
+        <li className="toggle" onClick={handleThemeToggle}>
           day/night
         </li>
       </ul>

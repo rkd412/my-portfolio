@@ -1,4 +1,8 @@
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context"
+
 import day from "../../day.jpg";
+import night from "../../night.jpg";
 
 import "./About.css";
 

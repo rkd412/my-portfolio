@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 import "./MobileNavBar.css";
 
 const MobileNavBar = () => {
-  const [dayMode, setDayMode] = useState(false);
+const { isNight, setIsNight } = useContext(ThemeContext);
 
-  const dayModeHandler = () => {
-    setDayMode(prevCheck => !prevCheck);
-    console.log(dayMode);
+  const handleThemeToggle = (e) => {
+    e.preventDefault();
+    setIsNight(isNight === true ? false : true);
+    console.log(isNight);
   };
 
   return (
-    <nav className="mobile-nav-bar">
+    <nav className={isNight ? "night-mobile-nav-bar" : "day-mobile-nav-bar"}>
       <ul>
         <li className="mobile-nav-item">
           <a href="#about">About</a>
@@ -22,7 +24,7 @@ const MobileNavBar = () => {
         <li className="mobile-nav-item">
           <a href="#contact">Contact</a>
         </li>
-        <li className="mobile-nav-mode-toggle" onClick={dayModeHandler}>
+        <li className="mobile-toggle" onClick={handleThemeToggle}>
           day/night
         </li>
       </ul>
