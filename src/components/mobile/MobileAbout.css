@@ -1,10 +1,16 @@
-.mobile-about {
-  background: yellow;
+.night-mobile-about {
+  background: darkslategrey;
   height: 100vh;
   width: 100vw;
 }
 
-.mobile-about span {
+.day-mobile-about {
+  background: grey;
+  height: 100vh;
+  width: 100vw;
+}
+
+span {
   color: black;
   margin: 5vh;
   display: flex;
@@ -15,7 +21,7 @@
   text-align: center;
 }
 
-.mobile-image {
+image {
   display: block;
   margin-left: auto;
   margin-right: auto;

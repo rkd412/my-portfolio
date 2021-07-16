@@ -1,20 +1,28 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "../../context"
+import React, { useState, useContext } from "react";
+import { ThemeContext } from "../../context";
 
-import day from "../../day.jpg";
-import night from "../../night.jpg";
+import day from "../../assets/day-profile.jpg";
+import night from "../../assets/night-profile.jpg";
+import rat from "../../assets/rat-in-a-nest.jpg";
 
 import "./About.css";
 
 const About = () => {
+  const theme = useContext(ThemeContext);
+
   return (
-    <div id="about" className="about">
-      <img className="image" src={day} alt="Photo of me" />
+    <div id="about" className={theme.isNight ? "night-about" : "day-about"}>
+      <img
+        className="image"
+        src={theme.isNight ? night : day}
+        alt="Photo of me"
+      />
       <span>
         <h1>
           Welcome to my website! My name is Rob and I am a web developer. Feel
           free to check out my projects below or reach out to me through the
-          contact section. Thanks!
+          contact section. Also, my GitHub can be found here and I have some
+          CodePen projects I did for FreeCodeCamp here. Thanks!
         </h1>
       </span>
     </div>

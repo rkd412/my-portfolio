@@ -1,15 +1,27 @@
-.mobile-contact {
-    background: grey;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  .mobile-contact p {
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    font-size: 1.5vw;
-  }
-  
+.night-mobile-contact {
+  background: darkslategrey;
+  height: 100vh;
+  width: 100vw;
+}
+
+.night-mobile-contact p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.5vw;
+}
+
+.day-mobile-contact {
+  background: grey;
+  height: 100vh;
+  width: 100vw;
+}
+
+.day-mobile-contact p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.5vw;
+}

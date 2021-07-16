@@ -1,4 +1,10 @@
-.about {
+.night-about {
+  background: darkslategrey;
+  height: 100vh;
+  width: 100vw;
+}
+
+.day-about {
   background: grey;
   height: 100vh;
   width: 100vw;

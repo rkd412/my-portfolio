@@ -1,6 +1,7 @@
-App {
+a {
+  text-decoration: none;
+  text-align: center;
 }
-
 body {
-  background: grey;
+  background: pink;
 }
