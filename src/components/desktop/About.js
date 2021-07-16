@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../context";
 
 import day from "../../assets/day-profile.jpg";
@@ -10,12 +10,33 @@ import "./About.css";
 const About = () => {
   const theme = useContext(ThemeContext);
 
+  const [count, setCount] = useState(0);
+  const [image, setImage] = useState(night);
+
+  const clickHandler = () => {
+    setCount(count + 1);
+    console.log(count);
+  };
+
+  useEffect(() => {
+    if (count === 10) {
+      setImage(rat);
+    } else if (count === 11) {
+      setCount(0);
+    } else if (theme.isNight) {
+      setImage(night);
+    } else {
+      setImage(day);
+    }
+  });
+
   return (
     <div id="about" className={theme.isNight ? "night-about" : "day-about"}>
       <img
         className="image"
-        src={theme.isNight ? night : day}
+        src={image}
         alt="Photo of me"
+        onClick={clickHandler}
       />
       <span>
         <h1>

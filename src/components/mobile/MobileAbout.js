@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../context";
 
 import day from "../../assets/day-profile.jpg";
@@ -7,16 +7,39 @@ import rat from "../../assets/rat-in-a-nest.jpg";
 
 import "./MobileAbout.css";
 
-
-const About = () => {
+const MobileAbout = () => {
   const theme = useContext(ThemeContext);
 
+  const [count, setCount] = useState(0);
+  const [image, setImage] = useState(night);
+
+  const clickHandler = () => {
+    setCount(count + 1);
+    console.log(count);
+  };
+
+  useEffect(() => {
+    if (count === 10) {
+      setImage(rat);
+    } else if (count === 11) {
+      setCount(0);
+    } else if (theme.isNight) {
+      setImage(night);
+    } else {
+      setImage(day);
+    }
+  });
+
   return (
-    <div id="about" className={theme.isNight ? "night-mobile-about" : "day-mobile-about"}>
+    <div
+      id="about"
+      className={theme.isNight ? "night-mobile-about" : "day-mobile-about"}
+    >
       <img
         className="image"
-        src={theme.isNight ? night : day}
+        src={image}
         alt="Photo of me"
+        onClick={clickHandler}
       />
       <span>
         <h1>
@@ -30,4 +53,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default MobileAbout;
