@@ -1,20 +1,19 @@
 .night-nav-bar {
-  background: darkslategrey;
-  margin: 2vh;
+  background: grey;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 
 .night-nav-bar ul {
-  background: darkslategrey;
-  width: 100%;
+  background: grey;
+  width: 95%;
   display: flex;
   height: 5vh;
-  width: 95vw;
 }
 .night-nav-bar ul li {
-  background: darkslategrey;
+  background: grey;
   display: inline;
   box-sizing: border-box;
   width: 5vw;
@@ -22,27 +21,26 @@
   padding: 5px 10px;
 }
 .night-nav-bar ul li:last-child {
-  background: darkslategrey;
+  background: grey;
   margin-left: auto;
 }
 
 .day-nav-bar {
-  background: grey;
-  margin: 2vh;
+  background: snow;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 
 .day-nav-bar ul {
-  background: grey;
-  width: 100%;
+  background: snow;
+  width: 95%;
   display: flex;
   height: 5vh;
-  width: 95vw;
 }
 .day-nav-bar ul li {
-  background: grey;
+  background: snow;
   display: inline;
   box-sizing: border-box;
   width: 5vw;
@@ -50,6 +48,6 @@
   padding: 5px 10px;
 }
 .day-nav-bar ul li:last-child {
-  background: grey;
+  background: snow;
   margin-left: auto;
 }

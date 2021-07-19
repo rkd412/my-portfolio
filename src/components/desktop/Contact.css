@@ -4,12 +4,19 @@
   width: 100vw;
 }
 
-.night-contact p {
+.night-contact h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
-  font-size: 1.5vw;
+}
+
+.night-contact p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  font-size: 2vw;
 }
 
 .day-contact {
@@ -18,10 +25,17 @@
   width: 100vw;
 }
 
-.day-contact p {
+.day-contact h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
-  font-size: 1.5vw;
+}
+
+.day-contact p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  font-size: 2vw;
 }

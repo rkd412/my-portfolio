@@ -42,8 +42,8 @@ const About = () => {
         <h1>
           Welcome to my website! My name is Rob and I am a web developer. Feel
           free to check out my projects below or reach out to me through the
-          contact section. Also, my GitHub can be found here and I have some
-          CodePen projects I did for FreeCodeCamp here. Thanks!
+          contact section. Also, check out my GitHub or some
+          CodePen projects I did for FreeCodeCamp. Thanks!
         </h1>
       </span>
     </div>
