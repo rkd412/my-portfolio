@@ -1,13 +1,13 @@
 .night-about {
   background: darkslategrey;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .day-about {
   background: grey;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .about span {

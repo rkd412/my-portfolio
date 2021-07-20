@@ -1,41 +1,29 @@
+.contact-text {
+  font-size: 2vw;
+}
+
+.contact-links {
+  font-size: 3vw;
+  text-align: center;
+  align-self: flex-end;
+}
+
 .night-contact {
   background: darkslategrey;
   height: 100vh;
   width: 100vw;
-}
-
-.night-contact h1 {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 50vh;
-}
-
-.night-contact p {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  height: 25vh;
-  font-size: 2vw;
+  text-align: center;
 }
 
 .day-contact {
   background: grey;
   height: 100vh;
   width: 100vw;
-}
-
-.day-contact h1 {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 50vh;
-}
-
-.day-contact p {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  height: 25vh;
-  font-size: 2vw;
+  text-align: center;
 }
