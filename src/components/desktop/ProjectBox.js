@@ -8,7 +8,7 @@ import sun2 from "../../assets/sunflowers-2.jpg";
 import sun3 from "../../assets/sunflowers-3.jpg";
 import sun4 from "../../assets/sunflowers-4.jpg";
 
-import "./ProjectBox.css";
+import styles from "./ProjectBox.module.css";
 
 const ProjectBox = () => {
   const theme = useContext(ThemeContext);
@@ -16,9 +16,11 @@ const ProjectBox = () => {
   return (
     <div
       id="project"
-      className={theme.isNight ? "night-project-box" : "day-project-box"}
+      className={
+        theme.isNight ? styles["night-project-box"] : styles["day-project-box"]
+      }
     >
-      <div className="carousel">
+      <div className={styles["carousel"]}>
         <Carousel emulateTouch>
           <div>
             <img src={sun1} />

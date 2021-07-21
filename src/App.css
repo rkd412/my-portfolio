@@ -1,3 +1,5 @@
-body {
-  background: pink;
+html {
+  scroll-behavior: smooth;
+  background: grey;
+  user-select: none;
 }

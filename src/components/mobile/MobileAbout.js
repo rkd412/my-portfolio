@@ -5,7 +5,7 @@ import day from "../../assets/day-profile.jpg";
 import night from "../../assets/night-profile.jpg";
 import rat from "../../assets/rat-in-a-nest.jpg";
 
-import "./MobileAbout.css";
+import styles from "./MobileAbout.module.css";
 
 const MobileAbout = () => {
   const theme = useContext(ThemeContext);
@@ -33,10 +33,14 @@ const MobileAbout = () => {
   return (
     <div
       id="about"
-      className={theme.isNight ? "night-mobile-about" : "day-mobile-about"}
+      className={
+        theme.isNight
+          ? styles["night-mobile-about"]
+          : styles["day-mobile-about"]
+      }
     >
       <img
-        className="image"
+        className={styles["image"]}
         src={image}
         alt="Photo of me"
         onClick={clickHandler}

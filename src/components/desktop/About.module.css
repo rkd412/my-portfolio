@@ -1,0 +1,40 @@
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10vh;
+  height: 30vh;
+  width: 40vh;
+}
+
+.night-about {
+  background: #3c3f42;
+  height: 100vh;
+  width: 100%;
+}
+
+.night-about span {
+  margin: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.day-about {
+  background: #96999c;
+  height: 100vh;
+  width: 100%;
+}
+
+.day-about span {
+  margin: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 1vw;
+  text-align: center;
+}

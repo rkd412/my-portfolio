@@ -5,7 +5,7 @@ import day from "../../assets/day-profile.jpg";
 import night from "../../assets/night-profile.jpg";
 import rat from "../../assets/rat-in-a-nest.jpg";
 
-import "./About.css";
+import styles from "./About.module.css";
 
 const About = () => {
   const theme = useContext(ThemeContext);
@@ -31,19 +31,23 @@ const About = () => {
   });
 
   return (
-    <div id="about" className={theme.isNight ? "night-about" : "day-about"}>
+    <div
+      id="about"
+      className={theme.isNight ? styles["night-about"] : styles["day-about"]}
+    >
       <img
-        className="image"
+        className={styles["image"]}
         src={image}
         alt="Photo of me"
         onClick={clickHandler}
       />
       <span>
         <h1>
-          Welcome to my website! My name is Rob and I am a web developer. Feel
-          free to check out my projects below or reach out to me through the
-          contact section. Also, check out my GitHub or some
-          CodePen projects I did for FreeCodeCamp. Thanks!
+          Welcome to my website! My name is Rob and I am a web developer. I am
+          self-taught and dabble mostly in React. Currently learning the Full
+          MERN Stack of technologies though. Feel free to check out my projects
+          below or reach out to me through the contact section. Also, vist my
+          GitHub or my CodePen for projects I did for FreeCodeCamp. Thanks!
         </h1>
       </span>
     </div>

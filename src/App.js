@@ -12,6 +12,7 @@ import MobileAbout from "./components/mobile/MobileAbout";
 import MobileProjectBox from "./components/mobile/MobileProjectBox";
 import MobileContact from "./components/mobile/MobileContact";
 
+import './index.css';
 import "./App.css";
 
 const App = () => {

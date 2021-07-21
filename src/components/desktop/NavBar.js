@@ -3,7 +3,7 @@ import { ThemeContext } from "../../context";
 
 import { FaRegMoon, FaSun } from "react-icons/fa";
 
-import "./NavBar.css";
+import styles from "./NavBar.module.css";
 
 const NavBar = () => {
   const { isNight, setIsNight } = useContext(ThemeContext);
@@ -15,18 +15,21 @@ const NavBar = () => {
   };
 
   return (
-    <nav id="nav-bar" className={isNight ? "night-nav-bar" : "day-nav-bar"}>
+    <nav
+      id="nav-bar"
+      className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
+    >
       <ul>
-        <li className="nav-item">
+        <li className={styles["nav-item"]}>
           <a href="#about">About</a>
         </li>
-        <li className="nav-item">
+        <li className={styles["nav-item"]}>
           <a href="#project">Projects</a>
         </li>
-        <li className="nav-item">
+        <li className={styles["image"]}>
           <a href="#contact">Contact</a>
         </li>
-        <li className="toggle" onClick={handleThemeToggle}>
+        <li className={styles["toggle"]} onClick={handleThemeToggle}>
           {isNight ? <FaRegMoon /> : <FaSun />}
         </li>
       </ul>
