@@ -1,20 +1,29 @@
 .contact-text {
-  font-size: 2vw;
+  font-size: 3em;
+  padding-top: 40vh;
 }
 
 .contact-links {
-  font-size: 3vw;
-  text-align: center;
-  align-self: flex-end;
+  font-size: 3em;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10vh 2vw 0vh 2vw;
+}
+
+.contact-links:hover {
+  text-decoration: none;
+  color: #d2c2a9;
+}
+
+.contact-links:active {
+  text-decoration: none;
+  color: #a2aa97;
 }
 
 .night-contact {
   background: #3c3f42;
   height: 100vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -22,8 +31,5 @@
   background: #96999c;
   height: 100vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }

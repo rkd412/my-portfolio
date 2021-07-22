@@ -5,19 +5,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 25vh;
+  
 }
 
 .day-project-box {
   background: #898796;
-
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 25vh;
 }
 
 .carousel {
-  height: 50vh;
-  width: 50vw;
+  height: 40vh;
+  width: 40vw;
+  margin-top: -15vh;
 }

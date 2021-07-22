@@ -16,13 +16,19 @@ const Contact = () => {
         theme.isNight ? styles["night-contact"] : styles["day-contact"]
       }
     >
-      <div className={styles["contact-text"]}>
+      <h1 className={styles["contact-text"]}>
         Feel free to email me at rkdavis412@gmail.com with work opportunities or
         check out the links below.
-      </div>
+      </h1>
 
       <div className={styles["contact-links"]}>
-        <FaGithub /> <FaCodepen /> <FaLinkedin />
+        <FaGithub />
+      </div>
+      <div className={styles["contact-links"]}>
+        <FaCodepen />
+      </div>
+      <div className={styles["contact-links"]}>
+        <FaLinkedin />
       </div>
     </div>
   );

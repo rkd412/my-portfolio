@@ -11,15 +11,18 @@
   background: #3c3f42;
   height: 100vh;
   width: 100%;
+  font-family: "Oswald", sans-serif;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
-.night-about span {
+.night-about h1 {
   margin: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
-  font-size: 1vw;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -27,14 +30,17 @@
   background: #96999c;
   height: 100vh;
   width: 100%;
+  font-family: "Oswald", sans-serif;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
-.day-about span {
+.day-about h1 {
   margin: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
-  font-size: 1vw;
+  font-size: 2em;
   text-align: center;
 }

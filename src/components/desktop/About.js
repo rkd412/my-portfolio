@@ -41,15 +41,14 @@ const About = () => {
         alt="Photo of me"
         onClick={clickHandler}
       />
-      <span>
-        <h1>
-          Welcome to my website! My name is Rob and I am a web developer. I am
-          self-taught and dabble mostly in React. Currently learning the Full
-          MERN Stack of technologies though. Feel free to check out my projects
-          below or reach out to me through the contact section. Also, vist my
-          GitHub or my CodePen for projects I did for FreeCodeCamp. Thanks!
-        </h1>
-      </span>
+
+      <h1>
+        Welcome to my website! My name is Rob and I am a web developer. I am
+        self-taught and dabble mostly in React. Currently learning the Full MERN
+        Stack of technologies though. Feel free to check out my projects below
+        or reach out to me through the contact section. Also, vist my GitHub or
+        my CodePen for projects I did for FreeCodeCamp. Thanks!
+      </h1>
     </div>
   );
 };
