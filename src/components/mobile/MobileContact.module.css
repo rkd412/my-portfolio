@@ -1,27 +1,32 @@
-.night-mobile-contact {
-  background: darkslategrey;
+.email-button {
+  user-select: default;  
+  cursor: pointer;
+}
+
+.contact-text {
+  font-size: 2em;
+  padding-top: 30vh;
+  margin: 0vh 5vw 0vh 5vw;
+  font-family: "Oswald", sans-serif;
+}
+
+.contact-links {
+  font-size: 3em;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10vh 2vw 0vh 2vw;
+}
+
+.night-contact {
+  background: #3c3f42;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  text-align: center;
 }
 
-.night-mobile-contact p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  font-size: 1.5vw;
-}
-
-.day-mobile-contact {
-  background: grey;
+.day-contact {
+  background: #96999c;
   height: 100vh;
-  width: 100vw;
-}
-
-.day-mobile-contact p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  font-size: 1.5vw;
+  width: 100%;
+  text-align: center;
 }

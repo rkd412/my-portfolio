@@ -4,15 +4,15 @@ import { ThemeContext } from "./context";
 
 import NavBar from "./components/desktop/NavBar";
 import About from "./components/desktop/About";
-import ProjectBox from "./components/desktop/ProjectBox";
+import Projects from "./components/desktop/Projects";
 import Contact from "./components/desktop/Contact";
 
 import MobileNavBar from "./components/mobile/MobileNavBar";
 import MobileAbout from "./components/mobile/MobileAbout";
-import MobileProjectBox from "./components/mobile/MobileProjectBox";
+import MobileProjects from "./components/mobile/MobileProjects";
 import MobileContact from "./components/mobile/MobileContact";
 
-import './index.css';
+import "./index.css";
 import "./App.css";
 
 const App = () => {
@@ -37,7 +37,7 @@ const App = () => {
       <div>
         {isMobile ? <MobileNavBar /> : <NavBar />}
         {isMobile ? <MobileAbout /> : <About />}
-        {isMobile ? <MobileProjectBox /> : <ProjectBox />}
+        {isMobile ? <MobileProjects /> : <Projects />}
         {isMobile ? <MobileContact /> : <Contact />}
       </div>
     </ThemeContext.Provider>

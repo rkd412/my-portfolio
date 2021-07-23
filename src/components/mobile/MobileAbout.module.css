@@ -1,31 +1,33 @@
-.night-mobile-about {
-  background: darkslategrey;
-  height: 100vh;
-  width: 100vw;
+.image {
+  display: block;
+  margin: 10vh auto 10vh auto;
+  height: 30vh;
+  width: 40vh;
+  border: 2px solid #eb2b34;
+  border-radius: 2%;
 }
 
-.day-mobile-about {
-  background: grey;
-  height: 100vh;
-  width: 100vw;
-}
-
-span {
-  color: black;
-  margin: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about-text {
+  margin: 3vh 9vw 3vh 9vw;
   height: 10vh;
-  font-size: 1vw;
+  font-size: 2em;
   text-align: center;
 }
 
-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5vh;
-  height: 30vh;
-  width: 40vh;
+.night-about {
+  background: #3c3f42;
+  height: 100vh;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.day-about {
+  background: #96999c;
+  height: 100vh;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  padding-top: 60px;
+  margin-top: -60px;
 }

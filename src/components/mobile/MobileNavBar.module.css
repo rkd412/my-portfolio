@@ -1,55 +1,80 @@
-.night-mobile-nav-bar {
-  background: darkslategrey;
-  margin: 2vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+.nav-item:hover,
+.nav-item:active,
+.nav-item:visited,
+.nav-item:focus {
+  text-decoration: underline;
 }
 
-.night-mobile-nav-bar ul {
-  background: darkslategrey;
+.night-nav-bar {
+  background: #576470;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  line-height: 10vh;
+  height: 10vh;
   width: 100%;
-  display: flex;
-  height: 5vh;
-  width: 95vw;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Oswald", sans-serif;
+  border-bottom: 2px solid grey;
 }
-.night-mobile-nav-bar ul li {
-  background: darkslategrey;
+
+.night-nav-bar ul {
+  display: flex;
+  margin: 0;
+}
+
+.night-nav-bar ul li {
   display: inline;
   box-sizing: border-box;
-  width: 5vw;
-  height: 5vh;
-  padding: 5px 10px;
+  margin: 0 2vw 0 2vw;
 }
-.night-mobile-nav-bar ul li:last-child {
-  background: darkslategrey;
+.night-nav-bar ul li:last-child {
   margin-left: auto;
 }
 
-.day-mobile-nav-bar {
-  background: grey;
-  margin: 2vh;
-  position: -webkit-sticky;
+.day-nav-bar {
+  background: #898796;
   position: sticky;
   top: 0;
+  z-index: 9999;
+  line-height: 10vh;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  border-bottom: 2px solid grey;
 }
 
-.day-mobile-nav-bar ul {
-  background: grey;
-  width: 100%;
+.day-nav-bar ul {
   display: flex;
-  height: 5vh;
-  width: 95vw;
+  margin: 0;
 }
-.day-mobile-nav-bar ul li {
-  background: grey;
+.day-nav-bar ul li {
   display: inline;
   box-sizing: border-box;
-  width: 5vw;
-  height: 5vh;
-  padding: 5px 10px;
+  margin: 0vw 2vw 0vw 2vw;
 }
-.day-mobile-nav-bar ul li:last-child {
-  background: grey;
+.day-nav-bar ul li:last-child {
   margin-left: auto;
+}
+
+.night-toggle {
+  color: #eee8aa;
+  cursor: pointer;
+}
+
+.night-toggle:hover {
+  text-decoration: none;
+  color: #d2c2a9;
+}
+
+.day-toggle {
+  color: #ffdd42;
+  cursor: pointer;
+}
+.day-toggle:hover {
+  text-decoration: none;
+  color: #d2c2a9;
 }

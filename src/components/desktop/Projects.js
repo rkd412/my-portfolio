@@ -8,9 +8,9 @@ import sun2 from "../../assets/sunflowers-2.jpg";
 import sun3 from "../../assets/sunflowers-3.jpg";
 import sun4 from "../../assets/sunflowers-4.jpg";
 
-import styles from "./ProjectBox.module.css";
+import styles from "./Projects.module.css";
 
-const ProjectBox = () => {
+const Projects = () => {
   const theme = useContext(ThemeContext);
 
   return (
@@ -44,4 +44,4 @@ const ProjectBox = () => {
   );
 };
 
-export default ProjectBox;
+export default Projects;

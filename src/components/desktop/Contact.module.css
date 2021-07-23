@@ -1,6 +1,13 @@
+.email-button {
+  user-select: default;  
+  cursor: pointer;
+}
+
 .contact-text {
-  font-size: 3em;
-  padding-top: 40vh;
+  font-size: 2em;
+  padding-top: 30vh;
+  margin: 0vh 5vw 0vh 5vw;
+  font-family: "Oswald", sans-serif;
 }
 
 .contact-links {
@@ -8,16 +15,6 @@
   cursor: pointer;
   display: inline-block;
   margin: 10vh 2vw 0vh 2vw;
-}
-
-.contact-links:hover {
-  text-decoration: none;
-  color: #d2c2a9;
-}
-
-.contact-links:active {
-  text-decoration: none;
-  color: #a2aa97;
 }
 
 .night-contact {

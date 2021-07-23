@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+
 import { ThemeContext } from "../../context";
 
 import { FaMoon, FaSun } from "react-icons/fa";
@@ -6,12 +7,22 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import styles from "./NavBar.module.css";
 
 const NavBar = () => {
+  /*Used useContext for app wide state management for night/day themes*/
   const { isNight, setIsNight } = useContext(ThemeContext);
 
-  const handleThemeToggle = (e) => {
+  /*handler for night and day theme toggler*/
+  const themeToggleHandler = (e) => {
     e.preventDefault();
     setIsNight(isNight === true ? false : true);
-    console.log(isNight);
+    console.log(isNight)
+  };
+
+  /* my attempt at making site more accesible by allowing the theme toggle to be focused on and fired with keys only...
+I am sure there is a simpler way but here we are!*/
+  const keyPressThemeToggleHandler = (e) => {
+    if (e.key === "Enter") {
+      setIsNight(isNight === true ? false : true);
+    }
   };
 
   return (
@@ -26,10 +37,16 @@ const NavBar = () => {
         <li className={styles["nav-item"]}>
           <a href="#project">Projects</a>
         </li>
-        <li className={styles["image"]}>
+        <li className={styles["nav-item"]}>
           <a href="#contact">Contact</a>
         </li>
-        <li className={isNight ? styles["night-toggle"] : styles["day-toggle"]} onClick={handleThemeToggle}>
+        <li
+          className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
+          onClick={themeToggleHandler}
+          onKeyPress={keyPressThemeToggleHandler}
+          tabindex="0"
+          role="button"
+        >
           {isNight ? <FaMoon /> : <FaSun />}
         </li>
       </ul>

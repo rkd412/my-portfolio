@@ -3,3 +3,27 @@ html {
   background: grey;
   user-select: none;
 }
+a {
+  color: #eb2b34;
+}
+
+a:link {
+  text-decoration: none;
+  color: #eb2b34;
+}
+a:visited {
+  text-decoration: none;
+  color: #eb2b34;
+}
+a:hover {
+  text-decoration: underline;
+  color: #d2c2a9;
+}
+a:focus {
+  text-decoration: underline;
+  color: #d2c2a9;
+}
+a:active {
+  text-decoration: underline;
+  color: #a2aa97;
+}
