@@ -1,6 +1,6 @@
 .image {
   display: block;
-  margin: 10vh auto 10vh auto;
+  margin: 10vh auto 5vh auto;
   height: 30vh;
   width: 40vh;
   border: 2px solid #eb2b34;
@@ -9,9 +9,9 @@
 
 .about-text {
   margin: 3vh 9vw 3vh 9vw;
-  height: 10vh;
-  font-size: 2em;
-  text-align: center;
+  font-size: 1.25em;
+  height: 100vh;
+  text-align: justify;
 }
 
 .night-about {

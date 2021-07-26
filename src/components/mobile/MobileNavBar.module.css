@@ -14,7 +14,7 @@
   height: 10vh;
   width: 100%;
   text-align: center;
-  font-size: 3em;
+  font-size: 1em;
   font-family: "Oswald", sans-serif;
   border-bottom: 2px solid grey;
 }
@@ -43,7 +43,7 @@
   width: 100%;
   text-align: center;
   font-family: "Oswald", sans-serif;
-  font-size: 3em;
+  font-size: 1em;
   border-bottom: 2px solid grey;
 }
 
@@ -63,6 +63,8 @@
 .night-toggle {
   color: #eee8aa;
   cursor: pointer;
+  font-size: 2em;
+  padding: 1vw;
 }
 
 .night-toggle:hover {
@@ -73,6 +75,8 @@
 .day-toggle {
   color: #ffdd42;
   cursor: pointer;
+  font-size: 2em;
+  padding: 1vw;
 }
 .day-toggle:hover {
   text-decoration: none;

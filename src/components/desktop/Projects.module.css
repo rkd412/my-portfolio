@@ -5,8 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 25vh;
-  
 }
 
 .day-project-box {
@@ -16,11 +14,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 25vh;
 }
 
 .carousel {
   height: 40vh;
   width: 40vw;
-  margin-top: -15vh;
+  margin-bottom: 25vh;
 }

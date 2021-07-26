@@ -30,6 +30,7 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+    console.log(isMobile);
   });
 
   return (
