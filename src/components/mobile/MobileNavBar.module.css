@@ -5,59 +5,53 @@
   text-decoration: underline;
 }
 
-.night-nav-bar {
-  background: #576470;
-  position: sticky;
+.hamburger-icon {
+  position: fixed;
+  right: 0;
   top: 0;
-  z-index: 9999;
-  line-height: 10vh;
-  height: 10vh;
-  width: 100%;
+  margin-right: 10vw;
+  margin-top: 2vh;
   text-align: center;
-  font-size: 1em;
-  font-family: "Oswald", sans-serif;
-  border-bottom: 2px solid grey;
+  z-index: 9999;
+  font-size: 2em;
 }
 
-.night-nav-bar ul {
-  display: flex;
-  margin: 0;
+.night-nav-bar {
+  background: rgba(137, 135, 150, 0.9);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .night-nav-bar ul li {
-  display: inline;
-  box-sizing: border-box;
-  margin: 0 2vw 0 2vw;
-}
-.night-nav-bar ul li:last-child {
-  margin-left: auto;
+  text-align: center;
+  margin-top: 15vh;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
 }
 
 .day-nav-bar {
-  background: #898796;
-  position: sticky;
-  top: 0;
+  background: rgba(137, 135, 150, 0.9);
+  position: fixed;
   z-index: 9999;
-  line-height: 10vh;
-  height: 10vh;
-  width: 100%;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 1em;
-  border-bottom: 2px solid grey;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.day-nav-bar ul {
-  display: flex;
-  margin: 0;
-}
 .day-nav-bar ul li {
-  display: inline;
-  box-sizing: border-box;
-  margin: 0vw 2vw 0vw 2vw;
-}
-.day-nav-bar ul li:last-child {
-  margin-left: auto;
+  text-align: center;
+  margin-top: 15vh;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
 }
 
 .night-toggle {

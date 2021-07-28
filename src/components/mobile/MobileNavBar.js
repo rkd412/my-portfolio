@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 
 import { ThemeContext } from "../../context";
 
-import { FaMoon, FaSun } from "react-icons/fa";
+import { FaMoon, FaSun, FaBars, FaWindowClose  } from "react-icons/fa";
 
 import styles from "./MobileNavBar.module.css";
 
@@ -10,47 +10,61 @@ const MobileNavBar = () => {
   /*Used useContext for app wide state management for night/day themes*/
   const { isNight, setIsNight } = useContext(ThemeContext);
 
+  const [isOpen, setIsOpen] = useState(false);
+
   /*handler for night and day theme toggler*/
   const themeToggleHandler = (e) => {
     e.preventDefault();
     setIsNight(isNight === true ? false : true);
-    console.log(isNight)
   };
-
-  /* my attempt at making site more accesible by allowing the theme toggle to be focused on and fired with keys only...
-I am sure there is a simpler way but here we are!*/
-  const keyPressThemeToggleHandler = (e) => {
-    if (e.key === "Enter") {
-      setIsNight(isNight === true ? false : true);
-    }
+  /*handler for hamburger menu for mobile*/
+  const mobileMenuToggleHandler = (e) => {
+    e.preventDefault();
+    setIsOpen(isOpen === true ? false : true);
   };
 
   return (
-    <nav
-      id="nav-bar"
-      className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
-    >
-      <ul>
-        <li className={styles["nav-item"]}>
-          <a href="#about">About</a>
-        </li>
-        <li className={styles["nav-item"]}>
-          <a href="#project">Projects</a>
-        </li>
-        <li className={styles["nav-item"]}>
-          <a href="#contact">Contact</a>
-        </li>
-        <li
-          className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
-          onClick={themeToggleHandler}
-          onKeyPress={keyPressThemeToggleHandler}
-          tabindex="0"
-          role="button"
+    <div>
+      {!isOpen && (
+      <h1 className={styles["hamburger-icon"]} onClick={mobileMenuToggleHandler}>
+        {isOpen ? <FaWindowClose/> : <FaBars/>}
+      </h1>
+      )}
+
+      {isOpen && (
+        <nav
+          id="nav-bar"
+          className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
         >
-          {isNight ? <FaMoon /> : <FaSun />}
-        </li>
-      </ul>
-    </nav>
+          <h1
+            className={styles["hamburger-icon"]}
+            onClick={mobileMenuToggleHandler}
+          >
+            {isOpen ? <FaWindowClose/> : <FaBars/>}
+          </h1>
+
+          <ul>
+            <li className={styles["nav-item"]}>
+              <a href="#about" >About</a>
+            </li>
+            <li className={styles["nav-item"]}>
+              <a href="#project">Projects</a>
+            </li>
+            <li className={styles["nav-item"]}>
+              <a href="#contact">Contact</a>
+            </li>
+            <li
+              className={
+                isNight ? styles["night-toggle"] : styles["day-toggle"]
+              }
+              onClick={themeToggleHandler}
+            >
+              {isNight ? <FaMoon /> : <FaSun />}
+            </li>
+          </ul>
+        </nav>
+      )}
+    </div>
   );
 };
 
