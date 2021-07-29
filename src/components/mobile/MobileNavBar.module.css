@@ -5,6 +5,18 @@
   text-decoration: underline;
 }
 
+.nav-back {
+  background: rgba(137, 135, 150, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .hamburger-icon {
   position: fixed;
   right: 0;
@@ -17,13 +29,14 @@
 }
 
 .night-nav-bar {
-  background: rgba(137, 135, 150, 0.9);
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  height: 0;
+  margin: 5vh 10vw 0vh 5vw;
 }
 
 .night-nav-bar ul li {
@@ -33,16 +46,18 @@
   list-style-type: none;
   font-family: "Oswald", sans-serif;
   font-size: 2em;
+  z-index: 9999;
 }
 
 .day-nav-bar {
-  background: rgba(137, 135, 150, 0.9);
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  height: 0;
+  margin: 5vh 10vw 50vh 5vw;
 }
 
 .day-nav-bar ul li {
@@ -52,6 +67,7 @@
   list-style-type: none;
   font-family: "Oswald", sans-serif;
   font-size: 2em;
+  z-index: 9999;
 }
 
 .night-toggle {

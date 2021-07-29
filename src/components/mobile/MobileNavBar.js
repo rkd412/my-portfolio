@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 
 import { ThemeContext } from "../../context";
 
-import { FaMoon, FaSun, FaBars, FaWindowClose  } from "react-icons/fa";
+import { FaMoon, FaSun, FaBars, FaWindowClose } from "react-icons/fa";
 
 import styles from "./MobileNavBar.module.css";
 
@@ -26,9 +26,12 @@ const MobileNavBar = () => {
   return (
     <div>
       {!isOpen && (
-      <h1 className={styles["hamburger-icon"]} onClick={mobileMenuToggleHandler}>
-        {isOpen ? <FaWindowClose/> : <FaBars/>}
-      </h1>
+        <h1
+          className={styles["hamburger-icon"]}
+          onClick={mobileMenuToggleHandler}
+        >
+          {isOpen ? <FaWindowClose /> : <FaBars />}
+        </h1>
       )}
 
       {isOpen && (
@@ -36,16 +39,20 @@ const MobileNavBar = () => {
           id="nav-bar"
           className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
         >
+          <div
+            className={styles["nav-back"]}
+            onClick={mobileMenuToggleHandler}
+          ></div>
           <h1
             className={styles["hamburger-icon"]}
             onClick={mobileMenuToggleHandler}
           >
-            {isOpen ? <FaWindowClose/> : <FaBars/>}
+            {isOpen ? <FaWindowClose /> : <FaBars />}
           </h1>
 
           <ul>
             <li className={styles["nav-item"]}>
-              <a href="#about" >About</a>
+              <a href="#about">About</a>
             </li>
             <li className={styles["nav-item"]}>
               <a href="#project">Projects</a>
