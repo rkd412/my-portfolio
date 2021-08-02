@@ -14,7 +14,6 @@ const NavBar = () => {
   const themeToggleHandler = (e) => {
     e.preventDefault();
     setIsNight(isNight === true ? false : true);
-    console.log(isNight)
   };
 
   /* my attempt at making site more accesible by allowing the theme toggle to be focused on and fired with keys only...

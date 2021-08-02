@@ -23,11 +23,11 @@ const Projects = () => {
       <div className={styles["carousel"]}>
         <Carousel emulateTouch>
           <div>
-            <img src={sun1} />
+            <img src={sun1} alt="img1" />
             <p className="legend">Legend 1</p>
           </div>
           <div>
-            <img src={sun2} />
+            <img src={sun2} alt="img2" />
             <p className="legend">Legend 2</p>
           </div>
           <div>

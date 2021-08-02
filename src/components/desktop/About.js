@@ -16,17 +16,14 @@ const About = () => {
 
   const clickHandler = () => {
     setCount(count + 1);
-    console.log(count);
   };
 
   /*Click my photo 10 times to meet my cat Zarathustra!*/
   useEffect(() => {
     if (count === 10 && theme.isNight) {
       setImage(zaraNight);
-      console.log(count);
     } else if (count === 10 && !theme.isnight) {
       setImage(zaraDay);
-      console.log(count);
     } else if (count === 11) {
       setCount(0);
     } else if (theme.isNight) {
@@ -41,8 +38,6 @@ const About = () => {
       id="about"
       className={theme.isNight ? styles["night-about"] : styles["day-about"]}
     >
-
-      
       <img
         className={styles["image"]}
         src={image}

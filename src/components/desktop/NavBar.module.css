@@ -1,10 +1,3 @@
-.nav-item:hover,
-.nav-item:active,
-.nav-item:visited,
-.nav-item:focus {
-  text-decoration: underline;
-}
-
 .night-nav-bar {
   background: #576470;
   position: sticky;
