@@ -12,7 +12,7 @@ const Contact = () => {
   const copyHandler = () => {
     navigator.clipboard.writeText("rkdavis412@gmail.com");
     window.alert(
-      "Email copied to clipboard! No one really wants their email automatically launched for them. Let me know if you agree in your email and if you like this approach or not! Look forward to hearing from you :)"
+      "Email copied to clipboard! No one really wants their email automatically launched for them it seems. Let me know if you agree in your email and if you like this approach or not! Look forward to hearing from you :)"
     );
   };
 
@@ -21,11 +21,10 @@ const Contact = () => {
     if (e.key === "Enter") {
       navigator.clipboard.writeText("rkdavis412@gmail.com");
       window.alert(
-        "Email copied to clipboard! No one seems to really want their email automatically launched for them. Let me know if you agree in your email and if you like this approach or not! Look forward to hearing from you :)"
+        "Email copied to clipboard! No one really wants their email automatically launched for them it seems. Let me know if you agree in your email and if you like this approach or not! Look forward to hearing from you :)"
       );
     }
   };
-
   return (
     <div
       id="contact"
