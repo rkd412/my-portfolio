@@ -1,3 +1,18 @@
+.night-contact {
+  background: #062f4f;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.day-contact {
+  background: #416adb;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+
 .email-button {
   user-select: default;  
   cursor: pointer;
@@ -15,18 +30,4 @@
   cursor: pointer;
   display: inline-block;
   margin: 10vh 2vw 0vh 2vw;
-}
-
-.night-contact {
-  background: #3c3f42;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-}
-
-.day-contact {
-  background: #96999c;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
 }

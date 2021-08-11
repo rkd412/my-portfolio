@@ -1,5 +1,5 @@
 .night-project-box {
-  background: #404a5d;
+  background: #0C2340;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 .day-project-box {
-  background: rgb(226, 223, 223);
+  background: #1a4d8b;
   height: 100vh;
   width: 100%;
   display: flex;

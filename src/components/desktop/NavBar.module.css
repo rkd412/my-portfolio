@@ -1,5 +1,5 @@
 .night-nav-bar {
-  background: #576470;
+  background: #000015;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -9,7 +9,7 @@
   text-align: center;
   font-size: 3em;
   font-family: "Oswald", sans-serif;
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid #ffffff;
 }
 
 .night-nav-bar ul {
@@ -27,7 +27,7 @@
 }
 
 .day-nav-bar {
-  background: #898796;
+  background: #191991;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -35,9 +35,9 @@
   height: 10vh;
   width: 100%;
   text-align: center;
-  font-family: "Oswald", sans-serif;
   font-size: 3em;
-  border-bottom: 2px solid grey;
+  font-family: "Oswald", sans-serif;
+  border-bottom: 2px solid #ffffff;
 }
 
 .day-nav-bar ul {
@@ -47,7 +47,7 @@
 .day-nav-bar ul li {
   display: inline;
   box-sizing: border-box;
-  margin: 0vw 2vw 0vw 2vw;
+  margin: 0 2vw 0 2vw;
 }
 .day-nav-bar ul li:last-child {
   margin-left: auto;
