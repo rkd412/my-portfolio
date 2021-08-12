@@ -33,7 +33,7 @@ const Contact = () => {
       }
     >
       <div className={styles["contact-text"]}>
-        <h2>
+        <p>
           Email me at{" "}
           <a
             className={styles["email-button"]}
@@ -46,7 +46,7 @@ const Contact = () => {
           </a>{" "}
           with work opportunities and check out my links below. Thanks for
           visiting!
-        </h2>
+        </p>
       </div>
 
       <div className={styles["contact-links"]}>

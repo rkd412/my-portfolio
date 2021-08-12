@@ -13,6 +13,12 @@ import styles from "./Projects.module.css";
 const Projects = () => {
   const theme = useContext(ThemeContext);
 
+  const clickHandler = () => {
+    const url = "https://www.google.com/";
+    window.open(url, "_blank");
+    window.open(url, "_blank");
+  };
+
   return (
     <div
       id="project"
@@ -21,22 +27,22 @@ const Projects = () => {
       }
     >
       <div className={styles["carousel"]}>
-        <Carousel emulateTouch>
-          <div>
-            <img src={sun1} alt="img1" />
+        <Carousel emulateTouch autoPlay={false}>
+          <div className={styles["img-div"]} onClick={clickHandler}>
+            <img className={styles["image"]} src={sun1} alt="img1" />
             <p className="legend">Legend 1</p>
           </div>
-          <div>
+          <div className={styles["img-div"]} onClick={clickHandler}>
             <img src={sun2} alt="img2" />
             <p className="legend">Legend 2</p>
           </div>
-          <div>
+          <div className={styles["img-div"]} onClick={clickHandler}>
             <img src={sun3} alt="img3" />
             <p className="legend">Legend 3</p>
           </div>
-          <div>
+          <div className={styles["img-div"]} onClick={clickHandler}>
             <img src={sun4} alt="img4" />
-            <p className="legend">Legend 3</p>
+            <p className="legend">Legend 4</p>
           </div>
         </Carousel>
       </div>

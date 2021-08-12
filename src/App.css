@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  user-select: none;
 }
 
 a {
@@ -11,19 +10,28 @@ a:link {
   text-decoration: none;
   color: #ffffff;
 }
+
 a:visited {
   text-decoration: none;
   color: #ffffff;
 }
+
 a:hover {
   text-decoration: underline;
   color: gainsboro;
 }
+
 a:focus {
   text-decoration: underline;
   color: rgb(116, 116, 116);
 }
+
 a:active {
   text-decoration: underline;
   color: rgb(116, 116, 116);
+}
+
+.legend {
+  border: 2px solid #ffffff;
+  cursor: pointer;
 }
