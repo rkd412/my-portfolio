@@ -15,6 +15,7 @@
 .night-nav-bar ul {
   display: flex;
   margin: 0;
+  
 }
 
 .night-nav-bar ul li {
@@ -22,6 +23,7 @@
   box-sizing: border-box;
   margin: 0 2vw 0 2vw;
 }
+
 .night-nav-bar ul li:last-child {
   margin-left: auto;
 }
@@ -56,11 +58,13 @@
 .night-toggle {
   color: #eee8aa;
   cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
 .night-toggle:hover {
   text-decoration: none;
   color: #d2c2a9;
+  transform: scale(1.1);
 }
 
 .day-toggle {

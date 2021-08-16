@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
@@ -32,41 +33,43 @@ const Contact = () => {
         theme.isNight ? styles["night-contact"] : styles["day-contact"]
       }
     >
-      <div className={styles["contact-text"]}>
-        <p>
-          Email me at{" "}
-          <a
-            className={styles["email-button"]}
-            onClick={copyHandler}
-            onKeyDown={keyPressCopyHandler}
-            tabindex="0"
-            role="button"
-          >
-            rkdavis412@gmail.com
-          </a>{" "}
-          with work opportunities and check out my links below. Thanks for
-          visiting!
-        </p>
-      </div>
+      <Fade  bottom>
+        <div className={styles["contact-text"]}>
+          <p>
+            Email me at{" "}
+            <a
+              className={styles["email-button"]}
+              onClick={copyHandler}
+              onKeyDown={keyPressCopyHandler}
+              tabindex="0"
+              role="button"
+            >
+              rkdavis412@gmail.com
+            </a>{" "}
+            with work opportunities and check out my links below. Thanks for
+            visiting!
+          </p>
+        </div>
 
-      <div className={styles["contact-links"]}>
-        <a href="https://github.com/rkd412" target="_blank">
-          <FaGithub />
-        </a>
-      </div>
-      <div className={styles["contact-links"]}>
-        <a href="https://codepen.io/rkd412" target="_blank">
-          <FaCodepen />
-        </a>
-      </div>
-      <div className={styles["contact-links"]}>
-        <a
-          href="https://linkedin.com/in/robert-davis-b72893217"
-          target="_blank"
-        >
-          <FaLinkedin />
-        </a>
-      </div>
+        <div className={styles["contact-links"]}>
+          <a href="https://github.com/rkd412" target="_blank">
+            <FaGithub />
+          </a>
+        </div>
+        <div className={styles["contact-links"]}>
+          <a href="https://codepen.io/rkd412" target="_blank">
+            <FaCodepen />
+          </a>
+        </div>
+        <div className={styles["contact-links"]}>
+          <a
+            href="https://linkedin.com/in/robert-davis-b72893217"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+      </Fade>
     </div>
   );
 };

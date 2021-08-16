@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
@@ -26,19 +27,22 @@ const MobileNavBar = () => {
   return (
     <div>
       {!isOpen && (
-        <h1
-          className={styles["hamburger-icon"]}
-          onClick={mobileMenuToggleHandler}
-        >
-          {isOpen ? <FaWindowClose /> : <FaBars />}
-        </h1>
+        <Fade>
+          <h1
+            className={styles["hamburger-icon"]}
+            onClick={mobileMenuToggleHandler}
+          >
+            {isOpen ? <FaWindowClose /> : <FaBars />}
+          </h1>
+        </Fade>
       )}
 
       {isOpen && (
+       
         <nav
           id="nav-bar"
           className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
-        >
+        > <Fade right>
           <div
             className={styles["nav-back"]}
             onClick={mobileMenuToggleHandler}
@@ -69,7 +73,9 @@ const MobileNavBar = () => {
               {isNight ? <FaMoon /> : <FaSun />}
             </li>
           </ul>
+          </Fade>
         </nav>
+       
       )}
     </div>
   );

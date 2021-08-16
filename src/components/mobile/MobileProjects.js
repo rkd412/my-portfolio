@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Fade from "react-reveal/Fade";
+
 import { ThemeContext } from "../../context";
 
 import sun1 from "../../assets/sunflowers-1.jpg";
@@ -20,26 +22,28 @@ const MobileProjects = () => {
         theme.isNight ? styles["night-project-box"] : styles["day-project-box"]
       }
     >
-      <div className={styles["carousel"]}>
-        <Carousel emulateTouch>
-          <div>
-            <img src={sun1} />
-            <p className="legend">Legend 1</p>
-          </div>
-          <div>
-            <img src={sun2} />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src={sun3} alt="img3" />
-            <p className="legend">Legend 3</p>
-          </div>
-          <div>
-            <img src={sun4} alt="img4" />
-            <p className="legend">Legend 3</p>
-          </div>
-        </Carousel>
-      </div>
+      <Fade bottom>
+        <div className={styles["carousel"]}>
+          <Carousel emulateTouch>
+            <div>
+              <img src={sun1} />
+              <p className="legend">Legend 1</p>
+            </div>
+            <div>
+              <img src={sun2} />
+              <p className="legend">Legend 2</p>
+            </div>
+            <div>
+              <img src={sun3} alt="img3" />
+              <p className="legend">Legend 3</p>
+            </div>
+            <div>
+              <img src={sun4} alt="img4" />
+              <p className="legend">Legend 3</p>
+            </div>
+          </Carousel>
+        </div>
+      </Fade>
     </div>
   );
 };

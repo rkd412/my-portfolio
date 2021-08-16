@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
+import Fade from "react-reveal/Fade";
+import Pulse from 'react-reveal/Pulse';
+
 import { ThemeContext } from "../../context";
 
 import night from "../../assets/me-night.jpg";
@@ -38,28 +41,37 @@ const About = () => {
       id="about"
       className={theme.isNight ? styles["night-about"] : styles["day-about"]}
     >
-      <div className={styles["about-text"]}>
-        <p>Welcome to my website! My name is Rob and I am an aspiring web
-        developer. I am self-taught and dabble mostly in React. Currently, I am
-        learning the Full MERN Stack of technologies though. Feel free to check
-        out my <a href="#project">projects</a> below or reach out to me through
-        the <a href="#contact">contact</a> section. Also, vist my{" "}
-        <a href="https://github.com/rkd412" target="_blank">
-          Github
-        </a>{" "}
-        to see what I've been working on or my{" "}
-        <a href="https://codepen.io/rkd412" target="_blank">
-          Codepen
-        </a>{" "}
-        page for older projects I did for FreeCodeCamp. Thanks!</p>
-      </div>
+     
+     <Fade left>
+        <div className={styles["about-text"]}>
+          <p>
+            Welcome to my website! My name is Rob and I am an aspiring web
+            developer. I am self-taught and dabble mostly in React. Currently, I
+            am learning the Full MERN Stack of technologies though. Feel free to
+            check out my <a href="#project">projects</a> below or reach out to
+            me through the <a href="#contact">contact</a> section. Also, vist my{" "}
+            <a href="https://github.com/rkd412" target="_blank">
+              Github
+            </a>{" "}
+            to see what I've been working on or my{" "}
+            <a href="https://codepen.io/rkd412" target="_blank">
+              Codepen
+            </a>{" "}
+            page for older projects I did for FreeCodeCamp. Thanks!
+          </p>
+        </div>
+     </Fade>
+
+<Fade right>
       <div className={styles["about-img"]}>
-      <img
-        className={styles["image"]}
-        src={image}
-        alt="Photo of me"
-        onClick={clickHandler}
-      /></div>
+        <img
+          className={styles["image"]}
+          src={image}
+          alt="Photo of me"
+          onClick={clickHandler}
+        />
+      </div>
+      </Fade>
     </div>
   );
 };

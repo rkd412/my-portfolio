@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
@@ -25,6 +26,7 @@ I am sure there is a simpler way but here we are!*/
   };
 
   return (
+    <Fade top>
     <nav
       id="nav-bar"
       className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
@@ -50,6 +52,7 @@ I am sure there is a simpler way but here we are!*/
         </li>
       </ul>
     </nav>
+    </Fade>
   );
 };
 

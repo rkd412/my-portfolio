@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
+import Fade from "react-reveal/Fade";
+
 import { ThemeContext } from "../../context";
 
 import night from "../../assets/me-night.jpg";
@@ -38,13 +40,16 @@ const MobileAbout = () => {
       id="about"
       className={theme.isNight ? styles["night-about"] : styles["day-about"]}
     >
-      <img
-        className={styles["image"]}
-        src={image}
-        alt="Photo of me"
-        onClick={clickHandler}
-      />
+      <Fade top>
+        <img
+          className={styles["image"]}
+          src={image}
+          alt="Photo of me"
+          onClick={clickHandler}
+        />
+      </Fade>
 
+<Fade bottom>
       <div className={styles["about-text"]}>
         Welcome to my website! My name is Rob and I am an aspiring web
         developer. I am self-taught and dabble mostly in React. Currently, I am
@@ -60,6 +65,7 @@ const MobileAbout = () => {
         </a>{" "}
         page for older projects I did for FreeCodeCamp. Thanks!
       </div>
+      </Fade>
     </div>
   );
 };

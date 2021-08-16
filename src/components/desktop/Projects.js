@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Fade from "react-reveal/Fade";
+
 import { ThemeContext } from "../../context";
 
 import sun1 from "../../assets/sunflowers-1.jpg";
@@ -26,6 +28,7 @@ const Projects = () => {
         theme.isNight ? styles["night-project-box"] : styles["day-project-box"]
       }
     >
+      <Fade bottom>
       <div className={styles["carousel"]}>
         <Carousel emulateTouch autoPlay={false}>
           <div className={styles["img-div"]} onClick={clickHandler}>
@@ -46,6 +49,7 @@ const Projects = () => {
           </div>
         </Carousel>
       </div>
+      </Fade>
     </div>
   );
 };
