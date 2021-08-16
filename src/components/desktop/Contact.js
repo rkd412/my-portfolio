@@ -33,7 +33,7 @@ const Contact = () => {
         theme.isNight ? styles["night-contact"] : styles["day-contact"]
       }
     >
-      <Fade  bottom>
+      <Fade bottom>
         <div className={styles["contact-text"]}>
           <p>
             Email me at{" "}
@@ -50,7 +50,6 @@ const Contact = () => {
             visiting!
           </p>
         </div>
-
         <div className={styles["contact-links"]}>
           <a href="https://github.com/rkd412" target="_blank">
             <FaGithub />

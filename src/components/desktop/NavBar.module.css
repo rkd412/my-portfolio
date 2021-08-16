@@ -15,13 +15,17 @@
 .night-nav-bar ul {
   display: flex;
   margin: 0;
-  
 }
 
 .night-nav-bar ul li {
   display: inline;
   box-sizing: border-box;
   margin: 0 2vw 0 2vw;
+  transition: all 0.2s ease-in-out;
+}
+
+.night-nav-bar ul li:hover {
+  transform: scale(1.1);
 }
 
 .night-nav-bar ul li:last-child {
@@ -45,12 +49,20 @@
 .day-nav-bar ul {
   display: flex;
   margin: 0;
+ 
 }
+
 .day-nav-bar ul li {
   display: inline;
   box-sizing: border-box;
   margin: 0 2vw 0 2vw;
+  transition: all 0.2s ease-in-out;
 }
+
+.day-nav-bar ul li:hover {
+  transform: scale(1.1);
+}
+
 .day-nav-bar ul li:last-child {
   margin-left: auto;
 }
@@ -58,7 +70,7 @@
 .night-toggle {
   color: #eee8aa;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .night-toggle:hover {
@@ -70,8 +82,10 @@
 .day-toggle {
   color: #ffdd42;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 .day-toggle:hover {
   text-decoration: none;
   color: #d2c2a9;
+  transform: scale(1.1);
 }

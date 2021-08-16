@@ -19,6 +19,8 @@ a:visited {
 a:hover {
   text-decoration: underline;
   color: gainsboro;
+  transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 a:focus {
