@@ -20,13 +20,13 @@ const MobileAbout = () => {
     setCount(count + 1);
   };
 
-  /*Click my photo 10 times to meet my cat Zarathustra!*/
-  useEffect(() => {
-    if (count === 10 && theme.isNight) {
+   /*Click my photo to meet my cat Zarathustra!*/
+   useEffect(() => {
+    if (count === 1 && theme.isNight) {
       setImage(zaraNight);
-    } else if (count === 10 && !theme.isnight) {
+    } else if (count === 1 && !theme.isnight) {
       setImage(zaraDay);
-    } else if (count === 11) {
+    } else if (count === 2) {
       setCount(0);
     } else if (theme.isNight) {
       setImage(night);
@@ -41,12 +41,14 @@ const MobileAbout = () => {
       className={theme.isNight ? styles["night-about"] : styles["day-about"]}
     >
       <Fade top>
+      <Fade>
         <img
           className={styles["image"]}
           src={image}
+          key={image}
           alt="Photo of me"
           onClick={clickHandler}
-        />
+        /></Fade>
       </Fade>
 
 <Fade bottom>

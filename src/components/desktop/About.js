@@ -21,13 +21,13 @@ const About = () => {
     setCount(count + 1);
   };
 
-  /*Click my photo 10 times to meet my cat Zarathustra!*/
+  /*Click my photo to meet my cat Zarathustra!*/
   useEffect(() => {
-    if (count === 10 && theme.isNight) {
+    if (count === 1 && theme.isNight) {
       setImage(zaraNight);
-    } else if (count === 10 && !theme.isnight) {
+    } else if (count === 1 && !theme.isnight) {
       setImage(zaraDay);
-    } else if (count === 11) {
+    } else if (count === 2) {
       setCount(0);
     } else if (theme.isNight) {
       setImage(night);
@@ -64,12 +64,14 @@ const About = () => {
 
 <Fade right>
       <div className={styles["about-img"]}>
+        <Fade>
         <img
           className={styles["image"]}
           src={image}
+          key={image}
           alt="Photo of me"
           onClick={clickHandler}
-        />
+        /></Fade>
       </div>
       </Fade>
     </div>
