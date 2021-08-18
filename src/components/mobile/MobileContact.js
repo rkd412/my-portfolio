@@ -35,30 +35,29 @@ const MobileContact = () => {
       }
     >
       <Fade bottom>
-        <div className={styles["contact-text"]}>
-          <h2>
+      <div className={styles["contact-text"]}>
+          <p>
             Email me at{" "}
-            <a
+            <button
               className={styles["email-button"]}
               onClick={copyHandler}
-              onKeyDown={keyPressCopyHandler}
               tabindex="0"
               role="button"
             >
               rkdavis412@gmail.com
-            </a>{" "}
+            </button>{" "}
             with work opportunities and check out my links below. Thanks for
             visiting!
-          </h2>
+          </p>
         </div>
 
         <div className={styles["contact-links"]}>
-          <a href="https://github.com/rkd412" target="_blank">
+          <a href="https://github.com/rkd412" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
         </div>
         <div className={styles["contact-links"]}>
-          <a href="https://codepen.io/rkd412" target="_blank">
+          <a href="https://codepen.io/rkd412" target="_blank" rel="noreferrer">
             <FaCodepen />
           </a>
         </div>
@@ -66,6 +65,7 @@ const MobileContact = () => {
           <a
             href="https://linkedin.com/in/robert-davis-b72893217"
             target="_blank"
+            rel="noreferrer"
           >
             <FaLinkedin />
           </a>

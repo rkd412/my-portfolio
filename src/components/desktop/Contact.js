@@ -10,22 +10,14 @@ import styles from "./Contact.module.css";
 const Contact = () => {
   const theme = useContext(ThemeContext);
 
-  const copyHandler = () => {
+  const copyHandler = (e) => {
     navigator.clipboard.writeText("rkdavis412@gmail.com");
     window.alert(
       "Email copied to clipboard! No one really wants their email automatically launched for them it seems. Let me know if you agree in your email and if you like this approach or not! Look forward to hearing from you :)"
     );
+    e.target.blur();
   };
 
-  /* Again, trying to make this feature more accesible. Let me know if there is a best practice way to do it!*/
-  const keyPressCopyHandler = (e) => {
-    if (e.key === "Enter") {
-      navigator.clipboard.writeText("rkdavis412@gmail.com");
-      window.alert(
-        "Email copied to clipboard! No one really wants their email automatically launched for them it seems. Let me know if you agree in your email and if you like this approach or not! Look forward to hearing from you :)"
-      );
-    }
-  };
   return (
     <div
       id="contact"
@@ -37,26 +29,25 @@ const Contact = () => {
         <div className={styles["contact-text"]}>
           <p>
             Email me at{" "}
-            <a
+            <button
               className={styles["email-button"]}
               onClick={copyHandler}
-              onKeyDown={keyPressCopyHandler}
               tabindex="0"
               role="button"
             >
               rkdavis412@gmail.com
-            </a>{" "}
+            </button>{" "}
             with work opportunities and check out my links below. Thanks for
             visiting!
           </p>
         </div>
         <div className={styles["contact-links"]}>
-          <a href="https://github.com/rkd412" target="_blank">
+          <a href="https://github.com/rkd412" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
         </div>
         <div className={styles["contact-links"]}>
-          <a href="https://codepen.io/rkd412" target="_blank">
+          <a href="https://codepen.io/rkd412" target="_blank" rel="noreferrer">
             <FaCodepen />
           </a>
         </div>
@@ -64,6 +55,7 @@ const Contact = () => {
           <a
             href="https://linkedin.com/in/robert-davis-b72893217"
             target="_blank"
+            rel="noreferrer"
           >
             <FaLinkedin />
           </a>

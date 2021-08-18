@@ -12,15 +12,14 @@
   text-align: center;
 }
 
-
 .email-button {
-  user-select: default;  
-  cursor: pointer;
+  user-select: default;
+  color: #ffffff;
 }
 
 .contact-text {
-  font-size: 1em;
-  padding-top: 30vh;
+  font-size: 1.5em;
+  padding-top: 25vh;
   margin: 0vh 5vw 0vh 5vw;
   font-family: "Oswald", sans-serif;
 }

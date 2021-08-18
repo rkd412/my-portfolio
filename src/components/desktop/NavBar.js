@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
@@ -11,47 +11,66 @@ const NavBar = () => {
   /*Used useContext for app wide state management for night/day themes*/
   const { isNight, setIsNight } = useContext(ThemeContext);
 
+  const [selected, setSelected] = useState("a");
+
+  const selectedHandler = (e) => {
+    setSelected(e.target.id);
+  };
+
   /*handler for night and day theme toggler*/
   const themeToggleHandler = (e) => {
     e.preventDefault();
     setIsNight(isNight === true ? false : true);
-  };
-
-  /* my attempt at making site more accesible by allowing the theme toggle to be focused on and fired with keys only...
-I am sure there is a simpler way but here we are!*/
-  const keyPressThemeToggleHandler = (e) => {
-    if (e.key === "Enter") {
-      setIsNight(isNight === true ? false : true);
-    }
+    e.target.blur();
+    e.target.parentNode.blur();
+    e.target.parentNode.parentNode.blur();
   };
 
   return (
     <Fade top>
-    <nav
-      id="nav-bar"
-      className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
-    >
-      <ul>
-        <li className={styles["nav-item"]}>
-          <a href="#about">About</a>
-        </li>
-        <li className={styles["nav-item"]}>
-          <a href="#project">Projects</a>
-        </li>
-        <li className={styles["nav-item"]}>
-          <a href="#contact">Contact</a>
-        </li>
-        <li
-          className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
-          onClick={themeToggleHandler}
-          onKeyPress={keyPressThemeToggleHandler}
-          tabindex="0"
-          role="button"
-        >
-          {isNight ? <FaMoon /> : <FaSun />}
-        </li>
-      </ul>
-    </nav>
+      <nav
+        id="nav-bar"
+        className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
+      >
+        <ul>
+          <li className={styles["nav-item"]}>
+            <a
+              id="a"
+              href="#about"
+              onClick={selectedHandler}
+              className={selected === "a" ? styles["selected"] : styles[""]}
+            >
+              About
+            </a>
+          </li>
+          <li className={styles["nav-item"]}>
+            <a
+              id="b"
+              href="#projects"
+              onClick={selectedHandler}
+              className={selected === "b" ? styles["selected"] : styles[""]}
+            >
+              Projects
+            </a>
+          </li>
+          <li className={styles["nav-item"]}>
+            <a
+              id="c"
+              href="#contact"
+              onClick={selectedHandler}
+              className={selected === "c" ? styles["selected"] : styles[""]}
+            >
+              Contact
+            </a>
+          </li>
+          <li
+            className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
+            onClick={themeToggleHandler}
+          >
+            <button>{isNight ? <FaMoon /> : <FaSun />}</button>
+          </li>
+        </ul>
+      </nav>
     </Fade>
   );
 };

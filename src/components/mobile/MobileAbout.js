@@ -20,8 +20,8 @@ const MobileAbout = () => {
     setCount(count + 1);
   };
 
-   /*Click my photo to meet my cat Zarathustra!*/
-   useEffect(() => {
+  /*Click my photo to meet my cat Zarathustra!*/
+  useEffect(() => {
     if (count === 1 && theme.isNight) {
       setImage(zaraNight);
     } else if (count === 1 && !theme.isnight) {
@@ -41,32 +41,33 @@ const MobileAbout = () => {
       className={theme.isNight ? styles["night-about"] : styles["day-about"]}
     >
       <Fade top>
-      <Fade>
-        <img
-          className={styles["image"]}
-          src={image}
-          key={image}
-          alt="Photo of me"
-          onClick={clickHandler}
-        /></Fade>
+        <Fade>
+          <img
+            className={styles["image"]}
+            src={image}
+            key={image}
+            alt="Photo of me"
+            onClick={clickHandler}
+          />
+        </Fade>
       </Fade>
 
-<Fade bottom>
-      <div className={styles["about-text"]}>
-        Welcome to my website! My name is Rob and I am an aspiring web
-        developer. I am self-taught and dabble mostly in React. Currently, I am
-        learning the Full MERN Stack of technologies though. Feel free to check
-        out my <a href="#project">projects</a> below or reach out to me through
-        the <a href="#contact">contact</a> section. Also, vist my{" "}
-        <a href="https://github.com/rkd412" target="_blank">
-          Github
-        </a>{" "}
-        to see what I've been working on or my{" "}
-        <a href="https://codepen.io/rkd412" target="_blank">
-          Codepen
-        </a>{" "}
-        page for older projects I did for FreeCodeCamp. Thanks!
-      </div>
+      <Fade bottom>
+        <div className={styles["about-text"]}>
+          Welcome to my website! My name is Rob and I am an aspiring web
+          developer. I am self-taught and dabble mostly in React. Currently, I
+          am learning the Full MERN Stack of technologies though. Feel free to
+          check out my <a href="#project">projects</a> below or reach out to me
+          through the <a href="#contact">contact</a> section. Also, vist my{" "}
+          <a href="https://github.com/rkd412" target="_blank" rel="noreferrer">
+            Github
+          </a>{" "}
+          to see what I've been working on or my{" "}
+          <a href="https://codepen.io/rkd412" target="_blank" rel="noreferrer">
+            Codepen
+          </a>{" "}
+          page for older projects I did for FreeCodeCamp. Thanks!
+        </div>
       </Fade>
     </div>
   );

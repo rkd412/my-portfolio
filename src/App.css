@@ -2,13 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  color: #ffffff;
-}
-
 a:link {
   text-decoration: none;
   color: #ffffff;
+  outline: none;
 }
 
 a:visited {
@@ -20,7 +17,6 @@ a:hover {
   text-decoration: underline;
   color: gainsboro;
   transform: scale(1.1);
-  transform: scale(1.1);
 }
 
 a:focus {
@@ -30,10 +26,18 @@ a:focus {
 
 a:active {
   text-decoration: underline;
-  color: rgb(116, 116, 116);
 }
 
 .legend {
   border: 2px solid #ffffff;
   cursor: pointer;
+}
+
+button {
+  all: unset;
+}
+
+button:focus {
+  text-decoration: underline;
+  color: rgb(116, 116, 116);
 }

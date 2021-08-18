@@ -18,12 +18,11 @@ const Projects = () => {
   const clickHandler = () => {
     const url = "https://www.google.com/";
     window.open(url, "_blank");
-    window.open(url, "_blank");
   };
 
   return (
     <div
-      id="project"
+      id="projects"
       className={
         theme.isNight ? styles["night-project-box"] : styles["day-project-box"]
       }

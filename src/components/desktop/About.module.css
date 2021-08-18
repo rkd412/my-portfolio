@@ -51,4 +51,10 @@
 
 .image:hover {
   cursor: pointer;
+  border: 2px solid gainsboro;
+}
+
+.image:focus {
+  cursor: pointer;
+  border: 2px solid gainsboro;
 }

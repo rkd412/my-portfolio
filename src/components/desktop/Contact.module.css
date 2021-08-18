@@ -1,6 +1,17 @@
 .email-button {
   user-select: default;
   cursor: pointer;
+  color: #ffffff;
+}
+
+.email-button:hover {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.email-button:active {
+  text-decoration: underline;
+  color: rgb(116, 116, 116);
 }
 
 .contact-text {
