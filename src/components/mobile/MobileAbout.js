@@ -24,7 +24,7 @@ const MobileAbout = () => {
   useEffect(() => {
     if (count === 1 && theme.isNight) {
       setImage(zaraNight);
-    } else if (count === 1 && !theme.isnight) {
+    } else if (count === 1 && !theme.isNight) {
       setImage(zaraDay);
     } else if (count === 2) {
       setCount(0);
@@ -46,7 +46,7 @@ const MobileAbout = () => {
             className={styles["image"]}
             src={image}
             key={image}
-            alt="Photo of me"
+            alt="Robert Davis"
             onClick={clickHandler}
           />
         </Fade>

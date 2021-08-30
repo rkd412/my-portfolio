@@ -6,7 +6,7 @@
 }
 
 .day-contact {
-  background: #416adb;
+  background: #fbfcff;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -14,7 +14,7 @@
 
 .email-button {
   user-select: default;
-  color: #ffffff;
+  color: #dc143c;
 }
 
 .contact-text {

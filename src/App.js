@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { ThemeContext } from "./context";
+import { Selected } from "./context";
 
 import NavBar from "./components/desktop/NavBar";
 import About from "./components/desktop/About";
@@ -15,7 +16,8 @@ import MobileContact from "./components/mobile/MobileContact";
 import "./App.css";
 
 const App = () => {
-  const [isNight, setIsNight] = useState(true);
+  const [isNight, setIsNight] = useState(false);
+  const [ selected, setSelected ] = useState("aboutnav");
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -33,12 +35,14 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ isNight, setIsNight }}>
-      <div>
-        {isMobile ? <MobileNavBar /> : <NavBar />}
-        {isMobile ? <MobileAbout /> : <About />}
-        {isMobile ? <MobileProjects /> : <Projects />}
-        {isMobile ? <MobileContact /> : <Contact />}
-      </div>
+      <Selected.Provider value={{ selected, setSelected }}>
+        <div>
+          {isMobile ? <MobileNavBar /> : <NavBar />}
+          {isMobile ? <MobileAbout /> : <About />}
+          {isMobile ? <MobileProjects /> : <Projects />}
+          {isMobile ? <MobileContact /> : <Contact />}
+        </div>
+      </Selected.Provider>
     </ThemeContext.Provider>
   );
 };

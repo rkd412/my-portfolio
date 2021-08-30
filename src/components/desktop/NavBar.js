@@ -1,7 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import Fade from "react-reveal/Fade";
 
-import { ThemeContext } from "../../context";
+import { ThemeContext, Selected } from "../../context";
 
 import { FaMoon, FaSun } from "react-icons/fa";
 
@@ -10,12 +10,7 @@ import styles from "./NavBar.module.css";
 const NavBar = () => {
   /*Used useContext for app wide state management for night/day themes*/
   const { isNight, setIsNight } = useContext(ThemeContext);
-
-  const [selected, setSelected] = useState("a");
-
-  const selectedHandler = (e) => {
-    setSelected(e.target.id);
-  };
+  const { selected, setSelected } = useContext(Selected);
 
   /*handler for night and day theme toggler*/
   const themeToggleHandler = (e) => {
@@ -24,6 +19,10 @@ const NavBar = () => {
     e.target.blur();
     e.target.parentNode.blur();
     e.target.parentNode.parentNode.blur();
+  };
+
+  const selectedHandler = (e) => {
+    setSelected(e.target.id);
   };
 
   return (
@@ -35,30 +34,30 @@ const NavBar = () => {
         <ul>
           <li className={styles["nav-item"]}>
             <a
-              id="a"
+              id="aboutnav"
               href="#about"
               onClick={selectedHandler}
-              className={selected === "a" ? styles["selected"] : styles[""]}
+              className={selected === "aboutnav" ? styles["selected"] : styles[""]}
             >
               About
             </a>
           </li>
           <li className={styles["nav-item"]}>
             <a
-              id="b"
+              id="projectsnav"
               href="#projects"
               onClick={selectedHandler}
-              className={selected === "b" ? styles["selected"] : styles[""]}
+              className={selected === "projectsnav" ? styles["selected"] : styles[""]}
             >
               Projects
             </a>
           </li>
           <li className={styles["nav-item"]}>
             <a
-              id="c"
+              id="contactnav"
               href="#contact"
               onClick={selectedHandler}
-              className={selected === "c" ? styles["selected"] : styles[""]}
+              className={selected === "contactnav" ? styles["selected"] : styles[""]}
             >
               Contact
             </a>

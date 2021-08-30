@@ -4,28 +4,29 @@ html {
 
 a:link {
   text-decoration: none;
-  color: #ffffff;
+  color: #ff004f;
   outline: none;
 }
 
 a:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: #ff004f;
 }
 
 a:hover {
   text-decoration: underline;
-  color: gainsboro;
+  color: #ffe9f0;
   transform: scale(1.1);
 }
 
 a:focus {
   text-decoration: underline;
-  color: rgb(116, 116, 116);
+  color: #ffcadb;
 }
 
 a:active {
   text-decoration: underline;
+  color: #ffcadb;
 }
 
 .legend {
@@ -39,5 +40,4 @@ button {
 
 button:focus {
   text-decoration: underline;
-  color: rgb(116, 116, 116);
 }

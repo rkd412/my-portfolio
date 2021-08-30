@@ -17,16 +17,6 @@ const MobileContact = () => {
     );
   };
 
-  /* Again, trying to make this feature more accesible. Let me know if there is a best practice way to do it!*/
-  const keyPressCopyHandler = (e) => {
-    if (e.key === "Enter") {
-      navigator.clipboard.writeText("rkdavis412@gmail.com");
-      window.alert(
-        "Email copied to clipboard! No one really wants their email automatically launched for them. Let me know if you agree in your email and if you like this approach or not! Look forward to hearing from you :)"
-      );
-    }
-  };
-
   return (
     <div
       id="contact"
@@ -42,7 +32,6 @@ const MobileContact = () => {
               className={styles["email-button"]}
               onClick={copyHandler}
               tabindex="0"
-              role="button"
             >
               rkdavis412@gmail.com
             </button>{" "}

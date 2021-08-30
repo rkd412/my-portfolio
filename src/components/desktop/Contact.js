@@ -33,7 +33,6 @@ const Contact = () => {
               className={styles["email-button"]}
               onClick={copyHandler}
               tabindex="0"
-              role="button"
             >
               rkdavis412@gmail.com
             </button>{" "}
