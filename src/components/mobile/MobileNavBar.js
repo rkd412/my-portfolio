@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 import { ThemeContext } from "../../context";
 
@@ -38,44 +39,44 @@ const MobileNavBar = () => {
       )}
 
       {isOpen && (
-       
         <nav
           id="nav-bar"
           className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
-        > <Fade right>
-          <div
-            className={styles["nav-back"]}
-            onClick={mobileMenuToggleHandler}
-          ></div>
-          <h1
-            className={styles["hamburger-icon"]}
-            onClick={mobileMenuToggleHandler}
-          >
-            {isOpen ? <FaWindowClose /> : <FaBars />}
-          </h1>
-
-          <ul>
-            <li className={styles["nav-item"]}>
-              <a href="#about">About</a>
-            </li>
-            <li className={styles["nav-item"]}>
-              <a href="#project">Projects</a>
-            </li>
-            <li className={styles["nav-item"]}>
-              <a href="#contact">Contact</a>
-            </li>
-            <li
-              className={
-                isNight ? styles["night-toggle"] : styles["day-toggle"]
-              }
-              onClick={themeToggleHandler}
+        >
+          {" "}
+          <Fade right>
+            <div
+              className={styles["nav-back"]}
+              onClick={mobileMenuToggleHandler}
+            ></div>
+            <h1
+              className={styles["hamburger-icon"]}
+              onClick={mobileMenuToggleHandler}
             >
-              {isNight ? <FaMoon /> : <FaSun />}
-            </li>
-          </ul>
+              {isOpen ? <FaWindowClose /> : <FaBars />}
+            </h1>
+
+            <ul>
+              <li className={styles["nav-item"]}>
+                <a href="#about">About</a>
+              </li>
+              <li className={styles["nav-item"]}>
+                <a href="#project">Projects</a>
+              </li>
+              <li className={styles["nav-item"]}>
+                <a href="#contact">Contact</a>
+              </li>{" "}
+              <li
+                className={
+                  isNight ? styles["night-toggle"] : styles["day-toggle"]
+                }
+                onClick={themeToggleHandler}
+              >
+                {isNight ? <FaMoon /> : <FaSun />}
+              </li>
+            </ul>
           </Fade>
         </nav>
-       
       )}
     </div>
   );
