@@ -1,5 +1,6 @@
 .night-about {
   background: #062f4f;
+  color: #f8f8ff;
   height: 100vh;
   width: 100%;
   font-family: "Oswald", sans-serif;
@@ -9,11 +10,64 @@
 
 .day-about {
   background: #fbfcff;
+  color: #080808;
   height: 100vh;
   width: 100%;
   font-family: "Oswald", sans-serif;
   padding-top: 200px;
   margin-top: -200px;
+}
+
+.night-about a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.night-about a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.night-about a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.night-about a:focus {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.night-about a:active {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.day-about a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.day-about a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.day-about a:hover {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.day-about a:focus {
+  text-decoration: underline;
+  color: silver;
+}
+
+.day-about a:active {
+  text-decoration: underline;
+  color: silver;
 }
 
 .about-text {
@@ -51,12 +105,12 @@
 
 .night-image:hover {
   cursor: pointer;
-  border: 2px solid #696969;
+  border: 2px solid gainsboro;
 }
 
 .night-image:focus {
   cursor: pointer;
-  border: 2px solid #696969;
+  border: 2px solid silver;
 }
 
 .day-image {
@@ -69,12 +123,10 @@
 
 .day-image:hover {
   cursor: pointer;
-  border: 2px solid #ffcadb;
+  border: 4px solid gainsboro;
 }
 
 .day-image:focus {
   cursor: pointer;
-  border: 2px solid gainsboro;
+  border: 4px solid silver;
 }
-
-

@@ -12,6 +12,60 @@
   text-align: center;
 }
 
+.night-contact a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.night-contact a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.night-contact a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.night-contact a:focus {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.night-contact a:active {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.day-contact a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.day-contact a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.day-contact a:hover {
+  text-decoration: underline;
+  color: gainsboro;
+  transform: scale(1.1);
+}
+
+.day-contact a:focus {
+  text-decoration: underline;
+  color: silver;
+}
+
+.day-contact a:active {
+  text-decoration: underline;
+  color: silver;
+}
+
 .email-button {
   user-select: default;
   color: #dc143c;
@@ -29,4 +83,20 @@
   cursor: pointer;
   display: inline-block;
   margin: 10vh 2vw 0vh 2vw;
+}
+
+.night-contact {
+  background: #062f4f;
+  color: #f8f8ff;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.day-contact {
+  background: #fbfcff;
+  color: #080808;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
 }

@@ -39,7 +39,7 @@ const NavBar = () => {
               onClick={selectedHandler}
               className={selected === "aboutnav" ? styles["selected"] : styles[""]}
             >
-              About
+              about
             </a>
           </li>
           <li className={styles["nav-item"]}>
@@ -49,7 +49,7 @@ const NavBar = () => {
               onClick={selectedHandler}
               className={selected === "projectsnav" ? styles["selected"] : styles[""]}
             >
-              Projects
+              projects
             </a>
           </li>
           <li className={styles["nav-item"]}>
@@ -59,7 +59,7 @@ const NavBar = () => {
               onClick={selectedHandler}
               className={selected === "contactnav" ? styles["selected"] : styles[""]}
             >
-              Contact
+              contact
             </a>
           </li>
           <li

@@ -30,9 +30,10 @@ const Contact = () => {
           <p>
             Email me at{" "}
             <button
-              className={styles["email-button"]}
+              className={
+                theme.isNight ? styles["night-email-button"] : styles["day-email-button"]
+              }
               onClick={copyHandler}
-              tabindex="0"
             >
               rkdavis412@gmail.com
             </button>{" "}

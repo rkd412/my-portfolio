@@ -16,7 +16,59 @@
   margin-top: -60px;
 }
 
-.image {
+.night-about a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.night-about a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.night-about a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.night-about a:focus {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.night-about a:active {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.day-about a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.day-about a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.day-about a:hover {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.day-about a:focus {
+  text-decoration: underline;
+  color: silver;
+}
+
+.day-about a:active {
+  text-decoration: underline;
+  color: silver;
+}
+
+.night-image {
   display: block;
   margin: 10vh auto 5vh auto;
   height: 30vh;
@@ -25,9 +77,25 @@
   border-radius: 50%;
 }
 
-.about-text {
+.day-image {
+  display: block;
+  margin: 10vh auto 5vh auto;
+  height: 30vh;
+  width: 40vh;
+  border: 2px solid #ff004f;
+  border-radius: 50%;
+}
+
+.night-about-text {
   margin: 3vh 9vw 3vh 9vw;
   font-size: 1.25em;
-  height: 100vh;
   text-align: justify;
+  color: #f8f8ff;
+}
+
+.day-about-text {
+  margin: 3vh 9vw 3vh 9vw;
+  font-size: 1.25em;
+  text-align: justify;
+  color: #080808;
 }

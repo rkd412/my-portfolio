@@ -8,7 +8,7 @@
 }
 
 .day-project-box {
-  background: #edf0ff;
+  background: #f4f6fc;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -21,8 +21,15 @@
   width: 40vw;
   margin-bottom: 20vh;
 }
-.img-div {
+
+.night-img-div {
   cursor: pointer;
   border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.day-img-div {
+  cursor: pointer;
+  border: 3px solid #ff004f;
   cursor: pointer;
 }

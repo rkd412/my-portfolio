@@ -15,6 +15,12 @@ import styles from "./MobileProjects.module.css";
 const MobileProjects = () => {
   const theme = useContext(ThemeContext);
 
+  const clickHandler = () => {
+    const url = "https://www.google.com/";
+    window.open(url, "_blank");
+  };
+
+
   return (
     <div
       id="project"
@@ -25,19 +31,27 @@ const MobileProjects = () => {
       <Fade bottom>
         <div className={styles["carousel"]}>
           <Carousel emulateTouch>
-            <div>
+          <div  className={
+        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+      } onClick={clickHandler}>
               <img src={sun1} alt="img1"/>
               <p className="legend">Legend 1</p>
             </div>
-            <div>
+            <div  className={
+        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+      } onClick={clickHandler}>
               <img src={sun2} alt="img2"/>
               <p className="legend">Legend 2</p>
             </div>
-            <div>
+            <div  className={
+        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+      } onClick={clickHandler}>
               <img src={sun3} alt="img3" />
               <p className="legend">Legend 3</p>
             </div>
-            <div>
+            <div  className={
+        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+      } onClick={clickHandler}>
               <img src={sun4} alt="img4" />
               <p className="legend">Legend 3</p>
             </div>

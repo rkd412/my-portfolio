@@ -43,7 +43,9 @@ const MobileAbout = () => {
       <Fade top>
         <Fade>
           <img
-            className={styles["image"]}
+            className={
+              theme.isNight ? styles["night-image"] : styles["day-image"]
+            }
             src={image}
             key={image}
             alt="Robert Davis"
@@ -53,7 +55,9 @@ const MobileAbout = () => {
       </Fade>
 
       <Fade bottom>
-        <div className={styles["about-text"]}>
+        <div className={
+              theme.isNight ? styles["night-about-text"] : styles["day-about-text"]
+            }>
           Welcome to my website! My name is Rob and I am an aspiring web
           developer. I am self-taught and dabble mostly in React. Currently, I
           am learning the Full MERN Stack of technologies though. Feel free to

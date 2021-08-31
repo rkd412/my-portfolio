@@ -2,33 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-a:link {
-  text-decoration: none;
-  color: #ff004f;
-  outline: none;
-}
-
-a:visited {
-  text-decoration: none;
-  color: #ff004f;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #ffe9f0;
-  transform: scale(1.1);
-}
-
-a:focus {
-  text-decoration: underline;
-  color: #ffcadb;
-}
-
-a:active {
-  text-decoration: underline;
-  color: #ffcadb;
-}
-
 .legend {
   border: 2px solid #ffffff;
   cursor: pointer;

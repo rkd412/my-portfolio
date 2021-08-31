@@ -29,7 +29,9 @@ const MobileNavBar = () => {
       {!isOpen && (
         <Fade>
           <h1
-            className={styles["hamburger-icon"]}
+            className={
+              isNight ? styles["night-hamburger"] : styles["day-hamburger"]
+            }
             onClick={mobileMenuToggleHandler}
           >
             {isOpen ? <FaWindowClose /> : <FaBars />}
@@ -45,11 +47,15 @@ const MobileNavBar = () => {
           {" "}
           <Fade right>
             <div
-              className={styles["nav-back"]}
+              className={
+                isNight ? styles["day-nav-back"] : styles["night-nav-back"]
+              }
               onClick={mobileMenuToggleHandler}
             ></div>
             <h1
-              className={styles["hamburger-icon"]}
+              className={
+                isNight ? styles["night-hamburger"] : styles["day-hamburger"]
+              }
               onClick={mobileMenuToggleHandler}
             >
               {isOpen ? <FaWindowClose /> : <FaBars />}

@@ -32,6 +32,33 @@
   margin-left: auto;
 }
 
+.night-nav-bar a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.night-nav-bar a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.night-nav-bar a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.night-nav-bar a:focus {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.night-nav-bar a:active {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
 .day-nav-bar {
   background: #191991;
   position: sticky;
@@ -66,6 +93,33 @@
   margin-left: auto;
 }
 
+.day-nav-bar a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.day-nav-bar a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.day-nav-bar a:hover {
+  text-decoration: underline;
+  color: gainsboro;
+  transform: scale(1.1);
+}
+
+.day-nav-bar a:focus {
+  text-decoration: underline;
+  color: silver;
+}
+
+.day-nav-bar a:active {
+  text-decoration: underline;
+  color: silver;
+}
+
 .night-toggle {
   color: #eee8aa;
   cursor: pointer;
@@ -74,7 +128,7 @@
 
 .night-toggle:hover {
   text-decoration: none;
-  color: #d2c2a9;
+  color: #ffffff;
   transform: scale(1.1);
 }
 
@@ -85,7 +139,7 @@
 }
 .day-toggle:hover {
   text-decoration: none;
-  color: #d2c2a9;
+  color: gainsboro;
   transform: scale(1.1);
 }
 

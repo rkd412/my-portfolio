@@ -5,8 +5,8 @@
   text-decoration: underline;
 }
 
-.nav-back {
-  background: rgba(137, 135, 150, 0.8);
+.night-nav-back {
+  background: rgba(25, 25, 145, .8);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -17,7 +17,19 @@
   bottom: 0;
 }
 
-.hamburger-icon {
+.day-nav-back {
+  background: rgba(0, 0, 20, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.day-hamburger {
   position: fixed;
   right: 0;
   top: 0;
@@ -27,6 +39,18 @@
   z-index: 9999;
   font-size: 2em;
   color: gainsboro;
+}
+
+.night-hamburger {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin-right: 10vw;
+  margin-top: 2vh;
+  text-align: center;
+  z-index: 9999;
+  font-size: 2em;
+  color: #ffffff;
 }
 
 .night-nav-bar {
@@ -69,6 +93,58 @@
   font-family: "Oswald", sans-serif;
   font-size: 2em;
   z-index: 9999;
+}
+
+.night-nav-bar a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.night-nav-bar a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.night-nav-bar a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.night-nav-bar a:focus {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.night-nav-bar a:active {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.day-nav-bar a:link {
+  text-decoration: none;
+  color: #ff004f;
+  outline: none;
+}
+
+.day-nav-bar a:visited {
+  text-decoration: none;
+  color: #ff004f;
+}
+
+.day-nav-bar a:hover {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.day-nav-bar a:focus {
+  text-decoration: underline;
+  color: silver;
+}
+
+.day-nav-bar a:active {
+  text-decoration: underline;
+  color: silver;
 }
 
 .night-toggle {

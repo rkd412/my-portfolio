@@ -30,19 +30,27 @@ const Projects = () => {
       <Fade bottom>
       <div className={styles["carousel"]}>
         <Carousel emulateTouch autoPlay={false}>
-          <div className={styles["img-div"]} onClick={clickHandler}>
+          <div  className={
+        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+      } onClick={clickHandler}>
             <img className={styles["image"]} src={sun1} alt="img1" />
             <p className="legend">Legend 1</p>
           </div>
-          <div className={styles["img-div"]} onClick={clickHandler}>
+          <div  className={
+        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+      } onClick={clickHandler}>
             <img src={sun2} alt="img2" />
             <p className="legend">Legend 2</p>
           </div>
-          <div className={styles["img-div"]} onClick={clickHandler}>
+          <div  className={
+        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+      } onClick={clickHandler}>
             <img src={sun3} alt="img3" />
             <p className="legend">Legend 3</p>
           </div>
-          <div className={styles["img-div"]} onClick={clickHandler}>
+          <div  className={
+        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+      } onClick={clickHandler}>
             <img src={sun4} alt="img4" />
             <p className="legend">Legend 4</p>
           </div>
