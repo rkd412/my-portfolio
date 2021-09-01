@@ -1,16 +1,17 @@
-import React, { useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Fade from "react-reveal/Fade";
 
 import { ThemeContext, Selected } from "../../context";
 
-import { FaMoon, FaSun } from "react-icons/fa";
+import { FaMoon, FaSun, FaChevronDown } from "react-icons/fa";
 
 import styles from "./NavBar.module.css";
 
 const NavBar = () => {
   /*Used useContext for app wide state management for night/day themes*/
   const { isNight, setIsNight } = useContext(ThemeContext);
-  const { selected, setSelected } = useContext(Selected);
+  const [selected, setSelected] = useState("aboutnav");
+  const [isVisible, setIsVisible] = useState(true);
 
   /*handler for night and day theme toggler*/
   const themeToggleHandler = (e) => {
@@ -21,9 +22,32 @@ const NavBar = () => {
     e.target.parentNode.parentNode.blur();
   };
 
-  const selectedHandler = (e) => {
-    setSelected(e.target.id);
+  const scrollHandler = (e) => {
+    window.scrollBy(0, window.innerHeight * 1.1);
+    e.target.blur();
+    e.target.parentNode.blur();
+    e.target.parentNode.parentNode.blur();
   };
+
+  const listenScrollEvent = () => {
+    if (
+      window.scrollY > window.innerHeight * 1.0 &&
+      window.scrollY < window.innerHeight * 2.0
+    ) {
+      setSelected("projectsnav");
+      setIsVisible(true);
+    } else if (window.scrollY > window.innerHeight * 2.0) {
+      setSelected("contactnav");
+      setIsVisible(false);
+    } else {
+      setSelected("aboutnav");
+      setIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  });
 
   return (
     <Fade top>
@@ -36,8 +60,9 @@ const NavBar = () => {
             <a
               id="aboutnav"
               href="#about"
-              onClick={selectedHandler}
-              className={selected === "aboutnav" ? styles["selected"] : styles[""]}
+              className={
+                selected === "aboutnav" ? styles["selected"] : styles[""]
+              }
             >
               about
             </a>
@@ -46,8 +71,9 @@ const NavBar = () => {
             <a
               id="projectsnav"
               href="#projects"
-              onClick={selectedHandler}
-              className={selected === "projectsnav" ? styles["selected"] : styles[""]}
+              className={
+                selected === "projectsnav" ? styles["selected"] : styles[""]
+              }
             >
               projects
             </a>
@@ -56,8 +82,9 @@ const NavBar = () => {
             <a
               id="contactnav"
               href="#contact"
-              onClick={selectedHandler}
-              className={selected === "contactnav" ? styles["selected"] : styles[""]}
+              className={
+                selected === "contactnav" ? styles["selected"] : styles[""]
+              }
             >
               contact
             </a>
@@ -70,6 +97,19 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
+
+      <button
+        className={
+          !isVisible
+            ? styles["invisible"]
+            : isNight
+            ? styles["night-scroll"]
+            : styles["day-scroll"]
+        }
+        onClick={scrollHandler}
+      >
+        <FaChevronDown />
+      </button>
     </Fade>
   );
 };

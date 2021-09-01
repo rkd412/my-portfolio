@@ -62,7 +62,7 @@ const MobileAbout = () => {
           developer. I am self-taught and dabble mostly in React. Currently, I
           am learning the Full MERN Stack of technologies though. Feel free to
           check out my <a href="#project">projects</a> below or reach out to me
-          through the <a href="#contact">contact</a> section. Also, vist my{" "}
+          through the <a href="#contact">contact</a> section. Also, visit my{" "}
           <a href="https://github.com/rkd412" target="_blank" rel="noreferrer">
             Github
           </a>{" "}

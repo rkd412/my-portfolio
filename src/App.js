@@ -17,7 +17,6 @@ import "./App.css";
 
 const App = () => {
   const [isNight, setIsNight] = useState(false);
-  const [ selected, setSelected ] = useState("aboutnav");
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -35,14 +34,12 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ isNight, setIsNight }}>
-      <Selected.Provider value={{ selected, setSelected }}>
-        <div>
-          {isMobile ? <MobileNavBar /> : <NavBar />}
-          {isMobile ? <MobileAbout /> : <About />}
-          {isMobile ? <MobileProjects /> : <Projects />}
-          {isMobile ? <MobileContact /> : <Contact />}
-        </div>
-      </Selected.Provider>
+      <div>
+        {isMobile ? <MobileNavBar /> : <NavBar />}
+        {isMobile ? <MobileAbout /> : <About />}
+        {isMobile ? <MobileProjects /> : <Projects />}
+        {isMobile ? <MobileContact /> : <Contact />}
+      </div>
     </ThemeContext.Provider>
   );
 };

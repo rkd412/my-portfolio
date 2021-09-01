@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Fade from "react-reveal/Fade";
 
-import { ThemeContext, Selected } from "../../context";
+import { ThemeContext } from "../../context";
 
 import night from "../../assets/me-night.jpg";
 import zaraNight from "../../assets/me-zara-night.jpg";
@@ -11,8 +11,6 @@ import zaraDay from "../../assets/me-zara-day.jpg";
 import styles from "./About.module.css";
 
 const About = () => {
-  const { selected, setSelected } = useContext(Selected);
-
   const theme = useContext(ThemeContext);
 
   const [count, setCount] = useState(0);
@@ -20,11 +18,6 @@ const About = () => {
 
   const clickHandler = (e) => {
     setCount(count + 1);
-  };
-
-  const selectedHandler = (e) => {
-    setSelected(e.target.id);
-    console.log(selected);
   };
 
   /*Click my photo to meet my cat Zarathustra!*/
@@ -54,14 +47,14 @@ const About = () => {
             developer. I am self-taught and dabble mostly in React. Currently, I
             am learning the Full MERN Stack of technologies though. Feel free to
             check out my{" "}
-            <a onClick={selectedHandler} id="projectsnav" href="#projects">
+            <a id="projectsnav" href="#projects">
               projects
             </a>{" "}
             below or reach out to me through the{" "}
-            <a onClick={selectedHandler} id="contactnav" href="#contact">
+            <a id="contactnav" href="#contact">
               contact
             </a>{" "}
-            section. Also, vist my{" "}
+            section. Also, visit my{" "}
             <a
               href="https://github.com/rkd412"
               target="_blank"
@@ -86,7 +79,9 @@ const About = () => {
         <div className={styles["about-img"]}>
           <Fade>
             <input
-             className={theme.isNight ? styles["night-image"] : styles["day-image"]}
+              className={
+                theme.isNight ? styles["night-image"] : styles["day-image"]
+              }
               type="image"
               src={image}
               key={image}

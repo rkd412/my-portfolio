@@ -132,19 +132,91 @@
   transform: scale(1.1);
 }
 
+.night-toggle:active {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+.night-toggle:focus {
+  text-decoration: none;
+  color: gainsboro;
+}
+
 .day-toggle {
   color: #ffdd42;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
 .day-toggle:hover {
   text-decoration: none;
   color: gainsboro;
   transform: scale(1.1);
 }
 
+.day-toggle:active {
+  text-decoration: none;
+  color: silver;
+}
+
+.day-toggle:focus {
+  text-decoration: none;
+  color: silver;
+}
+
 /* Don't judge my use of !important....*/
 
 .selected {
   text-decoration: underline !important;
+}
+
+.night-scroll {
+  position: fixed;
+  bottom: 0px;
+  right: 50vw;
+  color: #ff004f;
+  font-size: 3em;
+  z-index: 9998;
+}
+
+.night-scroll:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.night-scroll:active {
+  cursor: pointer;
+  color: gainsboro;
+}
+
+.night-scroll:focus {
+  cursor: pointer;
+  color: gainsboro;
+}
+
+.day-scroll {
+  position: fixed;
+  bottom: 0px;
+  right: 50vw;
+  color: #ff004f;
+  font-size: 3em;
+  z-index: 9999;
+}
+
+.day-scroll:hover {
+  cursor: pointer;
+  color: gainsboro;
+}
+
+.day-scroll:active {
+  cursor: pointer;
+  color: silver;
+}
+
+.day-scroll:focus {
+  cursor: pointer;
+  color: silver;
+}
+.invisible {
+  opacity: 0;
 }
