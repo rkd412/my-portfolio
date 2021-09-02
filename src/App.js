@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import { ThemeContext } from "./context";
-import { Selected } from "./context";
 
 import NavBar from "./components/desktop/NavBar";
 import About from "./components/desktop/About";
@@ -17,7 +16,6 @@ import "./App.css";
 
 const App = () => {
   const [isNight, setIsNight] = useState(false);
-
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {

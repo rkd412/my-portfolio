@@ -70,6 +70,7 @@
 
 .night-image {
   display: block;
+  padding: 10vh auto 5vh auto;
   margin: 10vh auto 5vh auto;
   height: 30vh;
   width: 40vh;

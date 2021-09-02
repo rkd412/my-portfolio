@@ -1,9 +1,15 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
-import { FaMoon, FaSun, FaBars, FaWindowClose } from "react-icons/fa";
+import {
+  FaMoon,
+  FaSun,
+  FaBars,
+  FaWindowClose,
+  FaChevronDown,
+} from "react-icons/fa";
 
 import styles from "./MobileNavBar.module.css";
 
@@ -12,6 +18,8 @@ const MobileNavBar = () => {
   const { isNight, setIsNight } = useContext(ThemeContext);
 
   const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState("aboutnav");
+  const [isVisible, setIsVisible] = useState(true);
 
   /*handler for night and day theme toggler*/
   const themeToggleHandler = (e) => {
@@ -23,6 +31,30 @@ const MobileNavBar = () => {
     e.preventDefault();
     setIsOpen(isOpen === true ? false : true);
   };
+
+  const scrollHandler = (e) => {
+    window.scrollBy(0, window.innerHeight * 1.0);
+  };
+
+  const listenScrollEvent = () => {
+    if (
+      window.scrollY > window.innerHeight * 0.8 &&
+      window.scrollY < window.innerHeight * 1.6
+    ) {
+      setSelected("projectsnav");
+      setIsVisible(true);
+    } else if (window.scrollY > window.innerHeight * 1.6) {
+      setSelected("contactnav");
+      setIsVisible(false);
+    } else {
+      setSelected("aboutnav");
+      setIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  });
 
   return (
     <div>
@@ -63,13 +95,34 @@ const MobileNavBar = () => {
 
             <ul>
               <li className={styles["nav-item"]}>
-                <a href="#about">About</a>
+                <a
+                  className={
+                    selected === "aboutnav" ? styles["selected"] : styles[""]
+                  }
+                  href="#about"
+                >
+                  About
+                </a>
               </li>
               <li className={styles["nav-item"]}>
-                <a href="#project">Projects</a>
+                <a
+                  className={
+                    selected === "projectsnav" ? styles["selected"] : styles[""]
+                  }
+                  href="#project"
+                >
+                  Projects
+                </a>
               </li>
               <li className={styles["nav-item"]}>
-                <a href="#contact">Contact</a>
+                <a
+                  className={
+                    selected === "contactnav" ? styles["selected"] : styles[""]
+                  }
+                  href="#contact"
+                >
+                  Contact
+                </a>
               </li>{" "}
               <li
                 className={
@@ -83,6 +136,18 @@ const MobileNavBar = () => {
           </Fade>
         </nav>
       )}
+      <button
+        className={
+          !isVisible
+            ? styles["invisible"]
+            : isNight
+            ? styles["night-scroll"]
+            : styles["day-scroll"]
+        }
+        onClick={scrollHandler}
+      >
+        <FaChevronDown />
+      </button>
     </div>
   );
 };

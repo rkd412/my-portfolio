@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Fade from "react-reveal/Fade";
 
-import { ThemeContext, Selected } from "../../context";
+import { ThemeContext} from "../../context";
 
 import { FaMoon, FaSun, FaChevronDown } from "react-icons/fa";
 
