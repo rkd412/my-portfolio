@@ -31,9 +31,13 @@ const Contact = () => {
             Email me at{" "}
             <button
               className={
-                theme.isNight ? styles["night-email-button"] : styles["day-email-button"]
+                theme.isNight
+                  ? styles["night-email-button"]
+                  : styles["day-email-button"]
               }
               onClick={copyHandler}
+              name="copy email button"
+              type="text"
             >
               rkdavis412@gmail.com
             </button>{" "}

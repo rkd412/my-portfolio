@@ -93,7 +93,7 @@ const NavBar = () => {
             className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
             onClick={themeToggleHandler}
           >
-            <button>{isNight ? <FaMoon /> : <FaSun />}</button>
+            <button name="theme toggle button" type="text">{isNight ? <FaMoon /> : <FaSun />}</button>
           </li>
         </ul>
       </nav>
@@ -107,6 +107,7 @@ const NavBar = () => {
             : styles["day-scroll"]
         }
         onClick={scrollHandler}
+        name="page scroll button" type="text"
       >
         <FaChevronDown />
       </button>

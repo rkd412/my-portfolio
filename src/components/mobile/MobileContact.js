@@ -25,13 +25,15 @@ const MobileContact = () => {
       }
     >
       <Fade bottom>
-      <div className={styles["contact-text"]}>
+        <div className={styles["contact-text"]}>
           <p>
             Email me at{" "}
             <button
               className={styles["email-button"]}
               onClick={copyHandler}
               tabindex="0"
+              name="copy email button"
+              type="text"
             >
               rkdavis412@gmail.com
             </button>{" "}

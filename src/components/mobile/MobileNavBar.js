@@ -145,6 +145,8 @@ const MobileNavBar = () => {
             : styles["day-scroll"]
         }
         onClick={scrollHandler}
+        name="page scroll button"
+        type="text"
       >
         <FaChevronDown />
       </button>
