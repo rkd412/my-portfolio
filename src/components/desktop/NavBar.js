@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
 import Fade from "react-reveal/Fade";
 
-import { ThemeContext} from "../../context";
+import { ThemeContext } from "../../context";
 
 import { FaMoon, FaSun, FaChevronDown } from "react-icons/fa";
+
+import Zara from "../../assets/Zara.png";
+import ZaraWink from "../../assets/Zara-Wink.png";
 
 import styles from "./NavBar.module.css";
 
@@ -12,6 +15,8 @@ const NavBar = () => {
   const { isNight, setIsNight } = useContext(ThemeContext);
   const [selected, setSelected] = useState("aboutnav");
   const [isVisible, setIsVisible] = useState(true);
+  const [isAnimated, setIsAnimated] = useState(false);
+  const [zaraIcon, setZaraIcon] = useState(Zara);
 
   /*handler for night and day theme toggler*/
   const themeToggleHandler = (e) => {
@@ -45,6 +50,26 @@ const NavBar = () => {
     }
   };
 
+  const isAnimatedHandler = () => {
+    setIsAnimated(isAnimated === true ? false : true);
+    setTimeout(() => {
+      setZaraIcon(ZaraWink);
+      console.log("winking");
+    }, 4600);
+    setTimeout(() => {
+      setZaraIcon(ZaraWink);
+      console.log("winked");
+    }, 4800);
+    setTimeout(() => {
+      setZaraIcon(Zara);
+      console.log(isAnimated);
+    }, 6000);
+    setTimeout(() => {
+      setIsAnimated(false);
+      console.log(isAnimated);
+    }, 10001);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
   });
@@ -56,7 +81,18 @@ const NavBar = () => {
         className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
       >
         <ul>
-          <li className={styles["nav-item"]}>
+          <button
+            className={isAnimated ? styles["animated"] : styles[""]}
+            onClick={isAnimatedHandler}
+          >
+            <img
+              src={zaraIcon}
+              className={
+                isNight ? styles["night-nav-image"] : styles["day-nav-image"]
+              }
+            />
+          </button>
+          <li>
             <a
               id="aboutnav"
               href="#about"
@@ -67,7 +103,7 @@ const NavBar = () => {
               about
             </a>
           </li>
-          <li className={styles["nav-item"]}>
+          <li>
             <a
               id="projectsnav"
               href="#projects"
@@ -78,7 +114,7 @@ const NavBar = () => {
               projects
             </a>
           </li>
-          <li className={styles["nav-item"]}>
+          <li>
             <a
               id="contactnav"
               href="#contact"
@@ -93,7 +129,9 @@ const NavBar = () => {
             className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
             onClick={themeToggleHandler}
           >
-            <button name="theme toggle button" type="text">{isNight ? <FaMoon /> : <FaSun />}</button>
+            <button name="theme toggle button" type="text">
+              {isNight ? <FaMoon /> : <FaSun />}
+            </button>
           </li>
         </ul>
       </nav>
@@ -107,7 +145,8 @@ const NavBar = () => {
             : styles["day-scroll"]
         }
         onClick={scrollHandler}
-        name="page scroll button" type="text"
+        name="page scroll button"
+        type="text"
       >
         <FaChevronDown />
       </button>
