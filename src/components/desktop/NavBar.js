@@ -13,6 +13,7 @@ import styles from "./NavBar.module.css";
 const NavBar = () => {
   /*Used useContext for app wide state management for night/day themes*/
   const { isNight, setIsNight } = useContext(ThemeContext);
+
   const [selected, setSelected] = useState("aboutnav");
   const [isVisible, setIsVisible] = useState(true);
   const [isAnimated, setIsAnimated] = useState(false);
@@ -87,8 +88,9 @@ const NavBar = () => {
           >
             <img
               src={zaraIcon}
+              alt="cat icon"
               className={
-                isNight ? styles["night-nav-image"] : styles["day-nav-image"]
+                isNight ? styles["night-zara-image"] : styles["day-zara-image"]
               }
             />
           </button>

@@ -223,7 +223,7 @@
   opacity: 0;
 }
 
-.night-nav-image {
+.night-zara-image {
   height: 1.50em;
   width: 1.125em;
   position: absolute;
@@ -232,11 +232,11 @@
   filter: invert(100%);
 }
 
-.night-nav-image:hover {
+.night-zara-image:hover {
   cursor: pointer;
 }
 
-.day-nav-image {
+.day-zara-image {
   height: 1.50em;
   width: 1.125em;
   position: absolute;
@@ -244,7 +244,7 @@
   top: 1%;
 }
 
-.day-nav-image:hover {
+.day-zara-image:hover {
   cursor: pointer;
 }
 

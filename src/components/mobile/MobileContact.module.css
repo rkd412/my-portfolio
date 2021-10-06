@@ -63,3 +63,62 @@
   display: inline-block;
   padding: 5vh 2vw 0vh 2vw;
 }
+
+.night-zara-image {
+  height: 1.5em;
+  width: 1.125em;
+  position: absolute;
+  left: 2%;
+  bottom: -200vh;
+  filter: invert(100%);
+}
+
+.night-zara-image:hover {
+  cursor: pointer;
+}
+
+.day-zara-image {
+  height: 1.5em;
+  width: 1.125em;
+  position: absolute;
+  left: 2%;
+  bottom: -200vh;
+}
+
+.day-zara-image:hover {
+  cursor: pointer;
+}
+
+.animated img {
+  animation-name: Logo;
+  position: absolute;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  z-index: 9999;
+}
+
+@keyframes Logo {
+  0% {
+    right: 0;
+    transform: translateX(0%);
+  }
+  25% {
+    right: 0;
+    transform: translateX(-500%);
+  }
+  50% {
+    right: 0;
+    transform: translateY(50%);
+    height: 80vh;
+    width: 60vh;
+  }
+
+  75% {
+    right: 0;
+    transform: translateX(-250%);
+  }
+  100% {
+    right: 0;
+    transform: translateX(0%);
+  }
+}

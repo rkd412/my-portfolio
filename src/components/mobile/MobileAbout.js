@@ -55,9 +55,13 @@ const MobileAbout = () => {
       </Fade>
 
       <Fade bottom>
-        <div className={
-              theme.isNight ? styles["night-about-text"] : styles["day-about-text"]
-            }>
+        <div
+          className={
+            theme.isNight
+              ? styles["night-about-text"]
+              : styles["day-about-text"]
+          }
+        >
           Welcome to my website! My name is Rob and I am an aspiring web
           developer. I am self-taught and dabble mostly in React. Currently, I
           am learning the Full MERN Stack of technologies though. Feel free to
