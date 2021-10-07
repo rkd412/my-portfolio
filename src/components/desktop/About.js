@@ -75,8 +75,8 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
             >
-              FreeCodeCamp{" "}
-            </a>{" "}
+              FreeCodeCamp
+            </a>
             . Feel free to say hello on{" "}
             <a
               href="https://linkedin.com/in/robert-davis-b72893217"
