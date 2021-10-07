@@ -43,10 +43,9 @@ const About = () => {
       <Fade left>
         <div className={styles["about-text"]}>
           <p>
-            Welcome to my website! My name is Rob and I am an aspiring web
-            developer. I am self-taught and dabble mostly in React. Currently, I
-            am learning the Full MERN Stack of technologies though. Feel free to
-            check out my{" "}
+            Welcome to my website! My name is Rob and I am a web developer. I am
+            self-taught and dabble mostly in React. Currently, I am learning the
+            Full MERN Stack of technologies. Feel free to check out my{" "}
             <a id="projectsnav" href="#projects">
               projects
             </a>{" "}
@@ -70,7 +69,23 @@ const About = () => {
             >
               Codepen
             </a>{" "}
-            page for older projects I did for FreeCodeCamp. Thanks!
+            page for older projects I did for{" "}
+            <a
+              href="https://www.freecodecamp.org/rkd412"
+              target="_blank"
+              rel="noreferrer"
+            >
+              FreeCodeCamp{" "}
+            </a>{" "}
+            . Feel free to say hello on{" "}
+            <a
+              href="https://linkedin.com/in/robert-davis-b72893217"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>{" "}
+            as well. Thanks!
           </p>
         </div>
       </Fade>

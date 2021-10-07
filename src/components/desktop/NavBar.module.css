@@ -224,7 +224,7 @@
 }
 
 .night-zara-image {
-  height: 1.50em;
+  height: 1.5em;
   width: 1.125em;
   position: absolute;
   left: 2%;
@@ -237,7 +237,7 @@
 }
 
 .day-zara-image {
-  height: 1.50em;
+  height: 1.5em;
   width: 1.125em;
   position: absolute;
   left: 2%;
@@ -249,20 +249,18 @@
 }
 
 .animated img {
-  animation-name: Logo;
   position: absolute;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
+  animation: Logo 10s 1;
 }
 
 @keyframes Logo {
   0% {
     right: 0;
-    transform: translateX(0%)
+    transform: translateX(0%);
   }
   25% {
     right: 0;
-    transform: translateX(-1000%)
+    transform: translateX(-1000%);
   }
   50% {
     right: 0;
@@ -274,10 +272,10 @@
 
   75% {
     right: 0;
-    transform: translateX(-500%)
+    transform: translateX(-500%);
   }
   100% {
     right: 0;
-    transform: translateX(0%)
+    transform: translateX(0%);
   }
 }

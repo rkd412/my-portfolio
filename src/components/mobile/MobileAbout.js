@@ -62,19 +62,52 @@ const MobileAbout = () => {
               : styles["day-about-text"]
           }
         >
-          Welcome to my website! My name is Rob and I am an aspiring web
-          developer. I am self-taught and dabble mostly in React. Currently, I
-          am learning the Full MERN Stack of technologies though. Feel free to
-          check out my <a href="#project">projects</a> below or reach out to me
-          through the <a href="#contact">contact</a> section. Also, visit my{" "}
-          <a href="https://github.com/rkd412" target="_blank" rel="noreferrer">
-            Github
-          </a>{" "}
-          to see what I've been working on or my{" "}
-          <a href="https://codepen.io/rkd412" target="_blank" rel="noreferrer">
-            Codepen
-          </a>{" "}
-          page for older projects I did for FreeCodeCamp. Thanks!
+          {" "}
+          <p>
+            Welcome to my website! My name is Rob and I am a web developer. I am
+            self-taught and dabble mostly in React. Currently, I am learning the
+            Full MERN Stack of technologies. Feel free to check out my{" "}
+            <a id="projectsnav" href="#projects">
+              projects
+            </a>{" "}
+            below or reach out to me through the{" "}
+            <a id="contactnav" href="#contact">
+              contact
+            </a>{" "}
+            section. Also, visit my{" "}
+            <a
+              href="https://github.com/rkd412"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>{" "}
+            to see what I've been working on or my{" "}
+            <a
+              href="https://codepen.io/rkd412"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Codepen
+            </a>{" "}
+            page for older projects I did for{" "}
+            <a
+              href="https://www.freecodecamp.org/rkd412"
+              target="_blank"
+              rel="noreferrer"
+            >
+              FreeCodeCamp{" "}
+            </a>{" "}
+            . Feel free to say hello on{" "}
+            <a
+              href="https://linkedin.com/in/robert-davis-b72893217"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>{" "}
+            as well. Thanks!
+          </p>
         </div>
       </Fade>
     </div>

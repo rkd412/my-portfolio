@@ -13,7 +13,7 @@ const Contact = () => {
   const copyHandler = (e) => {
     navigator.clipboard.writeText("rkdavis412@gmail.com");
     window.alert(
-      "Email copied to clipboard! No one really wants their email automatically launched for them it seems. Let me know if you agree in your email and if you like this approach or not! Look forward to hearing from you :)"
+      "Email copied to clipboard! No one really wants their email automatically launched for them. Look forward to hearing from you!"
     );
     e.target.blur();
   };
