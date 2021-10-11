@@ -18,7 +18,7 @@ const NavBar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isAnimated, setIsAnimated] = useState(false);
   const [zaraIcon, setZaraIcon] = useState(Zara);
-
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   /*handler for night and day theme toggler*/
   const themeToggleHandler = (e) => {
     e.preventDefault();
@@ -53,22 +53,17 @@ const NavBar = () => {
 
   const isAnimatedHandler = () => {
     setIsAnimated(isAnimated === true ? false : true);
+    setIsButtonDisabled(true);
     setTimeout(() => {
       setZaraIcon(ZaraWink);
-      console.log("winking");
     }, 4600);
     setTimeout(() => {
-      setZaraIcon(ZaraWink);
-      console.log("winked");
-    }, 4800);
-    setTimeout(() => {
       setZaraIcon(Zara);
-      console.log(isAnimated);
     }, 6000);
     setTimeout(() => {
+      setIsButtonDisabled(false);
       setIsAnimated(false);
-      console.log(isAnimated);
-    }, 10001);
+    }, 10000);
   };
 
   useEffect(() => {
@@ -85,6 +80,7 @@ const NavBar = () => {
           <button
             className={isAnimated ? styles["animated"] : styles[""]}
             onClick={isAnimatedHandler}
+            disabled={isButtonDisabled}
           >
             <img
               src={zaraIcon}
