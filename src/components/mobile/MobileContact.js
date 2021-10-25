@@ -5,7 +5,7 @@ import { ThemeContext } from "../../context";
 
 import { FaGithub, FaCodepen, FaLinkedin } from "react-icons/fa";
 
-import Zara from "../../assets/Zara.png";
+import Zara from "../../assets/Zara-5.png";
 import ZaraWink from "../../assets/Zara-Wink.png";
 
 import styles from "./MobileContact.module.css";

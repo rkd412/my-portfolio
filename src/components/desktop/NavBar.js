@@ -5,7 +5,7 @@ import { ThemeContext } from "../../context";
 
 import { FaMoon, FaSun, FaChevronDown } from "react-icons/fa";
 
-import Zara from "../../assets/Zara.png";
+import Zara from "../../assets/Zara-5.png";
 import ZaraWink from "../../assets/Zara-Wink.png";
 
 import styles from "./NavBar.module.css";
@@ -77,19 +77,19 @@ const NavBar = () => {
         className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
       >
         <ul>
-          <button
-            className={isAnimated ? styles["animated"] : styles[""]}
-            onClick={isAnimatedHandler}
-            disabled={isButtonDisabled}
-          >
-            <img
-              src={zaraIcon}
-              alt="cat icon"
-              className={
-                isNight ? styles["night-zara-image"] : styles["day-zara-image"]
-              }
-            />
-          </button>
+        <button
+          className={isAnimated ? styles["animated"] : styles[""]}
+          onClick={isAnimatedHandler}
+          disabled={isButtonDisabled}
+        >
+          <img
+            src={zaraIcon}
+            alt="cat icon"
+            className={
+              isNight ? styles["night-zara-image"] : styles["day-zara-image"]
+            }
+          />
+        </button>
           <li>
             <a
               id="aboutnav"
