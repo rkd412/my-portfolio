@@ -1,5 +1,5 @@
 .night-project-box {
-  background: #0c2340;
+  background: #07264E;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 .day-project-box {
-  background: #f4f6fc;
+  background: #F2F3F2;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -30,6 +30,6 @@
 
 .day-img-div {
   cursor: pointer;
-  border: 3px solid #ff004f;
+  border: 3px solid #d1495b;
   cursor: pointer;
 }

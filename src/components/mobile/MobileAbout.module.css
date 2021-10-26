@@ -2,7 +2,6 @@
   background: #062f4f;
   height: 100vh;
   width: 100%;
-  font-family: "Oswald", sans-serif;
   padding-top: 60px;
   margin-top: -60px;
 }
@@ -11,20 +10,19 @@
   background: #fbfcff;
   height: 100vh;
   width: 100%;
-  font-family: "Oswald", sans-serif;
   padding-top: 60px;
   margin-top: -60px;
 }
 
 .night-about a:link {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
   outline: none;
 }
 
 .night-about a:visited {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
 }
 
 .night-about a:hover {
@@ -44,13 +42,13 @@
 
 .day-about a:link {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
   outline: none;
 }
 
 .day-about a:visited {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
 }
 
 .day-about a:hover {
@@ -83,7 +81,7 @@
   margin: 10vh auto 5vh auto;
   height: 30vh;
   width: 40vh;
-  border: 2px solid #ff004f;
+  border: 2px solid #d1495b;
   border-radius: 50%;
 }
 

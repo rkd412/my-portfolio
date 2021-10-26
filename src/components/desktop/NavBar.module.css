@@ -1,5 +1,5 @@
 .night-nav-bar {
-  background: #000015;
+  background: #001440;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -8,8 +8,7 @@
   width: 100%;
   text-align: center;
   font-size: 3em;
-  font-family: "Oswald", sans-serif;
-  border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
 .night-nav-bar ul {
@@ -34,13 +33,13 @@
 
 .night-nav-bar a:link {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
   outline: none;
 }
 
 .night-nav-bar a:visited {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
 }
 
 .night-nav-bar a:hover {
@@ -60,7 +59,7 @@
 }
 
 .day-nav-bar {
-  background: #191991;
+  background: #30638e;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -69,8 +68,7 @@
   width: 100%;
   text-align: center;
   font-size: 3em;
-  font-family: "Oswald", sans-serif;
-  border-bottom: 3px solid #ff004f;
+    border-bottom: 3px solid #d1495b;
 }
 
 .day-nav-bar ul {
@@ -95,13 +93,13 @@
 
 .day-nav-bar a:link {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
   outline: none;
 }
 
 .day-nav-bar a:visited {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
 }
 
 .day-nav-bar a:hover {
@@ -176,7 +174,7 @@
   position: fixed;
   bottom: 0px;
   right: 50vw;
-  color: #ff004f;
+  color: #d1495b;
   font-size: 3em;
   z-index: 9998;
 }
@@ -200,7 +198,7 @@
   position: fixed;
   bottom: 0px;
   right: 50vw;
-  color: #ff004f;
+  color: #d1495b;
   font-size: 3em;
   z-index: 9998;
 }

@@ -1,32 +1,30 @@
 .night-about {
-  background: #062f4f;
-  color: #f8f8ff;
+  background: #003a6d;
+  color: #e0e1dd;
   height: 100vh;
   width: 100%;
-  font-family: "Oswald", sans-serif;
   padding-top: 200px;
   margin-top: -200px;
 }
 
 .day-about {
-  background: #fbfcff;
+  background: #f9f9f8;
   color: #080808;
   height: 100vh;
   width: 100%;
-  font-family: "Oswald", sans-serif;
   padding-top: 200px;
   margin-top: -200px;
 }
 
 .night-about a:link {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
   outline: none;
 }
 
 .night-about a:visited {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
 }
 
 .night-about a:hover {
@@ -46,13 +44,13 @@
 
 .day-about a:link {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
   outline: none;
 }
 
 .day-about a:visited {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
 }
 
 .day-about a:hover {

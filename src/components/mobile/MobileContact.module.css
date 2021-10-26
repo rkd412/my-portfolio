@@ -16,13 +16,13 @@
 
 .night-contact a:link {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
   outline: none;
 }
 
 .night-contact a:visited {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
 }
 
 .night-contact a:active {
@@ -32,13 +32,13 @@
 
 .day-contact a:link {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
   outline: none;
 }
 
 .day-contact a:visited {
   text-decoration: none;
-  color: #ff004f;
+  color: #d1495b;
 }
 
 .day-contact a:active {
@@ -48,13 +48,12 @@
 
 .email-button {
   user-select: default;
-  color: #dc143c;
+  color: #d1495b;
 }
 
 .contact-text {
   font-size: 1.5em;
   padding: 30vh 5vw 0vh 5vw;
-  font-family: "Oswald", sans-serif;
 }
 
 .contact-links {
