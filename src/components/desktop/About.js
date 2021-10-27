@@ -102,7 +102,7 @@ const About = () => {
               src={image}
               key={image}
               name="saveForm"
-              alt="Photo of me"
+              alt="Robert Davis Himself"
               id="saveForm"
               onClick={clickHandler}
             />
