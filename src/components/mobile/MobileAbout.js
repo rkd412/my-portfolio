@@ -43,6 +43,7 @@ const MobileAbout = () => {
       <Fade top>
         <Fade>
           <img
+          loading="lazy"
             className={
               theme.isNight ? styles["night-image"] : styles["day-image"]
             }

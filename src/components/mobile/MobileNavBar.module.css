@@ -1,5 +1,5 @@
 .night-nav-back {
-  background: rgba(25, 25, 145, .8);
+  background: rgba(48, 99, 142, 0.95);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -11,7 +11,7 @@
 }
 
 .day-nav-back {
-  background: rgba(0, 0, 20, 0.8);
+  background: rgba(0, 0, 34, 0.95);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -59,7 +59,7 @@
 
 .night-nav-bar ul li {
   text-align: center;
-  margin-top: 15vh;
+  margin-top: 10vh;
   text-decoration: none;
   list-style-type: none;
   font-size: 2em;
@@ -79,7 +79,7 @@
 
 .day-nav-bar ul li {
   text-align: center;
-  margin-top: 15vh;
+  margin-top: 10vh;
   text-decoration: none;
   list-style-type: none;
   font-size: 2em;
@@ -152,7 +152,7 @@
 .day-scroll {
   position: fixed;
   bottom: 0px;
-  right: 45%;
+  right: 43%;
   color: #d1495b;
   font-size: 3em;
   z-index: 9998;

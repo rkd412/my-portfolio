@@ -85,6 +85,7 @@ const NavBar = () => {
           <img
             src={zaraIcon}
             alt="cat icon"
+            loading="lazy"
             className={
               isNight ? styles["night-zara-image"] : styles["day-zara-image"]
             }

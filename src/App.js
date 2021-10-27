@@ -16,27 +16,24 @@ import "./App.css";
 
 const App = () => {
   const [isNight, setIsNight] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1008);
 
-  const handleResize = () => {
-    if (window.innerWidth < 800) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 1008);
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
   });
 
   return (
     <ThemeContext.Provider value={{ isNight, setIsNight }}>
       <div>
-        {isMobile ? <MobileNavBar /> : <NavBar />}
-        {isMobile ? <MobileAbout /> : <About />}
-        {isMobile ? <MobileProjects /> : <Projects />}
-        {isMobile ? <MobileContact /> : <Contact />}
+        {isDesktop ? <NavBar /> : <MobileNavBar />}
+        {isDesktop ? <About /> : <MobileAbout />}
+        {isDesktop ? <Projects /> : <MobileProjects />}
+        {isDesktop ? <Contact /> : <MobileContact />}
       </div>
     </ThemeContext.Provider>
   );
