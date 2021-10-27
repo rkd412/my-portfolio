@@ -67,7 +67,7 @@
   height: 1.5em;
   width: 1.125em;
   position: absolute;
-  left: 50%;
+  left: 1%;
   bottom: -200vh;
   filter: invert(100%);
 }
