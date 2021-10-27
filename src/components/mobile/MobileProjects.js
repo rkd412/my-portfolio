@@ -15,9 +15,9 @@ import styles from "./MobileProjects.module.css";
 const MobileProjects = () => {
   const theme = useContext(ThemeContext);
 
-  const clickHandler = () => {
-    const url = "https://www.google.com/";
-    window.open(url, "_blank");
+  const clickHandler = (e) => {
+    e.preventDefault();
+    window.open(e.target.id, "_blank");
   };
 
   return (
@@ -35,6 +35,7 @@ const MobileProjects = () => {
                 theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
               }
               onClick={clickHandler}
+              id="https://wonderful-ptolemy-65f598.netlify.app/"
             >
               <img src={ECommerce} alt="Outdoor E-Commerce Page" />
               <p className="legend">Outdoor E-Commerce Page</p>
@@ -44,6 +45,7 @@ const MobileProjects = () => {
                 theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
               }
               onClick={clickHandler}
+              id="https://infallible-khorana-72773f.netlify.app/"
             >
               <img src={SecurityApp} alt="Security API App" />
               <p className="legend">Security API App</p>
@@ -53,6 +55,7 @@ const MobileProjects = () => {
                 theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
               }
               onClick={clickHandler}
+              id="https://eloquent-clarke-721698.netlify.app/"
             >
               <img src={MontyHall} alt="Monty Hall Game App" />
               <p className="legend">Monty Hall Game</p>
