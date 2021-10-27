@@ -37,7 +37,7 @@ const MobileAbout = () => {
 
   return (
     <div
-      id="about"
+      id="mobileabout"
       className={theme.isNight ? styles["night-about"] : styles["day-about"]}
     >
       <Fade top>
@@ -68,11 +68,11 @@ const MobileAbout = () => {
             Welcome to my website! My name is Rob and I am a web developer. I am
             self-taught and dabble mostly in React. Currently, I am learning the
             Full MERN Stack of technologies. Feel free to check out my{" "}
-            <a id="projectsnav" href="#projects">
+            <a id="mobileprojectsnav" href="#mobileprojects">
               projects
             </a>{" "}
             below or reach out to me through the{" "}
-            <a id="contactnav" href="#contact">
+            <a id="mobilecontactnav" href="#mobilecontact">
               contact
             </a>{" "}
             section. Also, visit my{" "}

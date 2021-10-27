@@ -22,7 +22,7 @@ const MobileProjects = () => {
 
   return (
     <div
-      id="project"
+      id="mobileproject"
       className={
         theme.isNight ? styles["night-project-box"] : styles["day-project-box"]
       }

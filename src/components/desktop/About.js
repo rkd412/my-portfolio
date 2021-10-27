@@ -50,7 +50,7 @@ const About = () => {
               projects
             </a>{" "}
             below or reach out to me through the{" "}
-            <a id="contactnav" href="#contact">
+            <a id="contactnav" href="#contact"   aria-label="contact section of page">
               contact
             </a>{" "}
             section. Also, visit my{" "}

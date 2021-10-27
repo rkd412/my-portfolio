@@ -41,7 +41,7 @@ const MobileContact = () => {
 
   return (
     <div
-      id="contact"
+      id="mobilecontact"
       className={
         theme.isNight ? styles["night-contact"] : styles["day-contact"]
       }

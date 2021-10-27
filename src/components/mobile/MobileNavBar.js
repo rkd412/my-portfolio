@@ -73,7 +73,7 @@ const MobileNavBar = () => {
 
       {isOpen && (
         <nav
-          id="nav-bar"
+          id="mobile-nav-bar"
           className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
         >
           {" "}
@@ -99,7 +99,7 @@ const MobileNavBar = () => {
                   className={
                     selected === "aboutnav" ? styles["selected"] : styles[""]
                   }
-                  href="#about"
+                  href="#mobileabout"
                 >
                   About
                 </a>
@@ -109,7 +109,7 @@ const MobileNavBar = () => {
                   className={
                     selected === "projectsnav" ? styles["selected"] : styles[""]
                   }
-                  href="#project"
+                  href="#mobileproject"
                 >
                   Projects
                 </a>
@@ -119,7 +119,7 @@ const MobileNavBar = () => {
                   className={
                     selected === "contactnav" ? styles["selected"] : styles[""]
                   }
-                  href="#contact"
+                  href="#mobilecontact"
                 >
                   Contact
                 </a>
