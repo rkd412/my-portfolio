@@ -77,20 +77,21 @@ const NavBar = () => {
         className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
       >
         <ul>
-        <button
-          className={isAnimated ? styles["animated"] : styles[""]}
-          onClick={isAnimatedHandler}
-          disabled={isButtonDisabled}
-        >
-          <img
-            src={zaraIcon}
-            alt="cat icon"
-            loading="lazy"
-            className={
-              isNight ? styles["night-zara-image"] : styles["day-zara-image"]
-            }
-          />
-        </button>
+          <button
+            className={isAnimated ? styles["animated"] : styles[""]}
+            onClick={isAnimatedHandler}
+            disabled={isButtonDisabled}
+            aria-label="icon animator"
+          >
+            <img
+              src={zaraIcon}
+              alt="cat icon"
+              loading="lazy"
+              className={
+                isNight ? styles["night-zara-image"] : styles["day-zara-image"]
+              }
+            />
+          </button>
           <li>
             <a
               id="aboutnav"
@@ -128,7 +129,7 @@ const NavBar = () => {
             className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
             onClick={themeToggleHandler}
           >
-            <button name="theme toggle button" type="text">
+            <button aria-label="theme toggle button" type="text">
               {isNight ? <FaMoon /> : <FaSun />}
             </button>
           </li>
@@ -144,7 +145,7 @@ const NavBar = () => {
             : styles["day-scroll"]
         }
         onClick={scrollHandler}
-        name="page scroll button"
+        aria-label="page scroll button"
         type="text"
       >
         <FaChevronDown />

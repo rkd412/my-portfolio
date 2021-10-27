@@ -54,7 +54,7 @@ const MobileContact = () => {
               className={styles["email-button"]}
               onClick={copyHandler}
               tabindex="0"
-              name="copy email button"
+              aria-label="copy email button"
               type="text"
             >
               rkdavis412@gmail.com
@@ -88,6 +88,7 @@ const MobileContact = () => {
         className={isAnimated ? styles["animated"] : styles[""]}
         onClick={isAnimatedHandler}
         disabled={isButtonDisabled}
+        aria-label="icon animator"
       >
         <img
           src={zaraIcon}

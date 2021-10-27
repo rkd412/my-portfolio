@@ -36,7 +36,7 @@ const Contact = () => {
                   : styles["day-email-button"]
               }
               onClick={copyHandler}
-              name="copy email button"
+              aria-label="copy email button"
               type="text"
             >
               rkdavis412@gmail.com
