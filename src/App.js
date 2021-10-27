@@ -15,7 +15,9 @@ import MobileContact from "./components/mobile/MobileContact";
 import "./App.css";
 
 const App = () => {
-  const [isNight, setIsNight] = useState(false);
+  const [isNight, setIsNight] = useState(
+    JSON.parse(localStorage.getItem("DARK_MODE"))
+  );
   const [isDesktop, setDesktop] = useState(window.innerWidth > 1008);
 
   const updateMedia = () => {
@@ -25,6 +27,10 @@ const App = () => {
   useEffect(() => {
     window.addEventListener("resize", updateMedia);
     return () => window.removeEventListener("resize", updateMedia);
+  });
+
+  useEffect(() => {
+    localStorage.setItem("DARK_MODE", isNight);
   });
 
   return (
