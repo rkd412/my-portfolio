@@ -29,7 +29,7 @@
   margin-right: 10vw;
   margin-top: 2vh;
   text-align: center;
-  z-index: 9999;
+  z-index: 9998;
   font-size: 2em;
   color: gainsboro;
 }
@@ -41,14 +41,14 @@
   margin-right: 10vw;
   margin-top: 2vh;
   text-align: center;
-  z-index: 9999;
+  z-index: 9998;
   font-size: 2em;
   color: #ffffff;
 }
 
 .night-nav-bar {
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   top: 0;
   left: 5vw;
   right: 0;
@@ -63,12 +63,12 @@
   text-decoration: none;
   list-style-type: none;
   font-size: 2em;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 .day-nav-bar {
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   top: 0;
   left: 5vw;
   right: 0;
@@ -83,7 +83,7 @@
   text-decoration: none;
   list-style-type: none;
   font-size: 2em;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 .night-nav-bar a:link {
@@ -155,7 +155,7 @@
   right: 45%;
   color: #d1495b;
   font-size: 3em;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 .day-scroll:active {

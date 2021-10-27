@@ -5,10 +5,10 @@ import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
-import sun1 from "../../assets/sunflowers-1.jpg";
-import sun2 from "../../assets/sunflowers-2.jpg";
-import sun3 from "../../assets/sunflowers-3.jpg";
-import sun4 from "../../assets/sunflowers-4.jpg";
+import ECommerce from "../../assets/ECommerce.jpeg";
+import SecurityApp from "../../assets/SecurityApp.jpeg";
+import MontyHall from "../../assets/MontyHall.jpeg";
+import ComingSoon from "../../assets/ComingSoon.jpg";
 
 import styles from "./MobileProjects.module.css";
 
@@ -20,7 +20,6 @@ const MobileProjects = () => {
     window.open(url, "_blank");
   };
 
-
   return (
     <div
       id="project"
@@ -31,29 +30,40 @@ const MobileProjects = () => {
       <Fade bottom>
         <div className={styles["carousel"]}>
           <Carousel emulateTouch>
-          <div  className={
-        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
-      } onClick={clickHandler}>
-              <img src={sun1} alt="img1"/>
-              <p className="legend">Legend 1</p>
+            <div
+              className={
+                theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+              }
+              onClick={clickHandler}
+            >
+              <img src={ECommerce} alt="Outdoor E-Commerce Page" />
+              <p className="legend">Outdoor E-Commerce Page</p>
             </div>
-            <div  className={
-        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
-      } onClick={clickHandler}>
-              <img src={sun2} alt="img2"/>
-              <p className="legend">Legend 2</p>
+            <div
+              className={
+                theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+              }
+              onClick={clickHandler}
+            >
+              <img src={SecurityApp} alt="Security API App" />
+              <p className="legend">Security API App</p>
             </div>
-            <div  className={
-        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
-      } onClick={clickHandler}>
-              <img src={sun3} alt="img3" />
-              <p className="legend">Legend 3</p>
+            <div
+              className={
+                theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+              }
+              onClick={clickHandler}
+            >
+              <img src={MontyHall} alt="Monty Hall Game App" />
+              <p className="legend">Monty Hall Game</p>
             </div>
-            <div  className={
-        theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
-      } onClick={clickHandler}>
-              <img src={sun4} alt="img4" />
-              <p className="legend">Legend 3</p>
+            <div
+              className={
+                theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+              }
+            >
+              <img src={ComingSoon} alt="Coming Soon..." />
+              <p className="legend">Coming Soon...</p>
             </div>
           </Carousel>
         </div>

@@ -99,7 +99,7 @@
 @keyframes Logo {
   0% {
     right: 0;
-    transform: translateX(0%);
+    transform: translate(0%);
   }
   25% {
     right: 0;
@@ -108,8 +108,8 @@
   50% {
     right: 0;
     transform: translateY(50%);
-    height: 80vh;
-    width: 60vh;
+    height: 60vh;
+    width: 40vh;
   }
 
   75% {

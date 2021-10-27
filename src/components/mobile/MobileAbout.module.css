@@ -68,8 +68,8 @@
 
 .night-image {
   display: block;
-  padding: 10vh auto 5vh auto;
-  margin: 10vh auto 5vh auto;
+  padding: 5vh auto 5vh auto;
+  margin: 5vh auto 5vh auto;
   height: 30vh;
   width: 40vh;
   border: 2px solid #ffffff;
@@ -78,7 +78,8 @@
 
 .day-image {
   display: block;
-  margin: 10vh auto 5vh auto;
+  padding: 5vh auto 5vh auto;
+  margin: 5vh auto 5vh auto;
   height: 30vh;
   width: 40vh;
   border: 2px solid #d1495b;
