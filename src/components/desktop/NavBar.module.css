@@ -224,8 +224,8 @@
 .night-zara-image {
   height: 1.5em;
   width: 1.125em;
-  position: absolute;
-  left: 2%;
+  position: fixed;
+  left: 1%;
   top: 1%;
   filter: invert(100%);
 }
@@ -237,9 +237,9 @@
 .day-zara-image {
   height: 1.5em;
   width: 1.125em;
-  position: absolute;
-  left: 2%;
-  top: 5%;
+  position: fixed;
+  left: 1%;
+  top: 1%;
 }
 
 .day-zara-image:hover {
@@ -247,7 +247,7 @@
 }
 
 .animated img {
-  position: absolute;
+  position: fixed;
   animation: Logo 10s 1;
 }
 

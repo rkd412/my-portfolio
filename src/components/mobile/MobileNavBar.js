@@ -11,6 +11,9 @@ import {
   FaChevronDown,
 } from "react-icons/fa";
 
+import Zara from "../../assets/Zara.png";
+import ZaraWink from "../../assets/Zara-Wink.png";
+
 import styles from "./MobileNavBar.module.css";
 
 const MobileNavBar = () => {
@@ -20,6 +23,9 @@ const MobileNavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState("aboutnav");
   const [isVisible, setIsVisible] = useState(true);
+  const [isAnimated, setIsAnimated] = useState(false);
+  const [zaraIcon, setZaraIcon] = useState(Zara);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   /*handler for night and day theme toggler*/
   const themeToggleHandler = (e) => {
@@ -34,6 +40,21 @@ const MobileNavBar = () => {
 
   const scrollHandler = (e) => {
     window.scrollBy(0, window.innerHeight * 1.0);
+  };
+
+  const isAnimatedHandler = () => {
+    setIsAnimated(isAnimated === true ? false : true);
+    setIsButtonDisabled(true);
+    setTimeout(() => {
+      setZaraIcon(ZaraWink);
+    }, 4600);
+    setTimeout(() => {
+      setZaraIcon(Zara);
+    }, 6000);
+    setTimeout(() => {
+      setIsButtonDisabled(false);
+      setIsAnimated(false);
+    }, 10000);
   };
 
   const listenScrollEvent = () => {
@@ -57,7 +78,23 @@ const MobileNavBar = () => {
   });
 
   return (
-    <div>
+    <div className={styles["mobile-nav-container"]}>
+      <button
+        className={isAnimated ? styles["animated"] : styles[""]}
+        onClick={isAnimatedHandler}
+        disabled={isButtonDisabled}
+        aria-label="icon animator"
+      >
+        <img
+          src={zaraIcon}
+          alt="cat icon"
+          className={
+            isNight
+              ? styles["night-zara-image"]
+              : styles["day-zara-image"]
+          }
+        />
+      </button>
       {!isOpen && (
         <Fade>
           <h1

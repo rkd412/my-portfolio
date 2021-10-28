@@ -1,42 +1,20 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
 import { FaGithub, FaCodepen, FaLinkedin } from "react-icons/fa";
 
-import Zara from "../../assets/Zara.png";
-import ZaraWink from "../../assets/Zara-Wink.png";
-
 import styles from "./MobileContact.module.css";
 
 const MobileContact = () => {
   const theme = useContext(ThemeContext);
-
-  const [isAnimated, setIsAnimated] = useState(false);
-  const [zaraIcon, setZaraIcon] = useState(Zara);
-  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const copyHandler = () => {
     navigator.clipboard.writeText("rkdavis412@gmail.com");
     window.alert(
       "Email copied to clipboard! No one really wants their email automatically launched for them. Look forward to hearing from you!"
     );
-  };
-
-  const isAnimatedHandler = () => {
-    setIsAnimated(isAnimated === true ? false : true);
-    setIsButtonDisabled(true);
-    setTimeout(() => {
-      setZaraIcon(ZaraWink);
-    }, 4600);
-    setTimeout(() => {
-      setZaraIcon(Zara);
-    }, 6000);
-    setTimeout(() => {
-      setIsButtonDisabled(false);
-      setIsAnimated(false);
-    }, 10000);
   };
 
   return (
@@ -84,22 +62,6 @@ const MobileContact = () => {
           </a>
         </div>
       </Fade>
-      <button
-        className={isAnimated ? styles["animated"] : styles[""]}
-        onClick={isAnimatedHandler}
-        disabled={isButtonDisabled}
-        aria-label="icon animator"
-      >
-        <img
-          src={zaraIcon}
-          alt="cat icon"
-          className={
-            theme.isNight
-              ? styles["night-zara-image"]
-              : styles["day-zara-image"]
-          }
-        />
-      </button>
     </div>
   );
 };
