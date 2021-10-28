@@ -68,7 +68,7 @@
   width: 1.125em;
   position: absolute;
   left: 1%;
-  bottom: -200vh;
+  bottom: -201vh;
   filter: invert(100%);
 }
 
@@ -80,7 +80,7 @@
   height: 1.5em;
   width: 1.125em;
   position: absolute;
-  left: 1%;
+  left: 2%;
   bottom: -200vh;
 }
 
