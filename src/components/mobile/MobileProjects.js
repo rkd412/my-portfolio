@@ -22,14 +22,14 @@ const MobileProjects = () => {
 
   return (
     <div
-      id="mobileproject"
+      id="mobileprojects"
       className={
         theme.isNight ? styles["night-project-box"] : styles["day-project-box"]
       }
     >
       <Fade bottom>
         <div className={styles["carousel"]}>
-          <Carousel emulateTouch>
+          <Carousel emulateTouch autoPlay="false">
             <div
               className={
                 theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
