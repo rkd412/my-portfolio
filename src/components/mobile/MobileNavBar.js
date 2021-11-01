@@ -146,7 +146,7 @@ const MobileNavBar = () => {
                   className={
                     selected === "projectsnav" ? styles["selected"] : styles[""]
                   }
-                  href="#mobileproject"
+                  href="#mobileprojects"
                 >
                   Projects
                 </a>
