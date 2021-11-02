@@ -38,11 +38,11 @@ const NavBar = () => {
   const listenScrollEvent = () => {
     if (
       window.scrollY >= window.innerHeight * 1.0 &&
-      window.scrollY <= window.innerHeight * 2.0
+      window.scrollY <= window.innerHeight * 3.5
     ) {
       setSelected("projectsnav");
-      setIsVisible(true);
-    } else if (window.scrollY >= window.innerHeight * 2.0) {
+      setIsVisible(false);
+    } else if (window.scrollY >= window.innerHeight * 3.5) {
       setSelected("contactnav");
       setIsVisible(false);
     } else {

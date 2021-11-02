@@ -1,35 +1,131 @@
 .night-project-box {
-  background: #07264E;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #07264e;
+  height: auto;
+  width: auto;
+  padding: 15vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 300px;
+}
+
+.night-project-box ul {
+  font-size: 30px;
+}
+
+.day-project-box ul {
+  font-size: 30px;
 }
 
 .day-project-box {
-  background: #F2F3F2;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel {
-  height: 40vh;
-  width: 40vw;
-  margin-bottom: 35vh;
+  background: #f2f3f2;
+  height: auto;
+  width: auto;
+  padding: 15vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 200px;
 }
 
 .night-img-div {
-  cursor: pointer;
-  border: 2px solid #ffffff;
-  cursor: pointer;
+  color: #e0e1dd;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.night-img-div h1 {
+  margin: 10px;
+}
+
+.night-img-div a:link {
+  text-decoration: none;
+  color: #d1495b;
+  outline: none;
+}
+
+.night-img-div a:visited {
+  text-decoration: none;
+  color: #d1495b;
+}
+
+.night-img-div a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.night-img-div a:focus {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.night-img-div a:active {
+  text-decoration: underline;
+  color: gainsboro;
 }
 
 .day-img-div {
+  color: #080808;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.day-img-div h1 {
+  margin: 10px;
+}
+
+.day-img-div a:link {
+  text-decoration: none;
+  color: #d1495b;
+  outline: none;
+}
+
+.day-img-div a:visited {
+  text-decoration: none;
+  color: #d1495b;
+}
+
+.day-img-div a:hover {
+  text-decoration: underline;
+  color: gainsboro;
+}
+
+.day-img-div a:focus {
+  text-decoration: underline;
+  color: silver;
+}
+
+.day-img-div a:active {
+  text-decoration: underline;
+  color: silver;
+}
+
+.day-img-div {
+  width: 100%;
+  height: 100%;
+  color: #080808;
+}
+
+.night-text-div {
+  color: #e0e1dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 60px;
+}
+
+.day-text-div {
+  color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 60px;
+}
+
+.image {
   cursor: pointer;
-  border: 3px solid #d1495b;
-  cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 10px;
 }

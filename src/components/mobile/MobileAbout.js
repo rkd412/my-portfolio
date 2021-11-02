@@ -43,7 +43,7 @@ const MobileAbout = () => {
       <Fade top>
         <Fade>
           <img
-          loading="lazy"
+            loading="lazy"
             className={
               theme.isNight ? styles["night-image"] : styles["day-image"]
             }
@@ -65,9 +65,10 @@ const MobileAbout = () => {
         >
           {" "}
           <p>
-            Welcome to my website! My name is Rob and I am a web developer. I am
-            self-taught and dabble mostly in React. Currently, I am learning the
-            Full MERN Stack of technologies. Feel free to check out my{" "}
+            Welcome! My name is Rob and I am a web developer. I am self-taught
+            and dabble mostly in React. Currently, I am learning Nodejs,
+            Express, and MongoDB to complete the MERN stack. Feel free to check
+            out my{" "}
             <a id="mobileprojectsnav" href="#mobileprojects">
               projects
             </a>{" "}

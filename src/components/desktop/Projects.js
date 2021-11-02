@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Fade from "react-reveal/Fade";
 
@@ -8,7 +7,6 @@ import { ThemeContext } from "../../context";
 import ECommerce from "../../assets/ECommerce.jpg";
 import SecurityApp from "../../assets/SecurityApp.jpg";
 import MontyHall from "../../assets/MontyHall.jpg";
-import ComingSoon from "../../assets/ComingSoon.jpg";
 
 import styles from "./Projects.module.css";
 
@@ -27,55 +25,102 @@ const Projects = () => {
         theme.isNight ? styles["night-project-box"] : styles["day-project-box"]
       }
     >
-      <Fade bottom>
-        <div className={styles["carousel"]}>
-          <Carousel emulateTouch autoPlay={false}>
-            <div
-              className={
-                theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
-              }
-              onClick={clickHandler}
-              id="https://wonderful-ptolemy-65f598.netlify.app/"
-            >
-              <img
-                loading="lazy"
-                className={styles["image"]}
-                src={ECommerce}
-                alt="E-Commerce Site"
-              />
-              <p className="legend">Outdoor E-Commerce Page</p>
-            </div>
-            <div
-              className={
-                theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
-              }
-              onClick={clickHandler}
-              id="https://infallible-khorana-72773f.netlify.app/"
-            >
-              <img loading="lazy" src={SecurityApp} alt="Security API App" />
-              <p className="legend">Security API App</p>
-            </div>
-            <div
-              className={
-                theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
-              }
-              onClick={clickHandler}
-              id="https://eloquent-clarke-721698.netlify.app/"
-            >
-              <img loading="lazy" src={MontyHall} alt="Monty Hall Game" />
-              <p className="legend">Monty Hall Game</p>
-            </div>
-            <div
-              className={
-                theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
-              }
-            >
-              <img loading="lazy" src={ComingSoon} alt="Coming Soon" />
-              <p className="legend">Coming Soon...</p>
-            </div>
-          </Carousel>
-        </div>
-      </Fade>
+      <div
+        className={
+          theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+        }
+      >
+        <h1>Outdoor E-Commerce Page</h1>
+        <img
+          className={styles["image"]}
+          loading="lazy"
+          src={ECommerce}
+          alt="E-Commerce Site"
+          onClick={clickHandler}
+          id="https://wonderful-ptolemy-65f598.netlify.app/"
+        />{" "}
+        <a href="https://github.com/rkd412/outdoor-ecommerce" target="_blank" rel="noreferrer">
+          Source Code
+        </a>
+      </div>
+      <div
+        className={
+          theme.isNight ? styles["night-text-div"] : styles["day-text-div"]
+        }
+      >
+        <ul>
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>Material UI</li>
+        </ul>
+      </div>
+
+      <div
+        className={
+          theme.isNight ? styles["night-text-div"] : styles["day-text-div"]
+        }
+      >
+        <ul>
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>Material UI</li>
+        </ul>
+      </div>
+      <div
+        className={
+          theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+        }
+      >
+        <h1>Security API App</h1>
+        <img
+          className={styles["image"]}
+          loading="lazy"
+          src={SecurityApp}
+          alt="Security API App"
+          onClick={clickHandler}
+          id="https://infallible-khorana-72773f.netlify.app/"
+        />
+
+        <a href="https://github.com/rkd412/security-api-app" target="_blank" rel="noreferrer">
+          Source Code
+        </a>
+      </div>
+
+      <div
+        className={
+          theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
+        }
+      >
+        <h1>Monty Hall Game App</h1>
+        <img
+          className={styles["image"]}
+          loading="lazy"
+          src={MontyHall}
+          alt="Monty Hall Game"
+          onClick={clickHandler}
+          id="https://eloquent-clarke-721698.netlify.app/"
+        />
+
+        <a href="https://github.com/rkd412/monty-hall" target="_blank" rel="noreferrer">
+          Source Code
+        </a>
+      </div>
+      <div
+        className={
+          theme.isNight ? styles["night-text-div"] : styles["day-text-div"]
+        }
+      >
+        <ul>
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Javascript</li>
+          <li>React</li>
+        </ul>
+      </div>
     </div>
   );
 };
