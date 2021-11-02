@@ -45,7 +45,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Source Code
+            Outdoor E-Commerce Page Source Code
           </a>
         </div>
      
@@ -98,7 +98,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Source Code
+            Security API App Source Code
           </a>
         </div>
       </Fade>
@@ -123,7 +123,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Source Code
+            Monty Hall Game App Source Code
           </a>
         </div>
     
