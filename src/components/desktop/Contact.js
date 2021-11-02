@@ -46,17 +46,28 @@ const Contact = () => {
           </p>
         </div>
         <div className={styles["contact-links"]}>
-          <a href="https://github.com/rkd412" target="_blank" rel="noreferrer">
+          <a
+            aria-label="Github Link"
+            href="https://github.com/rkd412"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub />
           </a>
         </div>
         <div className={styles["contact-links"]}>
-          <a href="https://codepen.io/rkd412" target="_blank" rel="noreferrer">
+          <a
+            aria-label="CodePen Link"
+            href="https://codepen.io/rkd412"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaCodepen />
           </a>
         </div>
         <div className={styles["contact-links"]}>
           <a
+            aria-label="LinkedIn Link"
             href="https://linkedin.com/in/robert-davis-b72893217"
             target="_blank"
             rel="noreferrer"

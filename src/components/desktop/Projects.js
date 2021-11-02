@@ -41,14 +41,15 @@ const Projects = () => {
             id="https://wonderful-ptolemy-65f598.netlify.app/"
           />{" "}
           <a
+            aria-label="Outdoor E-Commerce Repository"
             href="https://github.com/rkd412/outdoor-ecommerce"
             target="_blank"
             rel="noreferrer"
           >
-            Outdoor E-Commerce Page Source Code
+            Source Code
           </a>
         </div>
-     
+
         <div
           className={
             theme.isNight ? styles["night-text-div"] : styles["day-text-div"]
@@ -78,7 +79,7 @@ const Projects = () => {
             <li>Material UI</li>
           </ul>
         </div>
-   
+
         <div
           className={
             theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
@@ -94,11 +95,12 @@ const Projects = () => {
             id="https://infallible-khorana-72773f.netlify.app/"
           />
           <a
+            aria-label="Security API App repository"
             href="https://github.com/rkd412/security-api-app"
             target="_blank"
             rel="noreferrer"
           >
-            Security API App Source Code
+            Source Code
           </a>
         </div>
       </Fade>
@@ -119,14 +121,15 @@ const Projects = () => {
             id="https://eloquent-clarke-721698.netlify.app/"
           />
           <a
+            aria-label="Monty Hall Repository"
             href="https://github.com/rkd412/monty-hall"
             target="_blank"
             rel="noreferrer"
           >
-            Monty Hall Game App Source Code
+            Source Code
           </a>
         </div>
-    
+
         <div
           className={
             theme.isNight ? styles["night-text-div"] : styles["day-text-div"]
@@ -140,7 +143,6 @@ const Projects = () => {
           </ul>
         </div>
       </Fade>
-      
     </div>
   );
 };

@@ -47,19 +47,16 @@ const About = () => {
             and dabble mostly in React. Currently, I am learning Nodejs,
             Express, and MongoDB to complete the MERN stack. Feel free to check
             out my{" "}
-            <a id="projectsnav" href="#projects">
+            <a aria-label="Projects Section" id="projectsnav" href="#projects">
               projects
             </a>{" "}
             below or reach out to me through the{" "}
-            <a
-              id="contactnav"
-              href="#contact"
-              aria-label="contact section of page"
-            >
+            <a aria-label="Contact Section" id="contactnav" href="#contact">
               contact
             </a>{" "}
             section. Also, visit my{" "}
             <a
+              aria-label="GitHub Page"
               href="https://github.com/rkd412"
               target="_blank"
               rel="noreferrer"
@@ -68,6 +65,7 @@ const About = () => {
             </a>{" "}
             to see what I've been working on or my{" "}
             <a
+              aria-label="CodePen Page"
               href="https://codepen.io/rkd412"
               target="_blank"
               rel="noreferrer"
@@ -76,6 +74,7 @@ const About = () => {
             </a>{" "}
             page for older projects I did for{" "}
             <a
+              aria-label="FreeCodeCamp Profile"
               href="https://www.freecodecamp.org/rkd412"
               target="_blank"
               rel="noreferrer"
@@ -84,6 +83,7 @@ const About = () => {
             </a>
             . Feel free to say hello on{" "}
             <a
+              aria-label="LinkedIn Page"
               href="https://linkedin.com/in/robert-davis-b72893217"
               target="_blank"
               rel="noreferrer"

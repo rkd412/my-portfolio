@@ -84,6 +84,7 @@ const NavBar = () => {
             aria-label="icon animator"
           >
             <img
+            aria-label="Cat Icon Animation"
               src={zaraIcon}
               alt="cat icon"
               loading="lazy"
@@ -94,6 +95,7 @@ const NavBar = () => {
           </button>
           <li>
             <a
+            aria-label="About Section"
               id="aboutnav"
               href="#about"
               className={
@@ -105,6 +107,7 @@ const NavBar = () => {
           </li>
           <li>
             <a
+            aria-label="Project Section"
               id="projectsnav"
               href="#projects"
               className={
@@ -116,6 +119,7 @@ const NavBar = () => {
           </li>
           <li>
             <a
+            aria-label="Contact Section"
               id="contactnav"
               href="#contact"
               className={
@@ -126,6 +130,7 @@ const NavBar = () => {
             </a>
           </li>
           <li
+          
             className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
             onClick={themeToggleHandler}
           >
