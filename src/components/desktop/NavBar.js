@@ -70,6 +70,19 @@ const NavBar = () => {
     window.addEventListener("scroll", listenScrollEvent);
   });
 
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("nav-bar").style.top = "0";
+      document.getElementById("cat-icon").style.top = "0";
+    } else {
+      document.getElementById("nav-bar").style.top = "-100px";
+      document.getElementById("cat-icon").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
   return (
     <Fade top>
       <nav
@@ -84,6 +97,7 @@ const NavBar = () => {
             aria-label="icon animator"
           >
             <img
+            id="cat-icon"
             aria-label="Cat Icon Animation"
               src={zaraIcon}
               alt="cat icon"

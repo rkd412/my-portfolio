@@ -1,11 +1,14 @@
 .night-project-box {
-  background: #07264e;
-  height: auto;
+  background: #2b2f77;
+  color: #ffffff;
+  height: 300vh;
   width: auto;
-  padding: 15vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 300px;
+  grid-gap: 100px;
+  transition: 0.8s;
+  scroll-margin-top: -8vh;
+  padding: 20vh;
 }
 
 .night-project-box ul {
@@ -18,23 +21,30 @@
 
 .day-project-box {
   background: #f2f3f2;
-  height: auto;
+  color: #080808;
+  height: 300vh;
   width: auto;
-  padding: 15vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 200px;
+  grid-gap: 100px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.8s;
+  scroll-margin-top: -8vh;
+  padding: 20vh;
 }
 
 .night-img-div {
-  color: #e0e1dd;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 
 .night-img-div h1 {
-  margin: 10px;
+  margin: 2vh;
+}
+
+.night-img-div a {
+  margin: 20vh;
 }
 
 .night-img-div a:link {
@@ -64,14 +74,13 @@
 }
 
 .day-img-div {
-  color: #080808;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 
 .day-img-div h1 {
-  margin: 10px;
+  margin: 2vh;
 }
 
 .day-img-div a:link {
@@ -100,32 +109,27 @@
   color: silver;
 }
 
-.day-img-div {
-  width: 100%;
-  height: 100%;
-  color: #080808;
-}
-
 .night-text-div {
-  color: #e0e1dd;
+  color: #ffffff;
   display: flex;
   justify-content: center;
-  align-items: center;
   line-height: 60px;
+  margin-top: 20vh;
 }
 
 .day-text-div {
   color: #080808;
   display: flex;
   justify-content: center;
-  align-items: center;
   line-height: 60px;
+  margin-top: 20vh;
 }
 
 .image {
   cursor: pointer;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 700px;
+  height: 550px;
   border: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
