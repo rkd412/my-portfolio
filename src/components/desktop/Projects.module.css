@@ -43,32 +43,28 @@
   margin: 2vh;
 }
 
-.night-img-div a {
-  margin: 20vh;
-}
-
-.night-img-div a:link {
+.night-text-div a:link {
   text-decoration: none;
   color: #d1495b;
   outline: none;
 }
 
-.night-img-div a:visited {
+.night-text-div a:visited {
   text-decoration: none;
   color: #d1495b;
 }
 
-.night-img-div a:hover {
+.night-text-div a:hover {
   text-decoration: underline;
   color: #ffffff;
 }
 
-.night-img-div a:focus {
+.night-text-div a:focus {
   text-decoration: underline;
   color: gainsboro;
 }
 
-.night-img-div a:active {
+.night-text-div a:active {
   text-decoration: underline;
   color: gainsboro;
 }
@@ -83,28 +79,28 @@
   margin: 2vh;
 }
 
-.day-img-div a:link {
+.day-text-div a:link {
   text-decoration: none;
   color: #d1495b;
   outline: none;
 }
 
-.day-img-div a:visited {
+.day-text-div a:visited {
   text-decoration: none;
   color: #d1495b;
 }
 
-.day-img-div a:hover {
+.day-text-div a:hover {
   text-decoration: underline;
   color: gainsboro;
 }
 
-.day-img-div a:focus {
+.day-text-div a:focus {
   text-decoration: underline;
   color: silver;
 }
 
-.day-img-div a:active {
+.day-text-div a:active {
   text-decoration: underline;
   color: silver;
 }

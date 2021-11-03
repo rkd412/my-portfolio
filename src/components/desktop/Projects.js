@@ -44,16 +44,6 @@ const Projects = () => {
               id="https://wonderful-ptolemy-65f598.netlify.app/"
             />
           </div>{" "}
-          <div>
-            <a
-              aria-label="Outdoor E-Commerce Repository"
-              href="https://github.com/rkd412/outdoor-ecommerce"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Source Code
-            </a>
-          </div>
         </div>
 
         <div
@@ -62,11 +52,24 @@ const Projects = () => {
           }
         >
           <ul>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Material UI</li>
+            <li>Built with CSS, HTML, Javascript, React, and MaterialUI</li>
+
+            <li>
+              Outdoor E-Commerce site that includes a functioning cart and
+              products page.
+            </li>
+            <li>
+              See source code{" "}
+              <a
+                aria-label="Outdoor E-Commerce Repository"
+                href="https://github.com/rkd412/outdoor-ecommerce"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here
+              </a>
+              .
+            </li>
           </ul>
         </div>
       </Fade>
@@ -78,11 +81,22 @@ const Projects = () => {
           }
         >
           <ul>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Material UI</li>
+            <li>Built with HTML, CSS, Javascript, React, MaterialUI</li>
+            <li>
+              Security API app that includes 3 different functioning APIs.
+            </li>
+            <li>
+              See source code{" "}
+              <a
+                aria-label="Security API App repository"
+                href="https://github.com/rkd412/security-api-app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here
+              </a>
+              .
+            </li>
           </ul>
         </div>
 
@@ -106,17 +120,6 @@ const Projects = () => {
               id="https://infallible-khorana-72773f.netlify.app/"
             />
           </div>
-          <div>
-            {" "}
-            <a
-              aria-label="Security API App repository"
-              href="https://github.com/rkd412/security-api-app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Source Code
-            </a>
-          </div>
         </div>
       </Fade>
 
@@ -126,23 +129,21 @@ const Projects = () => {
             theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
           }
         >
-         <div> <h1>Monty Hall Game App</h1></div>
-         <div> <img
-            className={styles["image"]}
-            loading="lazy"
-            src={MontyHall}
-            alt="Monty Hall Game"
-            onClick={clickHandler}
-            id="https://eloquent-clarke-721698.netlify.app/"
-          /></div>
-          <div><a
-            aria-label="Monty Hall Repository"
-            href="https://github.com/rkd412/monty-hall"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Source Code
-          </a></div>
+          <div>
+            {" "}
+            <h1>Monty Hall Game App</h1>
+          </div>
+          <div>
+            {" "}
+            <img
+              className={styles["image"]}
+              loading="lazy"
+              src={MontyHall}
+              alt="Monty Hall Game"
+              onClick={clickHandler}
+              id="https://eloquent-clarke-721698.netlify.app/"
+            />
+          </div>
         </div>
 
         <div
@@ -151,10 +152,20 @@ const Projects = () => {
           }
         >
           <ul>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Javascript</li>
-            <li>React</li>
+            <li>Built with CSS, HTML, Javascript, and React</li>
+            <li>Simple game illustrating the Monty Hall problem.</li>{" "}
+            <li>
+              View source code{" "}
+              <a
+                aria-label="Monty Hall Repository"
+                href="https://github.com/rkd412/monty-hall"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here
+              </a>
+              .
+            </li>
           </ul>
         </div>
       </Fade>
