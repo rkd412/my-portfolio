@@ -59,7 +59,7 @@ const Projects = () => {
               products page.
             </li>
             <li>
-              See source code{" "}
+              View source code{" "}
               <a
                 aria-label="Outdoor E-Commerce Repository"
                 href="https://github.com/rkd412/outdoor-ecommerce"
@@ -86,7 +86,7 @@ const Projects = () => {
               Security API app that includes 3 different functioning APIs.
             </li>
             <li>
-              See source code{" "}
+              View source code{" "}
               <a
                 aria-label="Security API App repository"
                 href="https://github.com/rkd412/security-api-app"

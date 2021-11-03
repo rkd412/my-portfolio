@@ -116,7 +116,7 @@ const NavBar = () => {
                 selected === "aboutnav" ? styles["selected"] : styles[""]
               }
             >
-              about
+              About
             </a>
           </li>
           <li>
@@ -128,7 +128,7 @@ const NavBar = () => {
                 selected === "projectsnav" ? styles["selected"] : styles[""]
               }
             >
-              projects
+              Projects
             </a>
           </li>
           <li>
@@ -140,7 +140,7 @@ const NavBar = () => {
                 selected === "contactnav" ? styles["selected"] : styles[""]
               }
             >
-              contact
+              Contact
             </a>
           </li>
           <li
