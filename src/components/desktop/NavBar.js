@@ -5,8 +5,8 @@ import { ThemeContext } from "../../context";
 
 import { FaMoon, FaSun, FaChevronDown } from "react-icons/fa";
 
-import Zara from "../../assets/Zara.png";
-import ZaraWink from "../../assets/Zara-Wink.png";
+import Zara from "../../assets/Zara.webp";
+import ZaraWink from "../../assets/Zara-Wink.webp";
 
 import styles from "./NavBar.module.css";
 

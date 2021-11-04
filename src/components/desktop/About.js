@@ -3,10 +3,10 @@ import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
-import night from "../../assets/me-night.jpg";
-import zaraNight from "../../assets/me-zara-night.jpg";
-import day from "../../assets/me-day.jpg";
-import zaraDay from "../../assets/me-zara-day.jpg";
+import night from "../../assets/me-night.webp";
+import zaraNight from "../../assets/me-zara-night.webp";
+import day from "../../assets/me-day.webp";
+import zaraDay from "../../assets/me-zara-day.webp";
 
 import styles from "./About.module.css";
 

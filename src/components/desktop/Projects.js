@@ -4,9 +4,9 @@ import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
-import ECommerce from "../../assets/ECommerce.jpg";
-import SecurityApp from "../../assets/SecurityApp.jpg";
-import MontyHall from "../../assets/MontyHall.jpg";
+import ECommerce from "../../assets/ECommerce.webp";
+import SecurityApp from "../../assets/SecurityApp.webp";
+import MontyHall from "../../assets/MontyHall.webp";
 
 import styles from "./Projects.module.css";
 

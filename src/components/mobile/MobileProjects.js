@@ -5,10 +5,10 @@ import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
-import ECommerce from "../../assets/ECommerce.jpg";
-import SecurityApp from "../../assets/SecurityApp.jpg";
-import MontyHall from "../../assets/MontyHall.jpg";
-import ComingSoon from "../../assets/ComingSoon.jpg";
+import ECommerce from "../../assets/ECommerce.webp";
+import SecurityApp from "../../assets/SecurityApp.webp";
+import MontyHall from "../../assets/MontyHall.webp";
+import ComingSoon from "../../assets/ComingSoon.webp";
 
 import styles from "./MobileProjects.module.css";
 
