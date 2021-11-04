@@ -50,7 +50,7 @@ const MobileNavBar = () => {
     }, 4600);
     setTimeout(() => {
       setZaraIcon(Zara);
-    }, 6000);
+    }, 5100);
     setTimeout(() => {
       setIsButtonDisabled(false);
       setIsAnimated(false);

@@ -223,6 +223,13 @@
     width: 50vh;
   }
 
+  52% {
+    transform: translateX(50%);
+    transform: translateY(50%);
+    height: 75vh;
+    width: 50vh;
+  }
+
   75% {
     right: 0;
     transform: translateX(-500%);

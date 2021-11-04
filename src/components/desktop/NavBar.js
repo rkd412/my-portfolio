@@ -59,7 +59,7 @@ const NavBar = () => {
     }, 4600);
     setTimeout(() => {
       setZaraIcon(Zara);
-    }, 6000);
+    }, 5100);
     setTimeout(() => {
       setIsButtonDisabled(false);
       setIsAnimated(false);
@@ -71,7 +71,7 @@ const NavBar = () => {
   });
 
   var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
+  window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("nav-bar").style.top = "0";
@@ -81,7 +81,7 @@ const NavBar = () => {
       document.getElementById("cat-icon").style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
-  }
+  };
 
   return (
     <Fade top>
@@ -90,6 +90,7 @@ const NavBar = () => {
         className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
       >
         <ul>
+          
           <button
             className={isAnimated ? styles["animated"] : styles[""]}
             onClick={isAnimatedHandler}
@@ -97,8 +98,8 @@ const NavBar = () => {
             aria-label="icon animator"
           >
             <img
-            id="cat-icon"
-            aria-label="Cat Icon Animation"
+              id="cat-icon"
+              aria-label="Cat Icon Animation"
               src={zaraIcon}
               alt="cat icon"
               loading="lazy"
@@ -107,9 +108,10 @@ const NavBar = () => {
               }
             />
           </button>
+          
           <li>
             <a
-            aria-label="About Section"
+              aria-label="About Section"
               id="aboutnav"
               href="#about"
               className={
@@ -121,30 +123,29 @@ const NavBar = () => {
           </li>
           <li>
             <a
-            aria-label="Project Section"
+              aria-label="Project Section"
               id="projectsnav"
               href="#projects"
               className={
                 selected === "projectsnav" ? styles["selected"] : styles[""]
               }
             >
-             PROJECTS
+              PROJECTS
             </a>
           </li>
           <li>
             <a
-            aria-label="Contact Section"
+              aria-label="Contact Section"
               id="contactnav"
               href="#contact"
               className={
                 selected === "contactnav" ? styles["selected"] : styles[""]
               }
             >
-             CONTACT
+              CONTACT
             </a>
           </li>
           <li
-          
             className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
             onClick={themeToggleHandler}
           >
