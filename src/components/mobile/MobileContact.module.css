@@ -1,9 +1,10 @@
 .night-contact {
-  background: #141852;
+  background: #343a40;
   color: #e0e1dd;
   height: 100vh;
   width: 100%;
   text-align: center;
+  transition: 0.8s;
 }
 
 .day-contact {
@@ -12,6 +13,7 @@
   height: 100vh;
   width: 100%;
   text-align: center;
+  transition: 0.8s;
 }
 
 .night-contact a:link {

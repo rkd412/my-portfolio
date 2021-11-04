@@ -117,7 +117,7 @@ const MobileNavBar = () => {
           <Fade right>
             <div
               className={
-                isNight ? styles["day-nav-back"] : styles["night-nav-back"]
+                isNight ? styles["night-nav-back"] : styles["day-nav-back"]
               }
               onClick={mobileMenuToggleHandler}
             ></div>
@@ -138,7 +138,7 @@ const MobileNavBar = () => {
                   }
                   href="#mobileabout"
                 >
-                  About
+                  ABOUT
                 </a>
               </li>
               <li className={styles["nav-item"]}>
@@ -148,7 +148,7 @@ const MobileNavBar = () => {
                   }
                   href="#mobileprojects"
                 >
-                  Projects
+                  PROJECTS
                 </a>
               </li>
               <li className={styles["nav-item"]}>
@@ -158,7 +158,7 @@ const MobileNavBar = () => {
                   }
                   href="#mobilecontact"
                 >
-                  Contact
+                  CONTACT
                 </a>
               </li>{" "}
               <li

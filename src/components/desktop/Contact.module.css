@@ -1,3 +1,24 @@
+.night-contact {
+  background: #343a40;
+  color: #e0e1dd;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  transition: 0.8s;
+  scroll-margin-top: -8vh;
+  
+}
+
+.day-contact {
+  background: #ececeb;
+  color: #080808;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  transition: 0.8s;
+}
+
+
 .night-email-button {
   user-select: default;
   cursor: pointer;
@@ -31,35 +52,16 @@
 }
 
 .contact-text {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   padding-top: 40vh;
   margin: 0vh 5vw 0vh 5vw;
 }
 
 .contact-links {
-  font-size: 3em;
+  font-size: 3rem;
   cursor: pointer;
   display: inline-block;
   margin: 10vh 2vw 0vh 2vw;
-}
-
-.night-contact {
-  background: #141852;
-  color: #e0e1dd;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-  transition: 0.8s;
-  scroll-margin-top: -8vh;
-}
-
-.day-contact {
-  background: #ececeb;
-  color: #080808;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-  transition: 0.8s;
 }
 
 .night-contact a:link {

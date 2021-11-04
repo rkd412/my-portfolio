@@ -1,5 +1,5 @@
 .night-nav-bar {
-  background: #050827;
+  background: #1d3557;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -7,7 +7,7 @@
   height: 8vh;
   width: 100%;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   box-shadow: 0 5px 4px -1px rgba(0, 0, 0, 0.25);
   transition: 0.8s;
 }
@@ -68,7 +68,7 @@
   height: 8vh;
   width: 100%;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   box-shadow: 0 5px 4px -1px rgba(0, 0, 0, 0.25);
   transition: 0.8s;
 }
@@ -177,7 +177,7 @@
   bottom: 0px;
   right: 50vw;
   color: #d1495b;
-  font-size: 3em;
+  font-size: 3rem;
   z-index: 9998;
 }
 
@@ -201,7 +201,7 @@
   bottom: 0px;
   right: 50vw;
   color: #d1495b;
-  font-size: 3em;
+  font-size: 3rem;
   z-index: 9998;
 }
 

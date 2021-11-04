@@ -42,6 +42,7 @@ const About = () => {
     >
       <Fade left>
         <div className={styles["about-text"]}>
+        
           <p>
             Welcome! My name is Rob and I am a web developer. I am self-taught
             and dabble mostly in React. Currently, I am learning Nodejs,

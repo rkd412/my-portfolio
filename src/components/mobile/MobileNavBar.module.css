@@ -1,4 +1,17 @@
 .night-nav-back {
+  background: rgba(29, 53, 87, 0.95);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+}
+
+.day-nav-back {
   background: rgba(48, 99, 142, 0.95);
   width: 100vw;
   height: 100vh;
@@ -8,18 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.day-nav-back {
-  background: rgba(0, 0, 34, 0.95);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  transition: 0.8s;
 }
 
 .day-hamburger {
@@ -32,6 +34,7 @@
   z-index: 9999;
   font-size: 2em;
   color: gainsboro;
+  transition: 0.8s;
 }
 
 .night-hamburger {
@@ -44,6 +47,7 @@
   z-index: 9999;
   font-size: 2em;
   color: #ffffff;
+  transition: 0.8s;
 }
 
 .night-nav-bar {
@@ -113,6 +117,7 @@
   cursor: pointer;
   font-size: 2em;
   padding: 1vw;
+  transition: 0.8s;
 }
 
 .night-toggle:hover {
@@ -125,6 +130,7 @@
   cursor: pointer;
   font-size: 2em;
   padding: 1vw;
+  transition: 0.8s;
 }
 .day-toggle:hover {
   text-decoration: none;
@@ -138,7 +144,7 @@
 .night-scroll {
   position: fixed;
   bottom: 0px;
-  right: 45%;
+  right: 43%;
   color: #d1495b;
   font-size: 3em;
   z-index: 9999;
