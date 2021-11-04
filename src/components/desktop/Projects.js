@@ -59,8 +59,9 @@ const Projects = () => {
               products page.
             </li>
             <li>
-              View source code{" "}
+              Source code{" "}
               <a
+              
                 aria-label="Outdoor E-Commerce Repository"
                 href="https://github.com/rkd412/outdoor-ecommerce"
                 target="_blank"
