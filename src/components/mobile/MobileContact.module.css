@@ -1,6 +1,6 @@
 .night-contact {
   background: #343a40;
-  color: #e0e1dd;
+  color: #ffffff;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -18,13 +18,13 @@
 
 .night-contact a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .night-contact a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .night-contact a:active {
@@ -34,13 +34,13 @@
 
 .day-contact a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .day-contact a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .day-contact a:active {
@@ -50,7 +50,7 @@
 
 .email-button {
   user-select: default;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .contact-text {

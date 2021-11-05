@@ -8,7 +8,7 @@
 }
 
 .day-about {
-  background: #ECECEB;
+  background: #ececeb;
   color: #080808;
   height: 100vh;
   width: 100%;
@@ -17,15 +17,23 @@
   transition: 0.8s;
 }
 
+.day-about h4 {
+  color: #696969;
+}
+
+.night-about h4 {
+  color: #c0c0c0;
+}
+
 .night-about a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .night-about a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .night-about a:hover {
@@ -45,13 +53,13 @@
 
 .day-about a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .day-about a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .day-about a:hover {
@@ -92,15 +100,38 @@
 }
 
 .night-about-text {
-  margin: 3vh 9vw 3vh 9vw;
-  font-size: 1.25em;
+  margin: 5vh 9vw 3vh 9vw;
   text-align: justify;
   color: #f8f8ff;
 }
 
+.night-about-text h2 {
+  margin: 2vh 0vh 5vh 0vh;
+}
+
 .day-about-text {
-  margin: 3vh 9vw 3vh 9vw;
-  font-size: 1.25em;
+  margin: 5vh 9vw 3vh 9vw;
   text-align: justify;
   color: #080808;
+}
+
+.day-about-text h2 {
+  margin: 2vh 0vh 5vh 0vh;
+}
+
+.night-zara-image {
+  height: 1.5em;
+  width: 1.125em;
+  filter: invert(100%);
+  transition: 0.8s;
+  cursor: pointer;
+  margin-left: 2vw;
+}
+
+.day-zara-image {
+  height: 1.5em;
+  width: 1.125em;
+  transition: 0.8s;
+  cursor: pointer;
+  margin-left: 0vw;
 }

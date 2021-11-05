@@ -1,6 +1,7 @@
 .night-project-box {
   background: #495057;
   height: 300vh;
+  width: 100vw;
   width: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,11 +23,11 @@
   background: #f2f3f2;
   color: #080808;
   height: 300vh;
+  width: 100vw;
   width: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 100px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.8s;
   scroll-margin-top: -8vh;
   padding: 20vh;
@@ -45,28 +46,28 @@
 
 .night-text-div a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .night-text-div a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .night-text-div a:hover {
   text-decoration: underline;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .night-text-div a:focus {
   text-decoration: underline;
-  color: gainsboro;
+  color: #FFFFFF;
 }
 
 .night-text-div a:active {
   text-decoration: underline;
-  color: gainsboro;
+  color: #FFFFFF;
 }
 
 .day-img-div {
@@ -81,32 +82,32 @@
 
 .day-text-div a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .day-text-div a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .day-text-div a:hover {
   text-decoration: underline;
-  color: gainsboro;
+  color: #080808;
 }
 
 .day-text-div a:focus {
   text-decoration: underline;
-  color: silver;
+  color: #080808;
 }
 
 .day-text-div a:active {
   text-decoration: underline;
-  color: silver;
+  color: #080808;
 }
 
 .night-text-div {
-  color: #ffffff;
+  color: #C0C0C0;
   display: flex;
   justify-content: center;
   line-height: 60px;
@@ -114,7 +115,7 @@
 }
 
 .day-text-div {
-  color: #080808;
+  color: #696969;
   display: flex;
   justify-content: center;
   line-height: 60px;

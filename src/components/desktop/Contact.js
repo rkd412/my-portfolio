@@ -27,7 +27,7 @@ const Contact = () => {
     >
       <Fade bottom>
         <div className={styles["contact-text"]}>
-          <p>
+          <h1>
             Email me at{" "}
             <button
               className={
@@ -43,7 +43,7 @@ const Contact = () => {
             </button>{" "}
             with work opportunities and check out my links below. Thanks for
             visiting!
-          </p>
+          </h1>
         </div>
         <div className={styles["contact-links"]}>
           <a

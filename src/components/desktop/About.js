@@ -7,12 +7,17 @@ import night from "../../assets/me-night.webp";
 import zaraNight from "../../assets/me-zara-night.webp";
 import day from "../../assets/me-day.webp";
 import zaraDay from "../../assets/me-zara-day.webp";
+import Zara from "../../assets/Zara.webp";
+import ZaraWink from "../../assets/Zara-Wink.webp";
 
 import styles from "./About.module.css";
 
 const About = () => {
   const theme = useContext(ThemeContext);
 
+  const [isAnimated, setIsAnimated] = useState(false);
+  const [zaraIcon, setZaraIcon] = useState(Zara);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [count, setCount] = useState(0);
   const [image, setImage] = useState(night);
 
@@ -35,6 +40,21 @@ const About = () => {
     }
   }, [theme.isNight, count]);
 
+  const isAnimatedHandler = () => {
+    setIsAnimated(isAnimated === true ? false : true);
+    setIsButtonDisabled(true);
+    setTimeout(() => {
+      setZaraIcon(ZaraWink);
+    }, 500);
+    setTimeout(() => {
+      setZaraIcon(Zara);
+    }, 1000);
+    setTimeout(() => {
+      setIsButtonDisabled(false);
+      setIsAnimated(false);
+    }, 1500);
+  };
+
   return (
     <div
       id="about"
@@ -42,12 +62,30 @@ const About = () => {
     >
       <Fade left>
         <div className={styles["about-text"]}>
-        
-          <p>
-            Welcome! My name is Rob and I am a web developer. I am self-taught
-            and dabble mostly in React. Currently, I am learning Nodejs,
-            Express, and MongoDB to complete the MERN stack. Feel free to check
-            out my{" "}
+          <h1>Welcome!{" "}
+          <button
+            className={isAnimated ? styles["animated"] : styles[""]}
+            onClick={isAnimatedHandler}
+            disabled={isButtonDisabled}
+            aria-label="icon animator"
+          >
+            <img
+              id="cat-icon"
+              aria-label="Cat Icon Animation"
+              src={zaraIcon}
+              alt="cat icon"
+              loading="lazy"
+              className={
+                theme.isNight ? styles["night-zara-image"] : styles["day-zara-image"]
+              }
+            />
+          </button>{" "}
+          </h1>
+          <h2>My name is Rob and I am a web developer.</h2>
+          <h4>
+            I am self-taught and dabble mostly in React. Currently, I am
+            learning Nodejs, Express, and MongoDB to complete the MERN stack.
+            Feel free to check out my{" "}
             <a aria-label="Projects Section" id="projectsnav" href="#projects">
               projects
             </a>{" "}
@@ -92,7 +130,7 @@ const About = () => {
               LinkedIn
             </a>{" "}
             as well. Thanks!
-          </p>
+          </h4>
         </div>
       </Fade>
 

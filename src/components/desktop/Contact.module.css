@@ -1,28 +1,24 @@
 .night-contact {
   background: #343a40;
-  color: #e0e1dd;
+  color: #ffffff;
   height: 100vh;
-  width: 100%;
   text-align: center;
   transition: 0.8s;
   scroll-margin-top: -8vh;
-  
 }
 
 .day-contact {
   background: #ececeb;
   color: #080808;
   height: 100vh;
-  width: 100%;
   text-align: center;
   transition: 0.8s;
 }
 
-
 .night-email-button {
   user-select: default;
   cursor: pointer;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .night-email-button:hover {
@@ -38,21 +34,20 @@
 .day-email-button {
   user-select: default;
   cursor: pointer;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .day-email-button:hover {
   text-decoration: underline;
-  color: gainsboro;
+  color: #080808;
 }
 
 .day-email-button:active {
   text-decoration: underline;
-  color: silver;
+  color: #080808;
 }
 
 .contact-text {
-  font-size: 2.5rem;
   padding-top: 40vh;
   margin: 0vh 5vw 0vh 5vw;
 }
@@ -66,14 +61,14 @@
 
 .night-contact a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
-  filter: drop-shadow(1px 1px 1px #d1495b);
+  filter: drop-shadow(1px 1px 1px #30638e);
 }
 
 .night-contact a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .night-contact a:hover {
@@ -84,38 +79,38 @@
 
 .night-contact a:focus {
   text-decoration: underline;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .night-contact a:active {
   text-decoration: underline;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .day-contact a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
-  filter: drop-shadow(1px 1px 1px #d1495b);
+  filter: drop-shadow(1px 1px 1px #30638e);
 }
 
 .day-contact a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .day-contact a:hover {
   text-decoration: underline;
-  color: gainsboro;
+  color: #080808;
   transform: scale(1.1);
 }
 
 .day-contact a:focus {
   text-decoration: underline;
-  color: silver;
+  color: #080808;
 }
 
 .day-contact a:active {
   text-decoration: underline;
-  color: silver;
+  color: #080808;
 }

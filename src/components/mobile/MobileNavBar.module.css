@@ -1,5 +1,5 @@
 .night-nav-back {
-  background: rgba(29, 53, 87, 0.95);
+  background: rgba(44, 44, 44, 0.95);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -12,7 +12,7 @@
 }
 
 .day-nav-back {
-  background: rgba(48, 99, 142, 0.95);
+  background: rgba(200, 200, 200, 0.95);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -33,7 +33,7 @@
   text-align: center;
   z-index: 9999;
   font-size: 2em;
-  color: gainsboro;
+  color: #080808;
   transition: 0.8s;
 }
 
@@ -92,24 +92,24 @@
 
 .night-nav-bar a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .night-nav-bar a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .day-nav-bar a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .day-nav-bar a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .night-toggle {
@@ -145,7 +145,7 @@
   position: fixed;
   bottom: 0px;
   right: 43%;
-  color: #d1495b;
+  color: #30638e;
   font-size: 3em;
   z-index: 9999;
 }
@@ -159,7 +159,7 @@
   position: fixed;
   bottom: 0px;
   right: 43%;
-  color: #d1495b;
+  color: #30638e;
   font-size: 3em;
   z-index: 9999;
 }
@@ -198,44 +198,4 @@
 
 .day-zara-image:hover {
   cursor: pointer;
-}
-
-.animated img {
-  position: fixed;
-  animation: Logo 10s 1;
-  z-index: 9999;
-}
-
-@keyframes Logo {
-  0% {
-    right: 0;
-    transform: translateX(0%);
-  }
-  25% {
-    right: 0;
-    transform: translateX(-500%);
-  }
-  50% {
-    right: 0;
-    transform: translateX(50%);
-    transform: translateY(50%);
-    height: 75vh;
-    width: 50vh;
-  }
-
-  52% {
-    transform: translateX(50%);
-    transform: translateY(50%);
-    height: 75vh;
-    width: 50vh;
-  }
-
-  75% {
-    right: 0;
-    transform: translateX(-500%);
-  }
-  100% {
-    right: 0;
-    transform: translateX(0%);
-  }
 }

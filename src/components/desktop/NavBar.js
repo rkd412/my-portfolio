@@ -5,8 +5,6 @@ import { ThemeContext } from "../../context";
 
 import { FaMoon, FaSun, FaChevronDown } from "react-icons/fa";
 
-import Zara from "../../assets/Zara.webp";
-import ZaraWink from "../../assets/Zara-Wink.webp";
 
 import styles from "./NavBar.module.css";
 
@@ -16,9 +14,7 @@ const NavBar = () => {
 
   const [selected, setSelected] = useState("aboutnav");
   const [isVisible, setIsVisible] = useState(true);
-  const [isAnimated, setIsAnimated] = useState(false);
-  const [zaraIcon, setZaraIcon] = useState(Zara);
-  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
   /*handler for night and day theme toggler*/
   const themeToggleHandler = (e) => {
     e.preventDefault();
@@ -51,21 +47,6 @@ const NavBar = () => {
     }
   };
 
-  const isAnimatedHandler = () => {
-    setIsAnimated(isAnimated === true ? false : true);
-    setIsButtonDisabled(true);
-    setTimeout(() => {
-      setZaraIcon(ZaraWink);
-    }, 4600);
-    setTimeout(() => {
-      setZaraIcon(Zara);
-    }, 5100);
-    setTimeout(() => {
-      setIsButtonDisabled(false);
-      setIsAnimated(false);
-    }, 10000);
-  };
-
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
   });
@@ -75,10 +56,8 @@ const NavBar = () => {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("nav-bar").style.top = "0";
-      document.getElementById("cat-icon").style.top = "0";
     } else {
       document.getElementById("nav-bar").style.top = "-100px";
-      document.getElementById("cat-icon").style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
   };
@@ -90,25 +69,6 @@ const NavBar = () => {
         className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
       >
         <ul>
-          
-          <button
-            className={isAnimated ? styles["animated"] : styles[""]}
-            onClick={isAnimatedHandler}
-            disabled={isButtonDisabled}
-            aria-label="icon animator"
-          >
-            <img
-              id="cat-icon"
-              aria-label="Cat Icon Animation"
-              src={zaraIcon}
-              alt="cat icon"
-              loading="lazy"
-              className={
-                isNight ? styles["night-zara-image"] : styles["day-zara-image"]
-              }
-            />
-          </button>
-          
           <li>
             <a
               aria-label="About Section"

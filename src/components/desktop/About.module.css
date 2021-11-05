@@ -2,37 +2,43 @@
   background: #343a40;
   color: #ffffff;
   height: 100vh;
-  width: 100%;
   transition: 0.8s;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10vw;
-  padding: 200px;
-  margin: -200px;
+  padding-top: 200px;
+  margin-top: -200px;
+}
+
+.night-about h4 {
+  color: #C0C0C0;
 }
 
 .day-about {
   background: #ececeb;
   color: #080808;
   height: 100vh;
-  width: 100%;
   transition: 0.8s;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10vw;
-  padding: 200px;
-  margin: -200px;
+  padding-top: 200px;
+  margin-top: -200px;
+}
+
+.day-about h4 {
+  color: #696969;
 }
 
 .night-about a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .night-about a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .night-about a:hover {
@@ -42,38 +48,38 @@
 
 .night-about a:focus {
   text-decoration: underline;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .night-about a:active {
   text-decoration: underline;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .day-about a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .day-about a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .day-about a:hover {
   text-decoration: underline;
-  color: gainsboro;
+  color: #080808;
 }
 
 .day-about a:focus {
   text-decoration: underline;
-  color: silver;
+  color: #080808;
 }
 
 .day-about a:active {
   text-decoration: underline;
-  color: silver;
+  color: #080808;
 }
 
 .about-text {
@@ -83,14 +89,17 @@
   width: 50vw;
   height: 50vh;
   margin: 15vh 0vw 0vh 5vw;
-  display: flex;
-  align-items: center;
+  line-height: 5vh;
+}
+
+.about-text h2 {
+  margin: 3vh 0vh 5vh 0vh;
 }
 
 .about-img {
   width: 20vw;
   height: 50vh;
-  margin: 12vh 0vw 0vh 0vw;
+  margin: 15vh 0vw 0vh 0vw;
   transition: 0.8s;
   display: flex;
   align-items: center;
@@ -121,3 +130,22 @@
 .day-image:hover {
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
 }
+
+.night-zara-image {
+  height: 1.5em;
+  width: 1.125em;
+  filter: invert(100%);
+  transition: 0.8s;
+  cursor: pointer;
+  margin-left: 2vw;
+
+}
+
+.day-zara-image {
+  height: 1.5em;
+  width: 1.125em;
+  transition: 0.8s;
+  cursor: pointer;
+  margin-left: 2vw;
+}
+

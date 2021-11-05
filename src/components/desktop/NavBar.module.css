@@ -1,14 +1,11 @@
 .night-nav-bar {
-  background: #1d3557;
   position: sticky;
   top: 0;
   z-index: 9999;
   line-height: 8vh;
   height: 8vh;
-  width: 100%;
   text-align: center;
-  font-size: 2.5rem;
-  box-shadow: 0 5px 4px -1px rgba(0, 0, 0, 0.25);
+  font-size: 2rem;
   transition: 0.8s;
 }
 
@@ -20,7 +17,7 @@
 .night-nav-bar ul li {
   display: inline;
   box-sizing: border-box;
-  margin-left: 10vw;
+  margin-left: 5vw;
   transition: all 0.2s ease-in-out;
 }
 
@@ -34,13 +31,13 @@
 
 .night-nav-bar a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .night-nav-bar a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .night-nav-bar a:hover {
@@ -51,25 +48,22 @@
 
 .night-nav-bar a:focus {
   text-decoration: underline;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .night-nav-bar a:active {
   text-decoration: underline;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .day-nav-bar {
-  background: #30638e;
   position: sticky;
   top: 0;
   z-index: 9999;
   line-height: 8vh;
   height: 8vh;
-  width: 100%;
   text-align: center;
-  font-size: 2.5rem;
-  box-shadow: 0 5px 4px -1px rgba(0, 0, 0, 0.25);
+  font-size: 2rem;
   transition: 0.8s;
 }
 
@@ -81,7 +75,7 @@
 .day-nav-bar ul li {
   display: inline;
   box-sizing: border-box;
-  margin-left: 10vw;
+  margin-left: 5vw;
   transition: all 0.2s ease-in-out;
 }
 
@@ -95,29 +89,29 @@
 
 .day-nav-bar a:link {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
   outline: none;
 }
 
 .day-nav-bar a:visited {
   text-decoration: none;
-  color: #d1495b;
+  color: #30638e;
 }
 
 .day-nav-bar a:hover {
   text-decoration: underline;
-  color: gainsboro;
+  color: #080808;
   transform: scale(1.1);
 }
 
 .day-nav-bar a:focus {
   text-decoration: underline;
-  color: silver;
+  color: #080808;
 }
 
 .day-nav-bar a:active {
   text-decoration: underline;
-  color: silver;
+  color: #080808;
 }
 
 .night-toggle {
@@ -135,12 +129,12 @@
 
 .night-toggle:active {
   text-decoration: none;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .night-toggle:focus {
   text-decoration: none;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .day-toggle {
@@ -152,18 +146,18 @@
 
 .day-toggle:hover {
   text-decoration: none;
-  color: gainsboro;
+  color: #080808;
   transform: scale(1.1);
 }
 
 .day-toggle:active {
   text-decoration: none;
-  color: silver;
+  color: #080808;
 }
 
 .day-toggle:focus {
   text-decoration: none;
-  color: silver;
+  color: #080808;
 }
 
 /* Don't judge my use of !important....*/
@@ -176,7 +170,7 @@
   position: fixed;
   bottom: 0px;
   right: 50vw;
-  color: #d1495b;
+  color: #30638e;
   font-size: 3rem;
   z-index: 9998;
 }
@@ -188,92 +182,37 @@
 
 .night-scroll:active {
   cursor: pointer;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .night-scroll:focus {
   cursor: pointer;
-  color: gainsboro;
+  color: #ffffff;
 }
 
 .day-scroll {
   position: fixed;
   bottom: 0px;
   right: 50vw;
-  color: #d1495b;
+  color: #30638e;
   font-size: 3rem;
   z-index: 9998;
 }
 
 .day-scroll:hover {
   cursor: pointer;
-  color: gainsboro;
+  color: #080808;
 }
 
 .day-scroll:active {
   cursor: pointer;
-  color: silver;
+  color: #080808;
 }
 
 .day-scroll:focus {
   cursor: pointer;
-  color: silver;
+  color: #080808;
 }
 .invisible {
   opacity: 0;
-}
-
-.night-zara-image {
-  height: 1.5em;
-  width: 1.125em;
-  filter: invert(100%);
-  left: 1%;
-  top: 0.5%;
-  transition: 0.8s;
-  cursor: pointer;
-  position: absolute;
-}
-
-.day-zara-image {
-  height: 1.5em;
-  width: 1.125em;
-  position: absolute;
-  left: 1%;
-  top: 0.5%;
-  transition: 0.8s;
-  cursor: pointer;
-  position: absolute;
-}
-
-.animated img {
-  animation: Logo 10s 1;
-}
-
-@keyframes Logo {
-  0% {
-    transform: translateX(0%);
-  }
-  25% {
-    transform: translateX(-1000%);
-  }
-  50% {
-    transform: translateX(100%);
-    transform: translateY(40%);
-    height: 100vh;
-    width: 75vh;
-  }
-
-  52% {
-    transform: translateX(100%);
-    transform: translateY(40%);
-    height: 100vh;
-    width: 75vh;
-  }
-
-  75% {
-    transform: translateX(-500%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
 }

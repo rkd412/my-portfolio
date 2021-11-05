@@ -7,6 +7,8 @@ import night from "../../assets/me-night.webp";
 import zaraNight from "../../assets/me-zara-night.webp";
 import day from "../../assets/me-day.webp";
 import zaraDay from "../../assets/me-zara-day.webp";
+import Zara from "../../assets/Zara.webp";
+import ZaraWink from "../../assets/Zara-Wink.webp";
 
 import styles from "./MobileAbout.module.css";
 
@@ -15,9 +17,27 @@ const MobileAbout = () => {
 
   const [count, setCount] = useState(0);
   const [image, setImage] = useState(night);
+  const [isAnimated, setIsAnimated] = useState(false);
+  const [zaraIcon, setZaraIcon] = useState(Zara);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const clickHandler = () => {
     setCount(count + 1);
+  };
+
+  const isAnimatedHandler = () => {
+    setIsAnimated(isAnimated === true ? false : true);
+    setIsButtonDisabled(true);
+    setTimeout(() => {
+      setZaraIcon(ZaraWink);
+    }, 500);
+    setTimeout(() => {
+      setZaraIcon(Zara);
+    }, 1000);
+    setTimeout(() => {
+      setIsButtonDisabled(false);
+      setIsAnimated(false);
+    }, 1500);
   };
 
   /*Click my photo to meet my cat Zarathustra!*/
@@ -65,50 +85,71 @@ const MobileAbout = () => {
         >
           {" "}
           <p>
-            Welcome! My name is Rob and I am a web developer. I am self-taught
-            and dabble mostly in React. Currently, I am learning Nodejs,
-            Express, and MongoDB to complete the MERN stack. Feel free to check
-            out my{" "}
-            <a id="mobileprojectsnav" href="#mobileprojects">
-              projects
-            </a>{" "}
-            below or reach out to me through the{" "}
-            <a id="mobilecontactnav" href="#mobilecontact">
-              contact
-            </a>{" "}
-            section. Also, visit my{" "}
-            <a
-              href="https://github.com/rkd412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>{" "}
-            to see what I've been working on or my{" "}
-            <a
-              href="https://codepen.io/rkd412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Codepen
-            </a>{" "}
-            page for older projects I did for{" "}
-            <a
-              href="https://www.freecodecamp.org/rkd412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              FreeCodeCamp{" "}
-            </a>{" "}
-            . Feel free to say hello on{" "}
-            <a
-              href="https://linkedin.com/in/robert-davis-b72893217"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>{" "}
-            as well. Thanks!
+            <h1>
+              Welcome!{" "}
+              <button
+                className={isAnimated ? styles["animated"] : styles[""]}
+                onClick={isAnimatedHandler}
+                disabled={isButtonDisabled}
+                aria-label="icon animator"
+              >
+                <img
+                  src={zaraIcon}
+                  alt="cat icon"
+                  className={
+                    theme.isNight
+                      ? styles["night-zara-image"]
+                      : styles["day-zara-image"]
+                  }
+                />
+              </button>
+            </h1>{" "}
+            <h2>My name is Rob and I am a web developer.</h2>{" "}
+            <h4>
+              I am self-taught and dabble mostly in React. Currently, I am
+              learning Nodejs, Express, and MongoDB to complete the MERN stack.
+              Feel free to check out my{" "}
+              <a id="mobileprojectsnav" href="#mobileprojects">
+                projects
+              </a>{" "}
+              below or reach out to me through the{" "}
+              <a id="mobilecontactnav" href="#mobilecontact">
+                contact
+              </a>{" "}
+              section. Also, visit my{" "}
+              <a
+                href="https://github.com/rkd412"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github
+              </a>{" "}
+              to see what I've been working on or my{" "}
+              <a
+                href="https://codepen.io/rkd412"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Codepen
+              </a>{" "}
+              page for older projects I did for{" "}
+              <a
+                href="https://www.freecodecamp.org/rkd412"
+                target="_blank"
+                rel="noreferrer"
+              >
+                FreeCodeCamp{" "}
+              </a>{" "}
+              . Feel free to say hello on{" "}
+              <a
+                href="https://linkedin.com/in/robert-davis-b72893217"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>{" "}
+              as well. Thanks!
+            </h4>
           </p>
         </div>
       </Fade>
