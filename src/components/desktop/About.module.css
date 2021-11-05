@@ -88,7 +88,7 @@
   text-align: justify;
   width: 50vw;
   height: 50vh;
-  margin: 15vh 0vw 0vh 5vw;
+  margin: 15vh 0vw 0vh 8vw;
   line-height: 5vh;
 }
 
@@ -99,7 +99,7 @@
 .about-img {
   width: 20vw;
   height: 50vh;
-  margin: 15vh 0vw 0vh 0vw;
+  margin: 10vh 0vw 1vh 0vw;
   transition: 0.8s;
   display: flex;
   align-items: center;

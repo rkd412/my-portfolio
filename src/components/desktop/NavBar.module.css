@@ -75,7 +75,7 @@
 .day-nav-bar ul li {
   display: inline;
   box-sizing: border-box;
-  margin-left: 5vw;
+  margin-left: 8vw;
   transition: all 0.2s ease-in-out;
 }
 
@@ -118,7 +118,7 @@
   color: #eee8aa;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  margin-right: 1vw;
+  margin-right: 2vw;
 }
 
 .night-toggle:hover {
@@ -141,7 +141,7 @@
   color: #ffdd42;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  margin-right: 1vw;
+  margin-right: 2vw;
 }
 
 .day-toggle:hover {
