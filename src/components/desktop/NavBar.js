@@ -3,8 +3,7 @@ import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../context";
 
-import { FaMoon, FaSun, FaChevronDown } from "react-icons/fa";
-
+import { FaMoon, FaSun, FaChevronDown} from "react-icons/fa";
 
 import styles from "./NavBar.module.css";
 
@@ -55,67 +54,71 @@ const NavBar = () => {
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      document.getElementById("nav-bar").style.top = "0";
+      document.getElementById("nav-bar").style.top = "0vh";
     } else {
-      document.getElementById("nav-bar").style.top = "-100px";
+      document.getElementById("nav-bar").style.top = "-10vh";
     }
     prevScrollpos = currentScrollPos;
   };
 
   return (
-    <Fade top>
-      <nav
-        id="nav-bar"
-        className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
-      >
-        <ul>
-          <li>
-            <a
-              aria-label="About Section"
-              id="aboutnav"
-              href="#about"
+    <>
+      <Fade top>
+        <nav
+          id="nav-bar"
+          className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
+        >
+          <ul>
+            <li>
+              <a
+                aria-label="About Section"
+                id="aboutnav"
+                href="#about"
+                className={
+                  selected === "aboutnav" ? styles["selected"] : styles[""]
+                }
+              >
+                ABOUT
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Project Section"
+                id="projectsnav"
+                href="#projects"
+                className={
+                  selected === "projectsnav" ? styles["selected"] : styles[""]
+                }
+              >
+                PROJECTS
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Contact Section"
+                id="contactnav"
+                href="#contact"
+                className={
+                  selected === "contactnav" ? styles["selected"] : styles[""]
+                }
+              >
+                CONTACT
+              </a>
+            </li>
+            
+            <li
               className={
-                selected === "aboutnav" ? styles["selected"] : styles[""]
+                isNight ? styles["night-toggle"] : styles["day-toggle"]
               }
+              onClick={themeToggleHandler}
             >
-              ABOUT
-            </a>
-          </li>
-          <li>
-            <a
-              aria-label="Project Section"
-              id="projectsnav"
-              href="#projects"
-              className={
-                selected === "projectsnav" ? styles["selected"] : styles[""]
-              }
-            >
-              PROJECTS
-            </a>
-          </li>
-          <li>
-            <a
-              aria-label="Contact Section"
-              id="contactnav"
-              href="#contact"
-              className={
-                selected === "contactnav" ? styles["selected"] : styles[""]
-              }
-            >
-              CONTACT
-            </a>
-          </li>
-          <li
-            className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
-            onClick={themeToggleHandler}
-          >
-            <button aria-label="theme toggle button" type="text">
-              {isNight ? <FaMoon /> : <FaSun />}
-            </button>
-          </li>
-        </ul>
-      </nav>
-
+              <button aria-label="theme toggle button" type="text">
+                {isNight ? <FaMoon /> : <FaSun />}
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </Fade>
       <button
         className={
           !isVisible
@@ -130,7 +133,7 @@ const NavBar = () => {
       >
         <FaChevronDown />
       </button>
-    </Fade>
+    </>
   );
 };
 

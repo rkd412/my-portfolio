@@ -40,6 +40,21 @@ const About = () => {
     }
   }, [theme.isNight, count]);
 
+  useEffect(() => {
+    setIsAnimated(isAnimated === true ? false : true);
+    setIsButtonDisabled(true);
+    setTimeout(() => {
+      setZaraIcon(ZaraWink);
+    }, 500);
+    setTimeout(() => {
+      setZaraIcon(Zara);
+    }, 1000);
+    setTimeout(() => {
+      setIsButtonDisabled(false);
+      setIsAnimated(false);
+    }, 1500);
+  }, []);
+
   const isAnimatedHandler = () => {
     setIsAnimated(isAnimated === true ? false : true);
     setIsButtonDisabled(true);
@@ -60,26 +75,29 @@ const About = () => {
       id="about"
       className={theme.isNight ? styles["night-about"] : styles["day-about"]}
     >
-      <Fade left>
+      <Fade>
         <div className={styles["about-text"]}>
-          <h1>Welcome!{" "}
-          <button
-            className={isAnimated ? styles["animated"] : styles[""]}
-            onClick={isAnimatedHandler}
-            disabled={isButtonDisabled}
-            aria-label="icon animator"
-          >
-            <img
-              id="cat-icon"
-              aria-label="Cat Icon Animation"
-              src={zaraIcon}
-              alt="cat icon"
-              loading="lazy"
-              className={
-                theme.isNight ? styles["night-zara-image"] : styles["day-zara-image"]
-              }
-            />
-          </button>{" "}
+          <h1>
+            Welcome!{" "}
+            <button
+              className={isAnimated ? styles["animated"] : styles[""]}
+              onClick={isAnimatedHandler}
+              disabled={isButtonDisabled}
+              aria-label="icon animator"
+            >
+              <img
+                id="cat-icon"
+                aria-label="Cat Icon Animation"
+                src={zaraIcon}
+                alt="cat icon"
+                loading="lazy"
+                className={
+                  theme.isNight
+                    ? styles["night-zara-image"]
+                    : styles["day-zara-image"]
+                }
+              />
+            </button>{" "}
           </h1>
           <h2>My name is Rob and I am a web developer.</h2>
           <h4>
@@ -134,7 +152,7 @@ const About = () => {
         </div>
       </Fade>
 
-      <Fade right>
+      <Fade>
         <div className={styles["about-img"]}>
           <Fade>
             <img

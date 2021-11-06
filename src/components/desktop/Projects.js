@@ -25,7 +25,7 @@ const Projects = () => {
         theme.isNight ? styles["night-project-box"] : styles["day-project-box"]
       }
     >
-      <Fade left>
+      <Fade>
         <div
           className={
             theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
@@ -61,7 +61,6 @@ const Projects = () => {
             <li>
               Source code{" "}
               <a
-              
                 aria-label="Outdoor E-Commerce Repository"
                 href="https://github.com/rkd412/outdoor-ecommerce"
                 target="_blank"
@@ -75,7 +74,7 @@ const Projects = () => {
         </div>
       </Fade>
 
-      <Fade right>
+      <Fade>
         <div
           className={
             theme.isNight ? styles["night-text-div"] : styles["day-text-div"]
@@ -124,7 +123,7 @@ const Projects = () => {
         </div>
       </Fade>
 
-      <Fade left>
+      <Fade>
         <div
           className={
             theme.isNight ? styles["night-img-div"] : styles["day-img-div"]

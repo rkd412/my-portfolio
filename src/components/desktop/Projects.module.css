@@ -1,5 +1,5 @@
 .night-project-box {
-  background: #495057;
+  background: #3f444b;
   height: 300vh;
   width: 100vw;
   width: auto;
@@ -127,6 +127,5 @@
   object-fit: cover;
   width: 700px;
   height: 550px;
-  border: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

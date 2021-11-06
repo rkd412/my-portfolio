@@ -25,7 +25,7 @@ const Contact = () => {
         theme.isNight ? styles["night-contact"] : styles["day-contact"]
       }
     >
-      <Fade bottom>
+      <Fade>
         <div className={styles["contact-text"]}>
           <h1>
             Email me at{" "}

@@ -12,7 +12,7 @@
 }
 
 .day-nav-back {
-  background: rgba(200, 200, 200, 0.95);
+  background: rgba(225, 225, 225, 0.95);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -120,21 +120,13 @@
   transition: 0.8s;
 }
 
-.night-toggle:hover {
-  text-decoration: none;
-  color: #d2c2a9;
-}
 
 .day-toggle {
-  color: #ffdd42;
+  color: #f48037;
   cursor: pointer;
   font-size: 2em;
   padding: 1vw;
   transition: 0.8s;
-}
-.day-toggle:hover {
-  text-decoration: none;
-  color: #d2c2a9;
 }
 
 .selected {
@@ -152,7 +144,7 @@
 
 .night-scroll:active {
   cursor: pointer;
-  color: gainsboro;
+  color: FFFFFF;
 }
 
 .day-scroll {
@@ -166,7 +158,7 @@
 
 .day-scroll:active {
   cursor: pointer;
-  color: silver;
+  color: #08080808;
 }
 
 .invisible {
