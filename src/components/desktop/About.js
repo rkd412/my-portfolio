@@ -53,7 +53,7 @@ const About = () => {
       setIsButtonDisabled(false);
       setIsAnimated(false);
     }, 1500);
-  }, []);
+  },);
 
   const isAnimatedHandler = () => {
     setIsAnimated(isAnimated === true ? false : true);
