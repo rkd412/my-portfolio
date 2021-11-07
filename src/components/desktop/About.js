@@ -40,6 +40,7 @@ const About = () => {
     }
   }, [theme.isNight, count]);
 
+  /* Netlify won't accept because of empty array warning. Need to fix later.
   useEffect(() => {
     setIsAnimated(isAnimated === true ? false : true);
     setIsButtonDisabled(true);
@@ -54,6 +55,7 @@ const About = () => {
       setIsAnimated(false);
     }, 1500);
   }, []);
+  */
 
   const isAnimatedHandler = () => {
     setIsAnimated(isAnimated === true ? false : true);
