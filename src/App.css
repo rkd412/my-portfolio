@@ -6,8 +6,16 @@ nav {
   font-family: "Rubik";
 }
 
+.App {
+  height: 100%;
+}
+
 body {
   font-family: "Roboto";
+  max-width: 2500px;
+  margin: auto;
+  background: grey;
+
 }
 
 html {
@@ -24,5 +32,9 @@ button {
 }
 
 button:focus {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
 }

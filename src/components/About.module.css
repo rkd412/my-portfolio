@@ -1,0 +1,243 @@
+.night-about {
+  background: #343a40;
+  color: #ffffff;
+  transition: 0.8s;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 5rem;
+  margin-top: -5rem;
+  height: 100vh;
+  max-height: 2000px;
+  text-align: justify;
+}
+
+.day-about {
+  background: #f5f5f5;
+  color: #080808;
+  transition: 0.8s;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 5rem;
+  margin-top: -5rem;
+  height: 100vh;
+  max-height: 2000px;
+
+   text-align: justify;
+}
+
+.about-text {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 5rem;
+  margin-top: 1rem;
+}
+
+.contact-links {
+  font-size: 3rem;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0rem 0rem 0rem 3rem;
+}
+
+.about-image {
+  line-height: 3rem;
+  padding: 5rem;
+  margin-top: 1rem;
+}
+
+.about-image-mobile {
+  display: none;
+}
+
+.about-text h2 {
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.night-about h4 {
+  color: #c0c0c0;
+}
+
+.day-about h4 {
+  color: #696969;
+  line-height: 3rem;
+}
+
+.night-image {
+  margin: auto;
+  cursor: pointer;
+  width: 20rem;
+  height: 15rem;
+  background: #ffffff;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s linear;
+}
+
+.night-image:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.day-image {
+  margin: auto;
+  cursor: pointer;
+  width: 20rem;
+  height: 15rem;
+  background: #ffffff;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s linear;
+}
+
+.day-image:hover {
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+.night-zara-image {
+  height: 8rem;
+  width: 6rem;
+  filter: invert(100%);
+  transition: 0.8s;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.day-zara-image {
+  height: 8rem;
+  width: 6rem;
+  transition: 0.8s;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.night-about a:link {
+  text-decoration: none;
+  color: #30638e;
+  outline: none;
+}
+
+.night-about a:visited {
+  text-decoration: underline;
+  color: #30638e;
+}
+
+.night-about a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.night-about a:focus {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.night-about a:active {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.day-about a:link {
+  text-decoration: none;
+  color: #30638e;
+  outline: none;
+}
+
+.day-about a:visited {
+  text-decoration: underline;
+  color: #30638e;
+}
+
+.day-about a:hover {
+  text-decoration: underline;
+  color: #080808;
+}
+
+.day-about a:focus {
+  text-decoration: underline;
+  color: #080808;
+}
+
+.day-about a:active {
+  text-decoration: underline;
+  color: #080808;
+}
+
+@media only screen and (max-width: 1300px) {
+  .night-about {
+    display: flex;
+    min-height: 800px;
+    height: 100vh;
+  }
+
+  .day-about {
+    display: flex;
+    min-height: 800px;
+    height: 100vh;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .contact-links {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem 0rem 1rem 1rem;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .about-image-mobile {
+    display: flex;
+  }
+
+  .about-text h2 {
+    margin: 2rem 0rem 2rem 0rem;
+  }
+
+  .night-about h4 {
+    color: #c0c0c0;
+    line-height: 2.5rem;
+  }
+
+  .day-about h4 {
+    color: #696969;
+    line-height: 2.5rem;
+  }
+
+  .night-image {
+    width: 12rem;
+    height: 9rem;
+    background: #ffffff;
+    margin: 1rem auto 2rem auto;
+    padding: 7.5px 7.5px 20px;
+  }
+
+  .day-image {
+    width: 12rem;
+    height: 9rem;
+    background: #ffffff;
+    margin: 1rem auto 2rem auto;
+    padding: 7.5px 7.5px 20px;
+  }
+
+  .night-zara-image {
+    height: 2rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .day-zara-image {
+    height: 2rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+  }
+}

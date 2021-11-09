@@ -1,16 +1,20 @@
 import React, { useState, useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
-import { ThemeContext } from "../../context";
+import { ThemeContext } from "../context";
 
-import night from "../../assets/me-night.webp";
-import zaraNight from "../../assets/me-zara-night.webp";
-import day from "../../assets/me-day.webp";
-import zaraDay from "../../assets/me-zara-day.webp";
-import Zara from "../../assets/Zara.webp";
-import ZaraWink from "../../assets/Zara-Wink.webp";
+import night from "../assets/me-night.webp";
+import zaraNight from "../assets/me-zara-night.webp";
+import day from "../assets/me-day.webp";
+import zaraDay from "../assets/me-zara-day.webp";
+import Zara from "../assets/Zara.webp";
+import ZaraWink from "../assets/Zara-Wink.webp";
+import Resume from "../robert-davis-resume.pdf";
 
 import styles from "./About.module.css";
+
+import { FaGithub, FaCodepen, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   const theme = useContext(ThemeContext);
@@ -40,7 +44,6 @@ const About = () => {
     }
   }, [theme.isNight, count]);
 
-  /* Netlify won't accept because of empty array warning. Need to fix later.
   useEffect(() => {
     setIsAnimated(isAnimated === true ? false : true);
     setIsButtonDisabled(true);
@@ -55,7 +58,6 @@ const About = () => {
       setIsAnimated(false);
     }, 1500);
   }, []);
-  */
 
   const isAnimatedHandler = () => {
     setIsAnimated(isAnimated === true ? false : true);
@@ -79,6 +81,18 @@ const About = () => {
     >
       <Fade>
         <div className={styles["about-text"]}>
+          <div className={styles["about-image-mobile"]}>
+            <img
+              className={
+                theme.isNight ? styles["night-image"] : styles["day-image"]
+              }
+              loading="lazy"
+              type="image"
+              src={image}
+              alt="Robert Davis Himself"
+              onClick={clickHandler}
+            />
+          </div>
           <h1>
             Welcome!{" "}
             <button
@@ -101,76 +115,70 @@ const About = () => {
               />
             </button>{" "}
           </h1>
-          <h2>My name is Rob and I am a web developer.</h2>
+          <h2>
+            My name is Rob and I am a web developer.{" "}
+            <div className={styles["contact-links"]}>
+              <a
+                aria-label="Github Link"
+                href="https://github.com/rkd412"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+            </div>
+            <div className={styles["contact-links"]}>
+              <a
+                aria-label="CodePen Link"
+                href="https://codepen.io/rkd412"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaCodepen />
+              </a>
+            </div>
+            <div className={styles["contact-links"]}>
+              <a
+                aria-label="LinkedIn Link"
+                href="https://linkedin.com/in/robert-davis-b72893217"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
+          </h2>
+
           <h4>
             I am self-taught and dabble mostly in React. Currently, I am
             learning Nodejs, Express, and MongoDB to complete the MERN stack.
             Feel free to check out my{" "}
-            <a aria-label="Projects Section" id="projectsnav" href="#projects">
+            <Link aria-label="Project Section" to="/projects">
               projects
-            </a>{" "}
-            below or reach out to me through the{" "}
-            <a aria-label="Contact Section" id="contactnav" href="#contact">
-              contact
-            </a>{" "}
-            section. Also, visit my{" "}
-            <a
-              aria-label="GitHub Page"
-              href="https://github.com/rkd412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>{" "}
-            to see what I've been working on or my{" "}
-            <a
-              aria-label="CodePen Page"
-              href="https://codepen.io/rkd412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Codepen
-            </a>{" "}
-            page for older projects I did for{" "}
-            <a
-              aria-label="FreeCodeCamp Profile"
-              href="https://www.freecodecamp.org/rkd412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              FreeCodeCamp
+            </Link>{" "}
+            page or send me an email at{" "}
+            <a aria-label="my email address" href="mailto:rob@robertkdavis.com">
+              rob@robertkdavis.com
             </a>
-            . Feel free to say hello on{" "}
-            <a
-              aria-label="LinkedIn Page"
-              href="https://linkedin.com/in/robert-davis-b72893217"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>{" "}
-            as well. Thanks!
+            . Download my{" "}
+            <Link to={Resume} target="_blank" download>
+              resume
+            </Link>{" "}
+            as well.
           </h4>
         </div>
-      </Fade>
 
-      <Fade>
-        <div className={styles["about-img"]}>
-          <Fade>
-            <img
-              className={
-                theme.isNight ? styles["night-image"] : styles["day-image"]
-              }
-              loading="lazy"
-              type="image"
-              src={image}
-              key={image}
-              name="saveForm"
-              alt="Robert Davis Himself"
-              id="saveForm"
-              onClick={clickHandler}
-            />
-          </Fade>
+        <div className={styles["about-image"]}>
+          <img
+            className={
+              theme.isNight ? styles["night-image"] : styles["day-image"]
+            }
+            loading="lazy"
+            type="image"
+            src={image}
+            alt="Robert Davis Himself"
+            onClick={clickHandler}
+          />
         </div>
       </Fade>
     </div>
