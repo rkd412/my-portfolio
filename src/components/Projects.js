@@ -18,6 +18,9 @@ const Projects = () => {
     window.open(e.target.id, "_blank");
   };
 
+  /*I could turn project-card into a separate hook.
+  There's lot's of repeated logic here.*/
+
   return (
     <div
       id="projects"
@@ -26,45 +29,6 @@ const Projects = () => {
       }
     >
       <Fade>
-        <div
-          className={
-            theme.isNight ? styles["night-intro"] : styles["day-intro"]
-          }
-        >
-          <h2>Hey, thanks for checking out my projects page.</h2>
-          <h4>
-            {" "}
-            I would suggest heading to my{" "}
-            <a
-              aria-label="GitHub Page"
-              href="https://github.com/rkd412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>{" "}
-            to see what I've been working on. My{" "}
-            <a
-              aria-label="CodePen Page"
-              href="https://codepen.io/rkd412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Codepen
-            </a>{" "}
-            page has older projects I did for{" "}
-            <a
-              aria-label="FreeCodeCamp Profile"
-              href="https://www.freecodecamp.org/rkd412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              FreeCodeCamp
-            </a>{" "}
-            as well. Below is some of my work with live demos and source code.
-          </h4>
-        </div>
-
         <div className={styles["project-card"]}>
           {" "}
           <div
@@ -92,7 +56,7 @@ const Projects = () => {
             }
           >
             <ul>
-              <li>Built with HTML, CSS, Javascript, React, MaterialUI</li>
+              <li>Built with HTML, CSS, Javascript, React, MaterialUI.</li>
 
               <li>
                 Outdoor E-Commerce site that includes a functioning cart and
@@ -102,6 +66,11 @@ const Projects = () => {
               <li>
                 First attempt using a design library. The premade components
                 were very helpful but it was challenging learning a new system.
+              </li>
+
+              <li>
+                I am considering expanding on the site and adding authentication
+                and a backend with a database.
               </li>
               <li>
                 <a
@@ -142,9 +111,9 @@ const Projects = () => {
               </li>
 
               <li>
-                I learned a lot about APIs and using fetch as well as Axios. It
-                was initially challenging but started to click as I stayed with
-                it.
+                I learned a lot about APIs in general creating this and using
+                fetch as well as Axios. It was initially challenging but started
+                to click as I stayed with it.
               </li>
               <li>
                 <a
@@ -225,8 +194,8 @@ const Projects = () => {
               <li>Built with CSS, HTML, Javascript, and React</li>
               <li>A game illustrating the Monty Hall problem.</li>{" "}
               <li>
-                Abstracting the thought problem and getting the logic behind it
-                correct was challenging but very fun.
+                Thinking through the problem and getting the logic behind the
+                game correct was challenging but fun.
               </li>
               <li>
                 <a
@@ -252,6 +221,43 @@ const Projects = () => {
           </div>
         </div>
       </Fade>
+
+      <div
+        className={theme.isNight ? styles["night-outro"] : styles["day-outro"]}
+      >
+        <h2>Hey, thanks for checking out my projects page.</h2>
+        <h4>
+          {" "}
+          I would suggest heading to my{" "}
+          <a
+            aria-label="GitHub Page"
+            href="https://github.com/rkd412"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>{" "}
+          to see what I've been working on. My{" "}
+          <a
+            aria-label="CodePen Page"
+            href="https://codepen.io/rkd412"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Codepen
+          </a>{" "}
+          page has older projects I did for{" "}
+          <a
+            aria-label="FreeCodeCamp Profile"
+            href="https://www.freecodecamp.org/rkd412"
+            target="_blank"
+            rel="noreferrer"
+          >
+            FreeCodeCamp
+          </a>{" "}
+          as well. See ya!
+        </h4>
+      </div>
     </div>
   );
 };

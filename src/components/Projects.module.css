@@ -18,7 +18,8 @@
 .day-projects {
   background: #f5f5f5;
   transition: 0.8s;
-  font-size: 1.5rem;
+  height: auto;
+  font-size: 1.25rem;
   padding-top: 5rem;
   margin-top: -5rem;
 }
@@ -29,30 +30,6 @@
 
 .day-projects h4 {
   color: #696969;
-}
-
-.night-intro {
-  width: 50%;
-  margin: auto;
-  text-align: justify;
-  padding: 10rem 0rem 5rem 0rem;
-}
-
-.night-intro h4 {
-  padding-top: 1rem;
-  line-height: 3rem;
-}
-
-.day-intro {
-  width: 50%;
-  margin: auto;
-  text-align: justify;
-  padding: 10rem 0rem 5rem 0rem;
-}
-
-.day-intro h4 {
-  padding-top: 1rem;
-  line-height: 3rem;
 }
 
 .project-card {
@@ -66,17 +43,17 @@
   padding: 5rem;
 }
 
+.night-img-div h2 {
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
 .night-text-div {
   color: #c0c0c0;
   line-height: 3rem;
   padding: 5rem;
   width: 30%;
-}
-
-.night-img-div h2 {
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
 }
 
 .day-img-div {
@@ -94,6 +71,31 @@
   line-height: 3rem;
   padding: 5rem;
   width: 30%;
+  text-align: justify;
+}
+
+.night-outro {
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+  padding: 1rem 0rem 10rem 0rem;
+}
+
+.night-outro h4 {
+  padding-top: 1rem;
+  line-height: 3rem;
+}
+
+.day-outro {
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+  padding: 1rem 0rem 10rem 0rem;
+}
+
+.day-outro h4 {
+  padding-top: 1rem;
+  line-height: 3rem;
 }
 
 .night-projects a:link {
@@ -159,89 +161,48 @@
 
 @media only screen and (max-width: 1300px) {
   .night-projects {
-    background: #343a40;
-    transition: 0.8s;
-    height: auto;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     padding-top: 5rem;
     margin-top: -5rem;
-  }
-
-  .night-projects h2 {
-    color: #ffffff;
-  }
-
-  .night-projects h4 {
-    color: #c0c0c0;
+    display: flex;
+    flex-direction: column;
   }
 
   .day-projects {
-    background: #f5f5f5;
-    transition: 0.8s;
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     padding-top: 5rem;
     margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
   }
 
-  .day-projects h2 {
-    color: #080808;
-  }
-
-  .day-projects h4 {
-    color: #696969;
-  }
-
-  .night-intro {
-    width: 50%;
-    margin: auto;
-    text-align: justify;
-    padding: 10rem 0rem 5rem 0rem;
-  }
-
-  .night-intro h4 {
-    padding-top: 1rem;
-    line-height: 3rem;
-  }
-
-  .day-intro {
-    width: 50%;
-    margin: auto;
-    text-align: justify;
-    padding: 10rem 0rem 5rem 0rem;
-  }
-
-  .day-intro h4 {
-    padding-top: 1rem;
-    line-height: 3rem;
+  .project-card:nth-child(2) {
+    flex-direction: column-reverse;
   }
 
   .project-card {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    flex-direction: column;
+    padding: 1rem;
   }
 
   .night-img-div {
-    padding: 5rem;
+    padding: 1rem;
   }
 
   .night-text-div {
-    color: #c0c0c0;
-    line-height: 3rem;
-    padding: 5rem;
-    width: 30%;
+    line-height: 1rem;
+    padding: 1rem;
+    width: 16rem;
   }
 
   .night-img-div h2 {
-    color: #ffffff;
     text-align: center;
     padding: 1rem;
   }
 
   .day-img-div {
-    color: #080808;
-    padding: 5rem;
+    padding: 1rem;
   }
 
   .day-img-div h2 {
@@ -250,70 +211,36 @@
   }
 
   .day-text-div {
-    color: #696969;
-    line-height: 3rem;
-    padding: 5rem;
-    width: 30%;
-  }
-
-  .night-projects a:link {
-    text-decoration: none;
-    color: #30638e;
-    outline: none;
-  }
-
-  .night-projects a:visited {
-    text-decoration: none;
-    color: #30638e;
-  }
-
-  .night-projects a:hover {
-    text-decoration: underline;
-    color: #ffffff;
-  }
-
-  .night-projects a:focus {
-    text-decoration: underline;
-    color: #ffffff;
-  }
-
-  .night-projects a:active {
-    text-decoration: underline;
-    color: #ffffff;
-  }
-
-  .day-projects a:link {
-    text-decoration: none;
-    color: #30638e;
-    outline: none;
-  }
-
-  .day-projects a:visited {
-    text-decoration: none;
-    color: #30638e;
-  }
-
-  .day-projects a:hover {
-    text-decoration: underline;
-    color: #080808;
-  }
-
-  .day-projects a:focus {
-    text-decoration: underline;
-    color: #080808;
-  }
-
-  .day-projects a:active {
-    text-decoration: underline;
-    color: #080808;
+    line-height: 1rem;
+    padding: 1rem;
+    width: 16rem;
   }
 
   .image {
-    cursor: pointer;
-    object-fit: cover;
-    width: 40rem;
-    height: 30rem;
-    border-radius: 1%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 16rem;
+    height: 12rem;
+  }
+
+  .night-outro {
+    width: auto;
+    text-align: center;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .night-outro h4 {
+    padding-top: 1rem;
+    line-height: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .day-outro {
+    width: auto;
+    text-align: center;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .day-outro h4 {
+    padding-top: 1rem;
+    line-height: 1rem;
   }
 }
