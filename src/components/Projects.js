@@ -219,43 +219,46 @@ const Projects = () => {
           </div>
         </div>
       </Fade>
-
-      <div
-        className={theme.isNight ? styles["night-outro"] : styles["day-outro"]}
-      >
-        <h2>Hey, thanks for checking out my projects page.</h2>
-        <h4>
-          {" "}
-          I would suggest heading to my{" "}
-          <a
-            aria-label="GitHub Page"
-            href="https://github.com/rkd412"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>{" "}
-          to see what I've been working on. My{" "}
-          <a
-            aria-label="CodePen Page"
-            href="https://codepen.io/rkd412"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Codepen
-          </a>{" "}
-          page has older projects I did for{" "}
-          <a
-            aria-label="FreeCodeCamp Profile"
-            href="https://www.freecodecamp.org/rkd412"
-            target="_blank"
-            rel="noreferrer"
-          >
-            FreeCodeCamp
-          </a>{" "}
-          as well. See ya!
-        </h4>
-      </div>
+      <Fade>
+        <div
+          className={
+            theme.isNight ? styles["night-outro"] : styles["day-outro"]
+          }
+        >
+          <h2>Hey, thanks for checking out my projects page.</h2>
+          <h4>
+            {" "}
+            I would suggest heading to my{" "}
+            <a
+              aria-label="GitHub Page"
+              href="https://github.com/rkd412"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>{" "}
+            to see what I've been working on. My{" "}
+            <a
+              aria-label="CodePen Page"
+              href="https://codepen.io/rkd412"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Codepen
+            </a>{" "}
+            page has older projects I did for{" "}
+            <a
+              aria-label="FreeCodeCamp Profile"
+              href="https://www.freecodecamp.org/rkd412"
+              target="_blank"
+              rel="noreferrer"
+            >
+              FreeCodeCamp
+            </a>{" "}
+            as well. See ya!
+          </h4>
+        </div>
+      </Fade>
     </div>
   );
 };

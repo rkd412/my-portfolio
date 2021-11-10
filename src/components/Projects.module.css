@@ -79,7 +79,7 @@
   width: 50%;
   margin: auto;
   text-align: justify;
-  padding: 1rem 0rem 10rem 0rem;
+  padding: 5rem 0rem 10rem 0rem;
 }
 
 .night-outro h4 {
@@ -91,7 +91,7 @@
   width: 50%;
   margin: auto;
   text-align: justify;
-  padding: 1rem 0rem 10rem 0rem;
+  padding: 5rem 0rem 10rem 0rem;
 }
 
 .day-outro h4 {
@@ -162,7 +162,7 @@
 
 @media only screen and (max-width: 1300px) {
   .night-projects {
-    font-size: .75rem;
+    font-size: 0.75rem;
     padding-top: 5rem;
     margin-top: -5rem;
     display: flex;
@@ -170,7 +170,7 @@
   }
 
   .day-projects {
-    font-size: .75rem;
+    font-size: 0.75rem;
     padding-top: 5rem;
     margin-top: -5rem;
     display: flex;
@@ -237,7 +237,7 @@
   .day-outro {
     width: auto;
     text-align: center;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   .day-outro h4 {
