@@ -224,14 +224,14 @@
 
   .night-outro {
     width: auto;
-    text-align: center;
+    text-align: justify;
     padding: 2rem 1rem 4rem 1rem;
   }
 
   .night-outro h4 {
     padding-top: 1rem;
     line-height: 1rem;
-    padding: 1rem 1rem 2rem 1rem;
+  
   }
 
   .day-outro {

@@ -28,8 +28,8 @@ const Projects = () => {
         theme.isNight ? styles["night-projects"] : styles["day-projects"]
       }
     >
-      <Fade>
-        <div className={styles["project-card"]}>
+      <div className={styles["project-card"]}>
+        <Fade>
           <div
             className={
               theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
@@ -51,6 +51,9 @@ const Projects = () => {
               />
             </div>
           </div>
+        </Fade>
+
+        <Fade>
           <div
             className={
               theme.isNight ? styles["night-text-div"] : styles["day-text-div"]
@@ -88,11 +91,12 @@ const Projects = () => {
               </li>
             </ul>
           </div>
-        </div>
-      </Fade>
-      <Fade>
-        <div className={styles["project-card"]}>
-          {" "}
+        </Fade>
+      </div>
+
+      <div className={styles["project-card"]}>
+        {" "}
+        <Fade>
           <div
             className={
               theme.isNight ? styles["night-text-div"] : styles["day-text-div"]
@@ -137,6 +141,8 @@ const Projects = () => {
               </li>
             </ul>
           </div>
+        </Fade>
+        <Fade>
           <div
             className={
               theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
@@ -156,11 +162,11 @@ const Projects = () => {
               />
             </div>{" "}
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
 
-      <Fade>
-        <div className={styles["project-card"]}>
+      <div className={styles["project-card"]}>
+        <Fade>
           <div
             className={
               theme.isNight ? styles["night-img-div"] : styles["day-img-div"]
@@ -182,7 +188,8 @@ const Projects = () => {
               />
             </div>
           </div>
-
+        </Fade>
+        <Fade>
           <div
             className={
               theme.isNight ? styles["night-text-div"] : styles["day-text-div"]
@@ -217,8 +224,9 @@ const Projects = () => {
               </li>
             </ul>
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
+
       <Fade>
         <div
           className={
