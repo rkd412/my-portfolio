@@ -28,7 +28,7 @@
   font-size: 1.5rem;
   line-height: 3rem;
   padding: 5rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .contact-links {
@@ -41,7 +41,7 @@
 .about-image {
   line-height: 3rem;
   padding: 5rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .about-image-mobile {
@@ -114,13 +114,13 @@
 
 .night-about a:link {
   text-decoration: none;
-  color: #30638e;
+  color: #008aff;
   outline: none;
 }
 
 .night-about a:visited {
   text-decoration: underline;
-  color: #30638e;
+  color: #008aff;
 }
 
 .night-about a:hover {
