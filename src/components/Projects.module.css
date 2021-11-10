@@ -54,6 +54,7 @@
   line-height: 3rem;
   padding: 5rem;
   width: 30%;
+  text-align: justify;
 }
 
 .day-img-div {
@@ -161,7 +162,7 @@
 
 @media only screen and (max-width: 1300px) {
   .night-projects {
-    font-size: 0.5rem;
+    font-size: .75rem;
     padding-top: 5rem;
     margin-top: -5rem;
     display: flex;
@@ -169,7 +170,7 @@
   }
 
   .day-projects {
-    font-size: 0.5rem;
+    font-size: .75rem;
     padding-top: 5rem;
     margin-top: -5rem;
     display: flex;
@@ -191,7 +192,7 @@
   }
 
   .night-text-div {
-    line-height: 1rem;
+    line-height: 1.25rem;
     padding: 1rem;
     width: 16rem;
   }
@@ -211,7 +212,7 @@
   }
 
   .day-text-div {
-    line-height: 1rem;
+    line-height: 1.25rem;
     padding: 1rem;
     width: 16rem;
   }

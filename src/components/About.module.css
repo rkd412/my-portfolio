@@ -229,14 +229,14 @@
   }
 
   .night-zara-image {
-    height: 2rem;
-    width: 1.5rem;
+    height: 4rem;
+    width: 3rem;
     margin-left: 1rem;
   }
   
   .day-zara-image {
-    height: 2rem;
-    width: 1.5rem;
+    height: 4rem;
+    width: 3rem;
     margin-left: 1rem;
   }
 }
