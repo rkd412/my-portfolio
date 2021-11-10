@@ -44,7 +44,7 @@ const About = () => {
     }
   }, [theme.isNight, count]);
 
-  useEffect(() => {
+  useEffect((isAnimated) => {
     setIsAnimated(isAnimated === true ? false : true);
     setIsButtonDisabled(true);
     setTimeout(() => {
@@ -57,7 +57,7 @@ const About = () => {
       setIsButtonDisabled(false);
       setIsAnimated(false);
     }, 1500);
-  }, []);
+  },[]);
 
   const isAnimatedHandler = () => {
     setIsAnimated(isAnimated === true ? false : true);
