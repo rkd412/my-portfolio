@@ -10,7 +10,7 @@ import day from "../assets/me-day.webp";
 import zaraDay from "../assets/me-zara-day.webp";
 import Zara from "../assets/Zara.webp";
 import ZaraWink from "../assets/Zara-Wink.webp";
-import Resume from "../robert-davis-resume.pdf";
+import Resume from "../Robert-Davis-Resume.pdf";
 
 import styles from "./About.module.css";
 

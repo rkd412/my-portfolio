@@ -60,7 +60,7 @@ const Projects = () => {
             }
           >
             <ul>
-              <li>Built with HTML, CSS, Javascript, React, MaterialUI</li>
+              <li>Built with HTML, CSS, Javascript, React, Material UI.</li>
               <li>
                 Security API app that includes 3 different functioning APIs.
               </li>
@@ -103,7 +103,7 @@ const Projects = () => {
             }
           >
             <ul>
-              <li>Built with HTML, CSS, Javascript, React, MaterialUI.</li>
+              <li>Built with HTML, CSS, Javascript, React, Material UI.</li>
 
               <li>
                 Outdoor E-Commerce site that includes a functioning cart and
@@ -112,7 +112,8 @@ const Projects = () => {
 
               <li>
                 First attempt using a design library. The premade components
-                were very helpful but it was challenging learning a new system.
+                were very helpful but it was challenging learning a new styling
+                system.
               </li>
 
               <li>
@@ -196,11 +197,16 @@ const Projects = () => {
             }
           >
             <ul>
-              <li>Built with CSS, HTML, Javascript, and React</li>
+              <li>Built with CSS, HTML, Javascript, and React.</li>
               <li>A game illustrating the Monty Hall problem.</li>{" "}
               <li>
                 Thinking through the problem and getting the logic behind the
                 game correct was challenging but fun.
+              </li>
+              <li>
+                I really wanted to maintain accuracy of the original brain
+                teaser in code the best I could and I think I did a pretty good
+                job in that regard.
               </li>
               <li>
                 <a
@@ -218,7 +224,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Live Demo
+                  Live Demo.
                 </a>
                 .
               </li>
@@ -233,7 +239,7 @@ const Projects = () => {
             theme.isNight ? styles["night-outro"] : styles["day-outro"]
           }
         >
-          <h2>Hey, thanks for checking out my projects page.</h2>
+          <h2>Hey, thanks for checking out my projects.</h2>
           <h4>
             {" "}
             I would suggest heading to my{" "}
