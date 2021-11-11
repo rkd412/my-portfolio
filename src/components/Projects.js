@@ -60,7 +60,7 @@ const Projects = () => {
             }
           >
             <ul>
-              <li>Built with HTML, CSS, Javascript, React, MaterialUI</li>
+              <li>Built with HTML, CSS, Javascript, React, and MaterialUI.</li>
               <li>
                 Security API app that includes 3 different functioning APIs.
               </li>
@@ -104,7 +104,7 @@ const Projects = () => {
             }
           >
             <ul>
-              <li>Built with HTML, CSS, Javascript, React, MaterialUI.</li>
+              <li>Built with HTML, CSS, Javascript, React, and MaterialUI.</li>
 
               <li>
                 Outdoor E-Commerce site that includes a functioning cart and
@@ -197,7 +197,7 @@ const Projects = () => {
             }
           >
             <ul>
-              <li>Built with CSS, HTML, Javascript, and React</li>
+              <li>Built with CSS, HTML, Javascript, and React.</li>
               <li>A game illustrating the Monty Hall problem.</li>{" "}
               <li>
                 Thinking through the problem and getting the logic behind the
