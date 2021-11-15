@@ -10,3 +10,5 @@ export default function ScrollToTop() {
 
   return null;
 }
+
+/*scrolls to top of page on rerender*/
