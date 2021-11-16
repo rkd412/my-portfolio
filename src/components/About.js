@@ -50,14 +50,14 @@ const About = () => {
     setIsButtonDisabled(true);
     setTimeout(() => {
       setZaraIcon(ZaraWink);
-    }, 500);
+    }, 1000);
     setTimeout(() => {
       setZaraIcon(Zara);
-    }, 1000);
+    }, 1500);
     setTimeout(() => {
       setIsButtonDisabled(false);
       setIsAnimated(false);
-    }, 1500);
+    }, 2000);
   }, []);
 
   const isAnimatedHandler = () => {
