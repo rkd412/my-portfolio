@@ -84,9 +84,7 @@ const About = () => {
         <div className={styles["about-text"]}>
           <div className={styles["about-image-mobile"]}>
             <img
-              className={
-                theme.isNight ? styles["night-image"] : styles["day-image"]
-              }
+              className={styles["profile"]}
               loading="lazy"
               type="image"
               src={image}
