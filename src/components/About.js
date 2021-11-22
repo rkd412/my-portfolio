@@ -12,7 +12,7 @@ import Zara from "../assets/Zara.webp";
 import ZaraWink from "../assets/Zara-Wink.webp";
 import Resume from "../Robert-Davis-Resume.pdf";
 
-import styles from "./About.module.css";
+import styles from "./About.module.scss";
 
 import { FaGithub, FaCodepen, FaLinkedin } from "react-icons/fa";
 
@@ -171,11 +171,8 @@ const About = () => {
 
         <div className={styles["about-image"]}>
           <img
-            className={
-              theme.isNight ? styles["night-image"] : styles["day-image"]
-            }
+            className={styles["profile"]}
             loading="lazy"
-            type="image"
             src={image}
             alt="Robert Davis Himself"
             onClick={clickHandler}

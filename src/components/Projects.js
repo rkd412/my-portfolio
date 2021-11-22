@@ -8,7 +8,7 @@ import ECommerce from "../assets/ECommerce.webp";
 import SecurityApp from "../assets/SecurityApp.webp";
 import MontyHall from "../assets/MontyHall.webp";
 
-import styles from "./Projects.module.css";
+import styles from "./Projects.module.scss";
 
 const Projects = () => {
   const theme = useContext(ThemeContext);
@@ -197,7 +197,7 @@ const Projects = () => {
             }
           >
             <ul>
-              <li>Built with CSS, HTML, Javascript, and React.</li>
+              <li>Built with HTML, CSS, Javascript, and React.</li>
               <li>A game illustrating the Monty Hall problem.</li>{" "}
               <li>
                 Thinking through the problem and getting the logic behind the

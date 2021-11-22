@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 
 import ScrollToTop from "./ScrollToTop";
 
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
   const [isNight, setIsNight] = useState(

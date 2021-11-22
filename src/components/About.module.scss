@@ -1,6 +1,16 @@
+$night-primary-text: #ffffff;
+$night-secondary-text: #c0c0c0;
+$night-link: #008aff;
+$night-background: #343a40;
+
+$day-primary-text: #080808;
+$day-secondary-text: #696969;
+$day-link: #30638e;
+$day-background: #f5f5f5;
+
 .night-about {
-  background: #343a40;
-  color: #ffffff;
+  background: $night-background;
+  color: $night-primary-text;
   transition: 0.8s;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -11,8 +21,8 @@
 }
 
 .day-about {
-  background: #f5f5f5;
-  color: #080808;
+  background: $day-background;
+  color: $day-primary-text;
   transition: 0.8s;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -51,15 +61,15 @@
 }
 
 .night-about h4 {
-  color: #c0c0c0;
+  color: $night-secondary-text;
 }
 
 .day-about h4 {
-  color: #696969;
+  color: $day-secondary-text;
   line-height: 3rem;
 }
 
-.night-image {
+.profile {
   margin: auto;
   cursor: pointer;
   width: 20rem;
@@ -68,29 +78,12 @@
   margin: 55px 75px 30px;
   padding: 15px 15px 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: all 0.2s linear;
+  transition: all 0.2s ease-in-out;
 }
 
-.night-image:hover {
+.profile:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-}
-
-.day-image {
-  margin: auto;
-  cursor: pointer;
-  width: 20rem;
-  height: 15rem;
-  background: #ffffff;
-  margin: 55px 75px 30px;
-  padding: 15px 15px 30px;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: all 0.2s linear;
-}
-
-.day-image:hover {
-  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
+  transform: scale(1.01);
 }
 
 .night-zara-image {
@@ -112,54 +105,54 @@
 
 .night-about a:link {
   text-decoration: none;
-  color: #008aff;
+  color: $night-link;
   outline: none;
 }
 
 .night-about a:visited {
   text-decoration: underline;
-  color: #008aff;
+  color: $night-link;
 }
 
 .night-about a:hover {
   text-decoration: underline;
-  color: #ffffff;
+  color: $night-primary-text;
 }
 
 .night-about a:focus {
   text-decoration: underline;
-  color: #ffffff;
+  color: $night-primary-text;
 }
 
 .night-about a:active {
   text-decoration: underline;
-  color: #ffffff;
+  color: $night-primary-text;
 }
 
 .day-about a:link {
   text-decoration: none;
-  color: #30638e;
+  color: $day-link;
   outline: none;
 }
 
 .day-about a:visited {
   text-decoration: underline;
-  color: #30638e;
+  color: $day-link;
 }
 
 .day-about a:hover {
   text-decoration: underline;
-  color: #080808;
+  color: $day-primary-text;
 }
 
 .day-about a:focus {
   text-decoration: underline;
-  color: #080808;
+  color: $day-primary-text;
 }
 
 .day-about a:active {
   text-decoration: underline;
-  color: #080808;
+  color: $day-primary-text;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -201,19 +194,18 @@
   }
 
   .night-about h4 {
-    color: #c0c0c0;
+    color: $night-secondary-text;
     line-height: 2.5rem;
   }
 
   .day-about h4 {
-    color: #696969;
+    color: $day-secondary-text;
     line-height: 2.5rem;
   }
 
   .night-image {
     width: 12rem;
     height: 9rem;
-    background: #ffffff;
     margin: 1rem auto 2rem auto;
     padding: 7.5px 7.5px 20px;
   }
@@ -221,7 +213,6 @@
   .day-image {
     width: 12rem;
     height: 9rem;
-    background: #ffffff;
     margin: 1rem auto 2rem auto;
     padding: 7.5px 7.5px 20px;
   }
@@ -231,7 +222,7 @@
     width: 3rem;
     margin-left: 1rem;
   }
-  
+
   .day-zara-image {
     height: 4rem;
     width: 3rem;

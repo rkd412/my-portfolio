@@ -7,7 +7,7 @@ import { ThemeContext } from "../context";
 
 import { FaMoon, FaSun } from "react-icons/fa";
 
-import styles from "./NavBar.module.css";
+import styles from "./NavBar.module.scss";
 
 const NavBar = () => {
   /*Used useContext for app wide state management for night/day themes*/

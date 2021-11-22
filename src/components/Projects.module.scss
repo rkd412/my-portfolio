@@ -1,5 +1,15 @@
+$night-primary-text: #ffffff;
+$night-secondary-text: #c0c0c0;
+$night-link: #008aff;
+$night-background: #343a40;
+
+$day-primary-text: #080808;
+$day-secondary-text: #696969;
+$day-link: #30638e;
+$day-background: #f5f5f5;
+
 .night-projects {
-  background: #343a40;
+  background: $night-background;
   transition: 0.8s;
   height: auto;
   font-size: 1.25rem;
@@ -8,15 +18,15 @@
 }
 
 .night-projects h2 {
-  color: #ffffff;
+  color: $night-primary-text;
 }
 
 .night-projects h4 {
-  color: #c0c0c0;
+  color: $night-secondary-text;
 }
 
 .day-projects {
-  background: #f5f5f5;
+  background: $day-background;
   transition: 0.8s;
   height: auto;
   font-size: 1.25rem;
@@ -25,11 +35,11 @@
 }
 
 .day-projects h2 {
-  color: #080808;
+  color: $day-primary-text;
 }
 
 .day-projects h4 {
-  color: #696969;
+  color: $day-secondary-text;
 }
 
 .project-card {
@@ -44,13 +54,13 @@
 }
 
 .night-img-div h2 {
-  color: #ffffff;
+  color: $night-primary-text;
   text-align: center;
   padding: 1rem;
 }
 
 .night-text-div {
-  color: #c0c0c0;
+  color: $night-secondary-text;
   line-height: 3rem;
   padding: 5rem;
   width: 30%;
@@ -58,7 +68,7 @@
 }
 
 .day-img-div {
-  color: #080808;
+  color: $day-primary-text;
   padding: 5rem;
 }
 
@@ -68,7 +78,7 @@
 }
 
 .day-text-div {
-  color: #696969;
+  color: $day-secondary-text;
   line-height: 3rem;
   padding: 5rem;
   width: 30%;
@@ -101,54 +111,54 @@
 
 .night-projects a:link {
   text-decoration: none;
-  color: #008aff;
+  color: $night-link;
   outline: none;
 }
 
 .night-projects a:visited {
   text-decoration: none;
-  color: #008aff;
+  color: $night-link;
 }
 
 .night-projects a:hover {
   text-decoration: underline;
-  color: #ffffff;
+  color: $night-primary-text;
 }
 
 .night-projects a:focus {
   text-decoration: underline;
-  color: #ffffff;
+  color: $night-primary-text;
 }
 
 .night-projects a:active {
   text-decoration: underline;
-  color: #ffffff;
+  color: $night-primary-text;
 }
 
 .day-projects a:link {
   text-decoration: none;
-  color: #30638e;
+  color: $day-link;
   outline: none;
 }
 
 .day-projects a:visited {
   text-decoration: none;
-  color: #30638e;
+  color: $day-link;
 }
 
 .day-projects a:hover {
   text-decoration: underline;
-  color: #080808;
+  color: $day-primary-text;
 }
 
 .day-projects a:focus {
   text-decoration: underline;
-  color: #080808;
+  color: $day-primary-text;
 }
 
 .day-projects a:active {
   text-decoration: underline;
-  color: #080808;
+  color: $day-primary-text;
 }
 
 .image {
@@ -157,7 +167,13 @@
   width: 40rem;
   height: 30rem;
   border-radius: 1%;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.image:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 19px 38px, rgba(0, 0, 0, 0.4) 0px 15px 12px;
+  transform: scale(1.01);
 }
 
 @media only screen and (max-width: 1300px) {
@@ -231,7 +247,6 @@
   .night-outro h4 {
     padding-top: 1rem;
     line-height: 1rem;
-  
   }
 
   .day-outro {
