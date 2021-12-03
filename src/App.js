@@ -22,9 +22,8 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ isNight, setIsNight }}>
-      
       <BrowserRouter>
-     <NavBar />
+        <NavBar />
         <ScrollToTop />
         <Switch>
           <Route path="/about">
@@ -42,6 +41,5 @@ const App = () => {
     </ThemeContext.Provider>
   );
 };
-
 
 export default App;
