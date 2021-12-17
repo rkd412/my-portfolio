@@ -18,8 +18,8 @@ const Projects = () => {
     window.open(e.target.id, "_blank");
   };
 
-  /*I could turn project-card into a separate hook.
-  There's lot's of repeated logic here.*/
+  /*I could turn project-card into a separate component.
+  There's lot's of repeated logic here...*/
 
   return (
     <div

@@ -150,7 +150,7 @@ const About = () => {
 
           <h4>
             I am self-taught and dabble mostly in React. Currently, I am
-            learning Nodejs, Express, and MongoDB to complete the MERN stack.
+            learning Node.js, Express, and MongoDB to complete the MERN stack.
             Feel free to check out my{" "}
             <Link aria-label="Project Section" to="/projects">
               projects
