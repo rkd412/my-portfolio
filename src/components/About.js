@@ -152,7 +152,7 @@ const About = () => {
             I am a self-taught tech enthusiast and currently work 
             as a web developer for a niche e-commerce company. I dabble
             a bit in React and the MERN stack but have mostly been
-            working with BigCommerce lately (lots of Javascript, 
+            working with BigCommerce lately (lots of JavaScript, 
             Handlebars, and Sass).
 
             Feel free to check out my{" "}
