@@ -150,9 +150,10 @@ const About = () => {
 
           <h4>
             I am a self-taught tech enthusiast and currently work 
-            as a web developer for a niche e-commerce company. I dabble a bit in React
-            and the MERN stack but have mostly been woking with
-            BigCommerce lately.
+            as a web developer for a niche e-commerce company. I dabble
+            a bit in React and the MERN stack but have mostly been
+            working with BigCommerce lately (lots of Javascript, 
+            Handlebars, and Sass).
 
             Feel free to check out my{" "}
             <Link aria-label="Project Section" to="/projects">
