@@ -150,7 +150,7 @@ const About = () => {
 
           <h4>
             I am a self-taught tech enthusiast and currently work 
-            as a web developer for a niche e-commerce company. I dabble
+            for a niche e-commerce company. I dabble
             a bit in React and the MERN stack but have mostly been
             working with BigCommerce lately (lots of JavaScript, 
             Handlebars, and Sass).
