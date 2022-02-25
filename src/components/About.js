@@ -149,8 +149,11 @@ const About = () => {
           </h2>
 
           <h4>
-            I am self-taught and dabble mostly in React. Currently, I am
-            learning Node.js, Express, and MongoDB to complete the MERN stack.
+            I am a self-taught tech enthusiast and currently work 
+            as a web developer for a niche e-commerce company. I dabble a bit in React
+            and the MERN stack but have mostly been woking with
+            BigCommerce lately.
+
             Feel free to check out my{" "}
             <Link aria-label="Project Section" to="/projects">
               projects
