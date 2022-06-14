@@ -160,7 +160,7 @@ const About = () => {
             </a>{" "}
             that has several successful sites. I dabble a bit in React and the
             MERN stack in my free time but have mostly been working with the
-            BigCommerce platform (lots of JavaScript, Handlebars, and Sass). I
+            BigCommerce platform lately (lots of JavaScript, Handlebars, and Sass). I
             have also recently been learning and using PHP and MySQL. Feel free
             to check out my{" "}
             <Link aria-label="Project Section" to="/projects">
