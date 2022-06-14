@@ -237,16 +237,17 @@ const Projects = () => {
           <h2>Hey, thanks for checking out my projects page.</h2>
           <h4>
             {" "}
-            I would suggest heading to my{" "}
+            I would suggest heading to{" "}
             <a
-              aria-label="GitHub Page"
-              href="https://github.com/rkd412"
+              aria-label="Online Stores, LLC"
+              href="https://www.onlinestores.com/"
               target="_blank"
               rel="noreferrer"
             >
-              Github
+              Online Stores
             </a>{" "}
-            to see what I've been working on. My{" "}
+            to see what I've been working on - there are several e-commerce sites
+            to check out. My{" "}
             <a
               aria-label="CodePen Page"
               href="https://codepen.io/rkd412"
