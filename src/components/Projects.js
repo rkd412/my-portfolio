@@ -246,7 +246,7 @@ const Projects = () => {
             >
               Online Stores
             </a>{" "}
-            to see what I've been working - there are several e-commerce sites
+            to see what I've been working on - there are several e-commerce sites
             to check out. My{" "}
             <a
               aria-label="CodePen Page"
