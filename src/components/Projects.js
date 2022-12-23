@@ -56,7 +56,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              English Teastore
+              English Tea Store
             </a>
             ). I'm always happy to talk about my work there and what I've
             accomplished! My{" "}
@@ -88,7 +88,9 @@ const Projects = () => {
             </a>{" "}
             has become a bit inactive too (╥_╥) because I've been pretty busy at
             work using Azure DevOps but I have a few projects in mind I'll be
-            starting up soon \ (•◡•) /. I do appreciate you stopping by!
+            starting up soon \ (•◡•) /. Feel free to check it out anyways though
+            because I have some older stuff on there with live demos. I do
+            appreciate you stopping by!
           </p>
         </div>
       </Fade>
