@@ -121,7 +121,7 @@ const About = () => {
                 aria-label="Github Link"
                 href="https://github.com/rkd412"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <FaGithub />
               </a>
@@ -131,7 +131,7 @@ const About = () => {
                 aria-label="CodePen Link"
                 href="https://codepen.io/rkd412"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <FaCodepen />
               </a>
@@ -141,7 +141,7 @@ const About = () => {
                 aria-label="LinkedIn Link"
                 href="https://linkedin.com/in/robert-davis-b72893217"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin />
               </a>
@@ -149,20 +149,20 @@ const About = () => {
           </h2>
 
           <h4>
-            I am a self-taught tech enthusiast and currently work for an{" "}
+            I am a lifelong tech enthusiast and currently work for an{" "}
             <a
               aria-label="Online Stores, LLC"
               href="https://www.onlinestores.com/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               e-commerce company
             </a>{" "}
             that has several successful sites. I dabble a bit in React and the
             MERN stack in my free time but have mostly been working with the
-            BigCommerce platform lately (lots of JavaScript, Handlebars, and Sass). I
-            have also recently been learning and using PHP and MySQL. Feel free
-            to check out my{" "}
+            BigCommerce platform lately (lots of JavaScript, Handlebars, and
+            Sass). I have also recently been learning and using PHP and MySQL.
+            Feel free to check out my{" "}
             <Link aria-label="Project Section" to="/projects">
               projects
             </Link>{" "}

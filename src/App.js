@@ -32,7 +32,6 @@ const App = () => {
           <Route path="/projects">
             <Projects />
           </Route>
-
           <Route path="/">
             <About />
           </Route>

@@ -12,16 +12,17 @@ $day-background: #f5f5f5;
   background: $night-background;
   transition: 0.8s;
   height: auto;
+  min-height: 100vh;
   font-size: 1.25rem;
   padding-top: 5rem;
   margin-top: -5rem;
 }
 
-.night-projects h2 {
+.night-projects h1 {
   color: $night-primary-text;
 }
 
-.night-projects h4 {
+.night-projects p {
   color: $night-secondary-text;
 }
 
@@ -29,16 +30,17 @@ $day-background: #f5f5f5;
   background: $day-background;
   transition: 0.8s;
   height: auto;
+  min-height: 100vh;
   font-size: 1.25rem;
   padding-top: 5rem;
   margin-top: -5rem;
 }
 
-.day-projects h2 {
+.day-projects h1 {
   color: $day-primary-text;
 }
 
-.day-projects h4 {
+.day-projects p {
   color: $day-secondary-text;
 }
 
@@ -53,7 +55,7 @@ $day-background: #f5f5f5;
   padding: 5rem;
 }
 
-.night-img-div h2 {
+.night-img-div h1 {
   color: $night-primary-text;
   text-align: center;
   padding: 1rem;
@@ -72,7 +74,7 @@ $day-background: #f5f5f5;
   padding: 5rem;
 }
 
-.day-img-div h2 {
+.day-img-div h1 {
   text-align: center;
   padding: 1rem;
 }
@@ -92,7 +94,7 @@ $day-background: #f5f5f5;
   padding: 5rem 0rem 10rem 0rem;
 }
 
-.night-outro h4 {
+.night-outro p {
   padding-top: 1rem;
   line-height: 3rem;
 }
@@ -104,7 +106,7 @@ $day-background: #f5f5f5;
   padding: 5rem 0rem 10rem 0rem;
 }
 
-.day-outro h4 {
+.day-outro p {
   padding-top: 1rem;
   line-height: 3rem;
 }
@@ -244,7 +246,7 @@ $day-background: #f5f5f5;
     padding: 2rem 1rem 4rem 1rem;
   }
 
-  .night-outro h4 {
+  .night-outro p {
     padding-top: 1rem;
     line-height: 1rem;
   }
@@ -255,7 +257,7 @@ $day-background: #f5f5f5;
     padding: 2rem 1rem 4rem 1rem;
   }
 
-  .day-outro h4 {
+  .day-outro p {
     padding-top: 1rem;
     line-height: 1rem;
   }
