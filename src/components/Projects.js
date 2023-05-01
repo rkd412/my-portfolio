@@ -27,14 +27,14 @@ const Projects = () => {
             {" "}
             I had some older stuff here but honestly it wasn't really
             representative of where I'm at these days¯\_(ツ)_/¯. I would suggest
-            heading to{" "}
+            heading to the{" "}
             <a
-              aria-label="Online Stores, LLC"
-              href="https://www.onlinestores.com/"
+              aria-label="City of Pittsburgh"
+              href="https://pittsburghpa.gov/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              the City of Pittsburgh
+              City of Pittsburgh
             </a>{" "}
             website to see what I've been working on or check out{" "}
             <a
