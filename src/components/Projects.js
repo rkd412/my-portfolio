@@ -64,7 +64,7 @@ const Projects = () => {
             >
               English Tea Store
             </a>
-            ). I'm always happy to talk about my work there and what I've
+            ). I'm always happy to talk about my work and what I've
             accomplished! My{" "}
             <a
               aria-label="CodePen Page"

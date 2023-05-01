@@ -149,14 +149,14 @@ const About = () => {
           </h2>
 
           <h4>
-            I am a lifelong tech enthusiast currently working for{" "}
+            I am a lifelong tech enthusiast currently working for the{" "}
             <a
-              aria-label="Online Stores, LLC"
-              href="https://www.onlinestores.com/"
+              aria-label="City of Pittsburgh"
+              href="https://pittsburghpa.gov/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              the City of Pittsburgh
+              City of Pittsburgh
             </a>{" "}
             as a web developer. I previously worked for an{" "}
             <a
@@ -179,7 +179,7 @@ const About = () => {
             <Link to={Resume} target="_blank" download>
               resume
             </Link>{" "}
-            as well. Thanks for stopping by!
+            as well. Thanks for your interest!
           </h4>
         </div>
 
