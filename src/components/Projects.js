@@ -9,9 +9,6 @@ import styles from "./Projects.module.scss";
 const Projects = () => {
   const theme = useContext(ThemeContext);
 
-  /*I could turn project-card into a separate component.
-  There's lot's of repeated logic here...*/
-
   return (
     <div
       id="projects"
@@ -37,10 +34,19 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
+              the City of Pittsburgh
+            </a>{" "}
+            website to see what I've been working on or check out{" "}
+            <a
+              aria-label="Online Stores, LLC"
+              href="https://www.onlinestores.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Online Stores
             </a>{" "}
-            to see what I've been working on - there are several e-commerce
-            sites to check out (like the{" "}
+            where there are several e-commerce sites from my previous job (like
+            the{" "}
             <a
               aria-label="Online Stores, LLC"
               href="https://www.discountsafetygear.com/"
@@ -87,10 +93,10 @@ const Projects = () => {
               GitHub
             </a>{" "}
             has become a bit inactive too (╥_╥) because I've been pretty busy at
-            work using Azure DevOps but I have a few projects in mind I'll be
-            starting up soon \ (•◡•) /. Feel free to check it out anyways though
-            because I have some older stuff on there with live demos. I do
-            appreciate you stopping by!
+            work but I have a few projects in mind I'll be starting up soon \
+            (•◡•) /. Feel free to check it out anyways though because I have
+            some older stuff on there with live demos. I do appreciate you
+            stopping by!
           </p>
         </div>
       </Fade>

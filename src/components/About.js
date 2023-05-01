@@ -149,7 +149,16 @@ const About = () => {
           </h2>
 
           <h4>
-            I am a lifelong tech enthusiast and currently work for an{" "}
+            I am a lifelong tech enthusiast currently working for{" "}
+            <a
+              aria-label="Online Stores, LLC"
+              href="https://www.onlinestores.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              the City of Pittsburgh
+            </a>{" "}
+            as a web developer. I previously worked for an{" "}
             <a
               aria-label="Online Stores, LLC"
               href="https://www.onlinestores.com/"
@@ -158,11 +167,7 @@ const About = () => {
             >
               e-commerce company
             </a>{" "}
-            that has several successful sites. I dabble a bit in React and the
-            MERN stack in my free time but have mostly been working with the
-            BigCommerce platform lately (lots of JavaScript, Handlebars, and
-            Sass). I have also recently been learning and using PHP and MySQL.
-            Feel free to check out my{" "}
+            that has several successful sites. Feel free to check out my{" "}
             <Link aria-label="Project Section" to="/projects">
               projects
             </Link>{" "}
@@ -174,7 +179,7 @@ const About = () => {
             <Link to={Resume} target="_blank" download>
               resume
             </Link>{" "}
-            as well. Thanks!
+            as well. Thanks for stopping by!
           </h4>
         </div>
 
