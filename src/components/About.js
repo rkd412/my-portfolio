@@ -157,8 +157,8 @@ const About = () => {
               rel="noopener noreferrer"
             >
               City of Pittsburgh
-            </a>{" "}
-            as a web developer. I previously worked for an{" "}
+            </a>
+            . I previously worked for an{" "}
             <a
               aria-label="Online Stores, LLC"
               href="https://www.onlinestores.com/"
@@ -179,7 +179,7 @@ const About = () => {
             <Link to={Resume} target="_blank" download>
               resume
             </Link>{" "}
-            as well. Thanks for your interest!
+            as well. Thank you for your interest!
           </h4>
         </div>
 
