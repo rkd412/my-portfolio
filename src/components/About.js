@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../context";
 
@@ -80,7 +79,6 @@ const About = () => {
       id="about"
       className={theme.isNight ? styles["night-about"] : styles["day-about"]}
     >
-      <Fade>
         <div className={styles["about-text"]}>
           <div className={styles["about-image-mobile"]}>
             <img
@@ -192,7 +190,6 @@ const About = () => {
             onClick={clickHandler}
           />
         </div>
-      </Fade>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Fade from "react-reveal/Fade";
 
 import { Link } from "react-router-dom";
 
@@ -32,34 +31,30 @@ const NavBar = () => {
 
   return (
     <>
-      <Fade top>
-        <nav
-          id="nav-bar"
-          className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
-        >
-          <ul>
-            <li>
-              <Link aria-label="About Section" to="/about">
-                ABOUT
-              </Link>
-            </li>
-            <li>
-              <Link aria-label="Project Section" to="/projects">
-                PROJECTS
-              </Link>
-            </li>
+      <nav
+        id="nav-bar"
+        className={isNight ? styles["night-nav-bar"] : styles["day-nav-bar"]}
+      >
+        <ul>
+          <li>
+            <Link aria-label="About Section" to="/about">
+              ABOUT
+            </Link>
+          </li>
+          <li>
+            <Link aria-label="Project Section" to="/projects">
+              PROJECTS
+            </Link>
+          </li>
 
-            <li
-              className={
-                isNight ? styles["night-toggle"] : styles["day-toggle"]
-              }
-              onClick={themeToggleHandler}
-            >
-              {isNight ? <FaMoon /> : <FaSun />}
-            </li>
-          </ul>
-        </nav>
-      </Fade>
+          <li
+            className={isNight ? styles["night-toggle"] : styles["day-toggle"]}
+            onClick={themeToggleHandler}
+          >
+            {isNight ? <FaMoon /> : <FaSun />}
+          </li>
+        </ul>
+      </nav>
     </>
   );
 };
